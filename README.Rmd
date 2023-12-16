@@ -6,7 +6,10 @@ output: github_document
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE,
+  collapse = TRUE, 
+  message = FALSE, 
+  error = FALSE, 
+  warning = FALSE
   comment = "#>"
 )
 ```
@@ -20,3 +23,11 @@ knitr::opts_chunk$set(
 ![](img/img-03.png)
 
 ![](img/img-04.png)
+## Carregando Pacotes
+
+```{r}
+library(tidyverse)
+```
+
+
+
