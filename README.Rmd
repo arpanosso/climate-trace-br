@@ -36,7 +36,7 @@ library(tidyverse)
 
 ```{r}
 brazil_ids <- read_rds("data/df_nome.rds")
-emissions_sources <- read_rds("data/emissions_sources.rds")
+# emissions_sources <- read_rds("data/emissions_sources.rds")
 ```
 
 ```{r}
@@ -53,11 +53,11 @@ emissions_sources <- read_rds("data/emissions_sources.rds")
 # sources_city <- emissions_sources %>% 
 #   dplyr::filter(source_name %in% brazil_ids_name)
 
-emissions_sources <- left_join(emissions_sources,
-          brazil_ids %>% 
-  rename(source_name = nome) %>% 
-    select(source_name,sigla_uf,nome_uf,nome_regiao),
-  by = "source_name")
+# emissions_sources <- left_join(emissions_sources,
+#           brazil_ids %>% 
+#   rename(source_name = nome) %>% 
+#     select(source_name,sigla_uf,nome_uf,nome_regiao),
+#   by = "source_name")
 ```
 
 ```{r}
@@ -71,45 +71,45 @@ uf_nome <- brazil_ids$nome_uf %>% unique()
 
 
 ```{r}
-emissions_sources %>% 
-  filter(sigla_uf == "SP",
-         source_name == "Jaboticabal",
-         sector_name == "agriculture",
-         gas == "co2e_100yr",
-         year == 2022
-         ) %>% 
-  group_by(original_inventory_sector) %>% 
-  summarise( emission = sum(emissions_quantity,
-                            na.rm = TRUE))
+# emissions_sources %>% 
+#   filter(sigla_uf == "SP",
+#          source_name == "Jaboticabal",
+#          sector_name == "agriculture",
+#          gas == "co2e_100yr",
+#          year == 2022
+#          ) %>% 
+#   group_by(original_inventory_sector) %>% 
+#   summarise( emission = sum(emissions_quantity,
+#                             na.rm = TRUE))
 ```
 
 ```{r}
-emissions_sources %>% 
-  filter(sigla_uf == "SP",
-         source_name == "Jaboticabal",
-         sector_name == "forestry",
-         gas == "co2e_100yr",
-         year == 2022
-         ) %>%
-  group_by(sub_sector) %>% 
-  summarise( emission = sum(emissions_quantity,
-                            na.rm = TRUE))
+# emissions_sources %>% 
+#   filter(sigla_uf == "SP",
+#          source_name == "Jaboticabal",
+#          sector_name == "forestry",
+#          gas == "co2e_100yr",
+#          year == 2022
+#          ) %>%
+#   group_by(sub_sector) %>% 
+#   summarise( emission = sum(emissions_quantity,
+#                             na.rm = TRUE))
 ```
 
 ```{r}
-states_id <- brazil_ids$sigla_uf %>% unique()
-emissions_sources %>% 
-  filter(
-    #source_name != "Acre",
-    #sigma_uf == "SP", # %in% states_id,
-    sector_name == "agriculture",
-    gas == "co2e_100yr",
-    year == 2022
-  ) %>% 
-  group_by(lon,lat) %>% 
-  summarise(emissions_quantity = sum(emissions_quantity,na.rm=TRUE)) %>% 
-  arrange(desc(emissions_quantity)) %>% 
-  ggplot(aes(lon,lat,size=emissions_quantity)) +
-  geom_point(color="black", fill= "blue",shape=21)
+# states_id <- brazil_ids$sigla_uf %>% unique()
+# emissions_sources %>% 
+#   filter(
+#     #source_name != "Acre",
+#     #sigma_uf == "SP", # %in% states_id,
+#     sector_name == "agriculture",
+#     gas == "co2e_100yr",
+#     year == 2022
+#   ) %>% 
+#   group_by(lon,lat) %>% 
+#   summarise(emissions_quantity = sum(emissions_quantity,na.rm=TRUE)) %>% 
+#   arrange(desc(emissions_quantity)) %>% 
+#   ggplot(aes(lon,lat,size=emissions_quantity)) +
+#   geom_point(color="black", fill= "blue",shape=21)
 ```
 
