@@ -35,7 +35,7 @@ my_file_stack <- function(sector_name){
 value <- tbl_directorys %>% pull(value)
 my_file_stack(value[1])
 # map(value,my_file_stack)
-ldados <- map_dfr(value,my_file_stack)
+dados <- map_dfr(value,my_file_stack)
 glimpse(dados)
 
 dados <- dados %>%
