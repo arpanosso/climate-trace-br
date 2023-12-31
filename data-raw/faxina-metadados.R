@@ -1,4 +1,5 @@
 library(tidyverse)
+source("R/my-function.R")
 
 # buscando o caminho dos setores
 tbl_directorys <- as_tibble(
@@ -55,7 +56,24 @@ dados <- dados %>%
                            simplify = TRUE)[,4],
     sub_sector = str_remove(sub_sector,"_emissions-sources.csv")
   )
-write_rds(dados, "data/emissions_sources.rds")
+
+base_sigla_uf <- dados %>%
+  group_by(source_name, lon, lat) %>%
+  summarise(
+    ano = mean(year)
+  ) %>%
+  mutate(
+    sigla_uf = get_geobr_state(lon,lat)
+  )
+
+dados_sigla <- left_join(
+  dados,
+  base_sigla_uf %>%
+    ungroup() %>%
+    select(source_name, lon, lat, sigla_uf),
+  by = c("source_name","lat","lon")
+) %>% as_tibble()
+write_rds(dados_sigla, "data/emissions_sources.rds")
 
 
 
