@@ -14,29 +14,15 @@ list_sector <- list.files("data-raw/BRA/",
                           full.names = TRUE,
                           pattern = "agriculture|forestry")
 
-# padroes <- c("country","confidence","sources.csv")
-#
-# list_sector_source <- c(list.files(list_sector[1],
-#           pattern = "sources.csv",
-#            full.names =TRUE)[-1],
-# list.files(list_sector[2],
-#           pattern = "sources.csv",
-#            full.names =TRUE)[-1])
-
-# list_sector_source <- list_sector_source[-(1:2)]
-
 my_file_stack <- function(sector_name){
   names <- read.csv(sector_name) %>%
-    select(!starts_with("other")) %>% #names()
+    select(!starts_with("other")) %>%
     mutate(directory = sector_name)
-  # print(list(sector_name,
-  #            names))
 }
 
 value <- tbl_directorys %>% pull(value)
 my_file_stack(value[1])
-# map(value,my_file_stack)
-dados <- map_dfr(value,my_file_stack)
+dados <- map_dfr(value, my_file_stack)
 glimpse(dados)
 
 dados <- dados %>%
@@ -73,7 +59,8 @@ dados_sigla <- left_join(
     select(source_name, lon, lat, sigla_uf),
   by = c("source_name","lat","lon")
 ) %>% as_tibble()
-write_rds(dados_sigla, "data/emissions_sources.rds")
+dados_sigla$sigla_uf %>%  unique()
+# write_rds(dados_sigla, "data/emissions_sources.rds")
 
 
 
