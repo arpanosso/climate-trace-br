@@ -40,12 +40,14 @@ source("R/gafico.R")
 
 ```{r}
 emissions_sources <- read_rds("data/emissions_sources.rds")
-states <- read_rds("data/states.rds")
+states <- read_rds("data/states.rds") %>% 
+  mutate(name_region = ifelse(name_region == "Centro Oeste","Centro-Oeste",name_region))
+
 brazil_ids <- read_rds("data/df_nome.rds")
 glimpse(brazil_ids)
 nomes_uf <- c(brazil_ids$nome_uf %>% unique(),"Brazil")
 abbrev_states <- brazil_ids$sigla_uf %>% unique()
-
+region_names <- brazil_ids$nome_regiao %>% unique()
 ```
 
 ### Lendo o polígono dos estados
@@ -57,7 +59,7 @@ states  %>%
           size=.15, show.legend = FALSE) +
   geom_point(
     data = emissions_sources %>%
-      filter(sigla_uf %in% c("AC","AM","PA","AP","RR","RO","TO"),
+      filter(nome_regiao == "Nordeste",
              year == 2020
              ),
     aes(lon,lat)) +
@@ -104,18 +106,21 @@ states  %>%
     aes(lon,lat,color=emission)) +
   tema_mapa()
 ```
+
+
+# Agriculture
+
 ```{r}
-abbrev_states 
-for(i in seq_along(abbrev_states[-27])){
-  my_state <- abbrev_states[i]
+for(i in seq_along(region_names)){
+  my_state <- region_names[i]
   my_plot <- states %>%
-    filter(abbrev_state == my_state) %>% 
+    filter(name_region == my_state) %>% 
     ggplot() +
     geom_sf(fill="white", color="black",
             size=.15, show.legend = FALSE) +
     tema_mapa() +
     geom_point(data = emissions_sources %>% 
-                 filter(sigla_uf == my_state,
+                 filter(nome_regiao == my_state,
                         year == 2022,
                         gas == "co2e_100yr",
                         sector_name == "agriculture",
@@ -129,7 +134,7 @@ for(i in seq_along(abbrev_states[-27])){
     labs(title = my_state)
   
   my_col <- emissions_sources %>% 
-    filter(sigla_uf == my_state,
+    filter(nome_regiao == my_state,
            year == 2022,
            gas == "co2e_100yr",
            sector_name == "agriculture",
@@ -150,6 +155,64 @@ for(i in seq_along(abbrev_states[-27])){
     coord_flip() +
     theme_bw() +
     labs(title = my_state)    
+  print(my_plot)
+  print(my_col)
+}
+
+```
+
+
+# Forestry and land use
+
+```{r}
+for(i in seq_along(region_names)){
+  my_state <- region_names[i]
+  my_plot <- states %>%
+    filter(name_region == my_state) %>% 
+    ggplot() +
+    geom_sf(fill="white", color="black",
+            size=.15, show.legend = FALSE) +
+    tema_mapa() +
+    geom_point(data = emissions_sources %>% 
+                 filter(nome_regiao == my_state,
+                        year == 2022,
+                        gas == "co2e_100yr",
+                        sector_name == "forestry",
+                        !source_name %in% nomes_uf) %>% 
+                 group_by(source_name,lat,lon) %>% 
+                 summarise(
+                   emission = -1*sum(emissions_quantity)
+                 ) %>% 
+                 ungroup(), 
+               aes(lon, lat, size = emission, color=emission))+
+    labs(title = my_state) +
+    scale_color_viridis_c()+
+    labs(size="-(emission)",
+         color="-(emission)")
+  
+  my_col <- emissions_sources %>% 
+    filter(nome_regiao == my_state,
+           year == 2022,
+           gas == "co2e_100yr",
+           sector_name == "forestry",
+           !source_name %in% nomes_uf) %>% 
+    group_by(source_name,lat,lon) %>% 
+    summarise(
+      emission = -1*sum(emissions_quantity),
+    ) %>% 
+    ungroup() %>% 
+    filter(emission > quantile(emission,.75)) %>% 
+    mutate(
+      perc = emission/sum(emission),
+      source_name = source_name %>% fct_lump(n=15,w=perc) %>%
+        fct_reorder(emission)) %>%
+    filter(source_name != "Other") %>% 
+    ggplot(aes(x=source_name, y= emission))+
+    geom_col(fill="gray",color="black") +
+    coord_flip() +
+    theme_bw() +
+    labs(title = my_state,
+         y="-(emission)")    
   print(my_plot)
   print(my_col)
 }

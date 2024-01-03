@@ -21,7 +21,9 @@ source("R/gafico.R")
 
 ``` r
 emissions_sources <- read_rds("data/emissions_sources.rds")
-states <- read_rds("data/states.rds")
+states <- read_rds("data/states.rds") %>% 
+  mutate(name_region = ifelse(name_region == "Centro Oeste","Centro-Oeste",name_region))
+
 brazil_ids <- read_rds("data/df_nome.rds")
 glimpse(brazil_ids)
 #> Rows: 5,570
@@ -53,6 +55,7 @@ glimpse(brazil_ids)
 #> $ nome_regiao               <chr> "Norte", "Norte", "Norte", "Norte", "Norte",…
 nomes_uf <- c(brazil_ids$nome_uf %>% unique(),"Brazil")
 abbrev_states <- brazil_ids$sigla_uf %>% unique()
+region_names <- brazil_ids$nome_regiao %>% unique()
 ```
 
 ### Lendo o polígono dos estados
@@ -64,7 +67,7 @@ states  %>%
           size=.15, show.legend = FALSE) +
   geom_point(
     data = emissions_sources %>%
-      filter(sigla_uf %in% c("AC","AM","PA","AP","RR","RO","TO"),
+      filter(nome_regiao == "Nordeste",
              year == 2020
              ),
     aes(lon,lat)) +
@@ -125,20 +128,19 @@ states  %>%
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
+# Agriculture
+
 ``` r
-abbrev_states 
-#>  [1] "RO" "AC" "AM" "RR" "PA" "AP" "TO" "MA" "PI" "CE" "RN" "PB" "PE" "AL" "SE"
-#> [16] "BA" "MG" "ES" "RJ" "SP" "PR" "SC" "RS" "MS" "MT" "GO" "DF"
-for(i in seq_along(abbrev_states[-27])){
-  my_state <- abbrev_states[i]
+for(i in seq_along(region_names)){
+  my_state <- region_names[i]
   my_plot <- states %>%
-    filter(abbrev_state == my_state) %>% 
+    filter(name_region == my_state) %>% 
     ggplot() +
     geom_sf(fill="white", color="black",
             size=.15, show.legend = FALSE) +
     tema_mapa() +
     geom_point(data = emissions_sources %>% 
-                 filter(sigla_uf == my_state,
+                 filter(nome_regiao == my_state,
                         year == 2022,
                         gas == "co2e_100yr",
                         sector_name == "agriculture",
@@ -152,7 +154,7 @@ for(i in seq_along(abbrev_states[-27])){
     labs(title = my_state)
   
   my_col <- emissions_sources %>% 
-    filter(sigla_uf == my_state,
+    filter(nome_regiao == my_state,
            year == 2022,
            gas == "co2e_100yr",
            sector_name == "agriculture",
@@ -178,4 +180,62 @@ for(i in seq_along(abbrev_states[-27])){
 }
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-10.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-11.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-12.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-13.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-14.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-15.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-16.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-17.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-18.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-19.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-20.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-21.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-22.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-23.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-24.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-25.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-26.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-27.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-28.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-29.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-30.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-31.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-32.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-33.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-34.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-35.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-36.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-37.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-38.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-39.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-40.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-41.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-42.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-43.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-44.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-45.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-46.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-47.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-48.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-49.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-50.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-51.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-52.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-10.png)<!-- -->
+
+# Forestry and land use
+
+``` r
+for(i in seq_along(region_names)){
+  my_state <- region_names[i]
+  my_plot <- states %>%
+    filter(name_region == my_state) %>% 
+    ggplot() +
+    geom_sf(fill="white", color="black",
+            size=.15, show.legend = FALSE) +
+    tema_mapa() +
+    geom_point(data = emissions_sources %>% 
+                 filter(nome_regiao == my_state,
+                        year == 2022,
+                        gas == "co2e_100yr",
+                        sector_name == "forestry",
+                        !source_name %in% nomes_uf) %>% 
+                 group_by(source_name,lat,lon) %>% 
+                 summarise(
+                   emission = -1*sum(emissions_quantity)
+                 ) %>% 
+                 ungroup(), 
+               aes(lon, lat, size = emission, color=emission))+
+    labs(title = my_state) +
+    scale_color_viridis_c()+
+    labs(size="-(emission)",
+         color="-(emission)")
+  
+  my_col <- emissions_sources %>% 
+    filter(nome_regiao == my_state,
+           year == 2022,
+           gas == "co2e_100yr",
+           sector_name == "forestry",
+           !source_name %in% nomes_uf) %>% 
+    group_by(source_name,lat,lon) %>% 
+    summarise(
+      emission = -1*sum(emissions_quantity),
+    ) %>% 
+    ungroup() %>% 
+    filter(emission > quantile(emission,.75)) %>% 
+    mutate(
+      perc = emission/sum(emission),
+      source_name = source_name %>% fct_lump(n=15,w=perc) %>%
+        fct_reorder(emission)) %>%
+    filter(source_name != "Other") %>% 
+    ggplot(aes(x=source_name, y= emission))+
+    geom_col(fill="gray",color="black") +
+    coord_flip() +
+    theme_bw() +
+    labs(title = my_state,
+         y="-(emission)")    
+  print(my_plot)
+  print(my_col)
+}
+```
+
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-10.png)<!-- -->

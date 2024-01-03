@@ -52,15 +52,26 @@ base_sigla_uf <- dados %>%
     sigla_uf = get_geobr_state(lon,lat)
   )
 
+
+
+brazil_ids <- read_rds("data/df_nome.rds")
+
+base_sigla_uf <- left_join(base_sigla_uf,brazil_ids %>%
+            group_by(sigla_uf,nome_regiao) %>%
+            summarise(count=n()) %>%
+            select(sigla_uf,nome_regiao),
+          by = c("sigla_uf"))
+
+
 dados_sigla <- left_join(
   dados,
   base_sigla_uf %>%
     ungroup() %>%
-    select(source_name, lon, lat, sigla_uf),
+    select(source_name, lon, lat, sigla_uf, nome_regiao),
   by = c("source_name","lat","lon")
 ) %>% as_tibble()
-dados_sigla$sigla_uf %>%  unique()
-# write_rds(dados_sigla, "data/emissions_sources.rds")
+dados_sigla$nome_regiao %>%  unique()
+write_rds(dados_sigla, "data/emissions_sources.rds")
 
 
 
