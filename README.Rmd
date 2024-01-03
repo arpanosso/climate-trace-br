@@ -41,6 +41,11 @@ source("R/gafico.R")
 ```{r}
 emissions_sources <- read_rds("data/emissions_sources.rds")
 states <- read_rds("data/states.rds")
+brazil_ids <- read_rds("data/df_nome.rds")
+glimpse(brazil_ids)
+nomes_uf <- c(brazil_ids$nome_uf %>% unique(),"Brazil")
+abbrev_states <- brazil_ids$sigla_uf %>% unique()
+
 ```
 
 ### Lendo o polígono dos estados
@@ -58,3 +63,97 @@ states  %>%
     aes(lon,lat)) +
   tema_mapa()
 ```
+
+
+```{r}
+emissions_sources %>% 
+  filter(sigla_uf == "AC",
+         year == 2022,
+         gas == "co2e_100yr",
+         sector_name == "forestry",
+         source_name != "Acre") %>% 
+  group_by(sub_sector) %>% 
+  arrange(emissions_quantity %>% desc()) %>% #select(source_name, emissions_quantity)
+  summarise(
+    emission = sum(emissions_quantity, na.rm = TRUE)
+  ) %>% 
+#  filter(str_detect(sub_sector,"^n")) %>% 
+  mutate(
+    emission_cumulatice = cumsum(emission)
+  )
+
+```
+
+
+```{r}
+states  %>%
+  ggplot() +
+  geom_sf(fill="white", color="black",
+          size=.15, show.legend = FALSE) +
+  geom_point(
+    data = emissions_sources %>% 
+  filter(sigla_uf == "SP",
+         year == 2022,
+         gas == "co2e_100yr",
+         sector_name == "agriculture",
+         source_name != "São Paulo") %>% 
+    group_by(sector_name,lat,lon) %>% 
+    summarise(
+      emission = sum(emissions_quantity)
+    ),
+    aes(lon,lat,color=emission)) +
+  tema_mapa()
+```
+```{r}
+abbrev_states 
+for(i in seq_along(abbrev_states[-27])){
+  my_state <- abbrev_states[i]
+  my_plot <- states %>%
+    filter(abbrev_state == my_state) %>% 
+    ggplot() +
+    geom_sf(fill="white", color="black",
+            size=.15, show.legend = FALSE) +
+    tema_mapa() +
+    geom_point(data = emissions_sources %>% 
+                 filter(sigla_uf == my_state,
+                        year == 2022,
+                        gas == "co2e_100yr",
+                        sector_name == "agriculture",
+                        !source_name %in% nomes_uf) %>% 
+                 group_by(source_name,lat,lon) %>% 
+                 summarise(
+                   emission = sum(emissions_quantity)
+                 ) %>% 
+                 ungroup(), 
+               aes(lon, lat, size = emission, color=emission))+
+    labs(title = my_state)
+  
+  my_col <- emissions_sources %>% 
+    filter(sigla_uf == my_state,
+           year == 2022,
+           gas == "co2e_100yr",
+           sector_name == "agriculture",
+           !source_name %in% nomes_uf) %>% 
+    group_by(source_name,lat,lon) %>% 
+    summarise(
+      emission = sum(emissions_quantity),
+    ) %>% 
+    ungroup() %>% 
+    filter(emission > quantile(emission,.75)) %>% 
+    mutate(
+      perc = emission/sum(emission),
+      source_name = source_name %>% fct_lump(n=15,w=perc) %>%
+        fct_reorder(emission)) %>%
+    filter(source_name != "Other") %>% 
+    ggplot(aes(x=source_name, y= emission))+
+    geom_col(fill="gray",color="black") +
+    coord_flip() +
+    theme_bw() +
+    labs(title = my_state)    
+  print(my_plot)
+  print(my_col)
+}
+
+```
+
+
