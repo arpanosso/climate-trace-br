@@ -69,19 +69,26 @@ states  %>%
 
 ```{r}
 emissions_sources %>% 
-  filter(sigla_uf == "AC",
+  filter(sigla_uf == "BA",
          year == 2022,
          gas == "co2e_100yr",
          sector_name == "forestry",
-         source_name != "Acre") %>% 
+         #source_name == "Amapá",
+         !source_name %in% nomes_uf,
+         !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")) %>% 
   group_by(sub_sector) %>% 
-  arrange(emissions_quantity %>% desc()) %>% #select(source_name, emissions_quantity)
+  arrange(emissions_quantity %>% desc()) %>%  
+  select(source_name, emissions_quantity) %>% 
   summarise(
     emission = sum(emissions_quantity, na.rm = TRUE)
   ) %>% 
-#  filter(str_detect(sub_sector,"^n")) %>% 
   mutate(
-    emission_cumulatice = cumsum(emission)
+    emission_cum = cumsum(emission)
   )
 
 ```
@@ -130,7 +137,8 @@ for(i in seq_along(region_names)){
                    emission = sum(emissions_quantity)
                  ) %>% 
                  ungroup(), 
-               aes(lon, lat, size = emission, color=emission))+
+               aes(lon, lat, #size = emission,
+                   color=emission))+
     labs(title = my_state)
   
   my_col <- emissions_sources %>% 
@@ -178,7 +186,13 @@ for(i in seq_along(region_names)){
                         year == 2022,
                         gas == "co2e_100yr",
                         sector_name == "forestry",
-                        !source_name %in% nomes_uf) %>% 
+                        !source_name %in% nomes_uf,         
+                        !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")) %>% 
                  group_by(source_name,lat,lon) %>% 
                  summarise(
                    emission = -1*sum(emissions_quantity)
@@ -195,7 +209,13 @@ for(i in seq_along(region_names)){
            year == 2022,
            gas == "co2e_100yr",
            sector_name == "forestry",
-           !source_name %in% nomes_uf) %>% 
+           !source_name %in% nomes_uf,
+           !sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")) %>% 
     group_by(source_name,lat,lon) %>% 
     summarise(
       emission = -1*sum(emissions_quantity),

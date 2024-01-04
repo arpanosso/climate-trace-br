@@ -78,32 +78,34 @@ states  %>%
 
 ``` r
 emissions_sources %>% 
-  filter(sigla_uf == "AC",
+  filter(sigla_uf == "BA",
          year == 2022,
          gas == "co2e_100yr",
          sector_name == "forestry",
-         source_name != "Acre") %>% 
+         #source_name == "Amapá",
+         !source_name %in% nomes_uf,
+         !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")) %>% 
   group_by(sub_sector) %>% 
-  arrange(emissions_quantity %>% desc()) %>% #select(source_name, emissions_quantity)
+  arrange(emissions_quantity %>% desc()) %>%  
+  select(source_name, emissions_quantity) %>% 
   summarise(
     emission = sum(emissions_quantity, na.rm = TRUE)
   ) %>% 
-#  filter(str_detect(sub_sector,"^n")) %>% 
   mutate(
-    emission_cumulatice = cumsum(emission)
+    emission_cum = cumsum(emission)
   )
-#> # A tibble: 9 × 3
-#>   sub_sector                emission emission_cumulatice
-#>   <chr>                        <dbl>               <dbl>
-#> 1 forest-land-clearing     70906521.           70906521.
-#> 2 forest-land-degradation   5664018.           76570539.
-#> 3 forest-land-fires        11514212.           88084751.
-#> 4 net-forest-land         -11603290.           76481461.
-#> 5 net-shrubgrass           -1279601.           75201860.
-#> 6 net-wetland                 -3499.           75198360.
-#> 7 removals                -88142790.          -12944430.
-#> 8 shrubgrass-fires           152575.          -12791855.
-#> 9 wetland-fires                1511.          -12790344.
+#> # A tibble: 4 × 3
+#>   sub_sector          emission emission_cum
+#>   <chr>                  <dbl>        <dbl>
+#> 1 net-forest-land  -110897669.  -110897669.
+#> 2 net-shrubgrass   -112555499.  -223453167.
+#> 3 net-wetland        -3221114.  -226674281.
+#> 4 water-reservoirs    2485197.  -224189084.
 ```
 
 ``` r
@@ -150,7 +152,8 @@ for(i in seq_along(region_names)){
                    emission = sum(emissions_quantity)
                  ) %>% 
                  ungroup(), 
-               aes(lon, lat, size = emission, color=emission))+
+               aes(lon, lat, #size = emission,
+                   color=emission))+
     labs(title = my_state)
   
   my_col <- emissions_sources %>% 
@@ -198,7 +201,13 @@ for(i in seq_along(region_names)){
                         year == 2022,
                         gas == "co2e_100yr",
                         sector_name == "forestry",
-                        !source_name %in% nomes_uf) %>% 
+                        !source_name %in% nomes_uf,         
+                        !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")) %>% 
                  group_by(source_name,lat,lon) %>% 
                  summarise(
                    emission = -1*sum(emissions_quantity)
@@ -215,7 +224,13 @@ for(i in seq_along(region_names)){
            year == 2022,
            gas == "co2e_100yr",
            sector_name == "forestry",
-           !source_name %in% nomes_uf) %>% 
+           !source_name %in% nomes_uf,
+           !sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")) %>% 
     group_by(source_name,lat,lon) %>% 
     summarise(
       emission = -1*sum(emissions_quantity),
