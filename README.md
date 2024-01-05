@@ -146,7 +146,8 @@ for(i in seq_along(region_names)){
                         year == 2022,
                         gas == "co2e_100yr",
                         sector_name == "agriculture",
-                        !source_name %in% nomes_uf) %>% 
+                        !source_name %in% nomes_uf,
+                        sub_sector == "enteric-fermentation-cattle-pasture") %>% 
                  group_by(source_name,lat,lon) %>% 
                  summarise(
                    emission = sum(emissions_quantity)
@@ -161,7 +162,8 @@ for(i in seq_along(region_names)){
            year == 2022,
            gas == "co2e_100yr",
            sector_name == "agriculture",
-           !source_name %in% nomes_uf) %>% 
+           !source_name %in% nomes_uf,
+           sub_sector == "enteric-fermentation-cattle-pasture") %>% 
     group_by(source_name,lat,lon) %>% 
     summarise(
       emission = sum(emissions_quantity),
@@ -200,57 +202,70 @@ for(i in seq_along(region_names)){
                  filter(nome_regiao == my_state,
                         year == 2022,
                         gas == "co2e_100yr",
-                        sector_name == "forestry",
+                        #sector_name == "forestry",
                         !source_name %in% nomes_uf,         
                         !sub_sector %in% c("forest-land-clearing",
                             "forest-land-degradation",
                             "shrubgrass-fires",
                             "forest-land-fires",
                             "wetland-fires",
-                            "removals")) %>% 
+                            "removals"),
+                        #sub_sector == "wetland-fires"
+                        ) %>% 
                  group_by(source_name,lat,lon) %>% 
                  summarise(
-                   emission = -1*sum(emissions_quantity)
+                   emission = sum(emissions_quantity)
                  ) %>% 
-                 ungroup(), 
-               aes(lon, lat, size = emission, color=emission))+
+                 ungroup() %>% 
+                 mutate(
+                   fonte_sumidouro = ifelse(emission <=0, "Sumidouro","Fonte"),
+                  ), 
+               aes(lon, lat, #size = fonte_sumidouro,
+                   color = fonte_sumidouro))+
     labs(title = my_state) +
-    scale_color_viridis_c()+
-    labs(size="-(emission)",
-         color="-(emission)")
+    scale_color_manual(values = c("red","green")) + 
+    labs(size="(emission)",
+         color="(emission)")
   
-  my_col <- emissions_sources %>% 
-    filter(nome_regiao == my_state,
-           year == 2022,
-           gas == "co2e_100yr",
-           sector_name == "forestry",
-           !source_name %in% nomes_uf,
-           !sub_sector %in% c("forest-land-clearing",
-                              "forest-land-degradation",
-                              "shrubgrass-fires",
-                              "forest-land-fires",
-                              "wetland-fires",
-                              "removals")) %>% 
-    group_by(source_name,lat,lon) %>% 
-    summarise(
-      emission = -1*sum(emissions_quantity),
-    ) %>% 
-    ungroup() %>% 
-    filter(emission > quantile(emission,.75)) %>% 
-    mutate(
-      perc = emission/sum(emission),
-      source_name = source_name %>% fct_lump(n=15,w=perc) %>%
-        fct_reorder(emission)) %>%
-    filter(source_name != "Other") %>% 
-    ggplot(aes(x=source_name, y= emission))+
-    geom_col(fill="gray",color="black") +
-    coord_flip() +
-    theme_bw() +
-    labs(title = my_state,
-         y="-(emission)")    
+  # my_col <- emissions_sources %>% 
+  #   filter(nome_regiao == my_state,
+  #          year == 2022,
+  #          gas == "co2e_100yr",
+  #          sector_name == "forestry",
+  #          !source_name %in% nomes_uf,
+  #          !sub_sector %in% c("forest-land-clearing",
+  #                             "forest-land-degradation",
+  #                             "shrubgrass-fires",
+  #                             "forest-land-fires",
+  #                             "wetland-fires",
+  #                             "removals"),
+  #          #sub_sector == "wetland-fires"
+  #          ) %>% 
+  #   group_by(source_name,lat,lon) %>% 
+  #   summarise(
+  #     emission = sum(emissions_quantity),
+  #   ) %>% 
+  #   ungroup() %>% 
+  #   filter(emission > quantile(emission,.75)) %>% 
+  #   mutate(
+  #     perc = emission/sum(emission),
+  #     source_name = source_name %>% fct_lump(n=15,w=perc) %>%
+  #       fct_reorder(emission)) %>%
+  #   filter(source_name != "Other") %>% 
+  #   ggplot(aes(x=source_name, y= emission))+
+  #   geom_col(fill="gray",color="black") +
+  #   coord_flip() +
+  #   theme_bw() +
+  #   labs(title = my_state,
+  #        y="(emission)")    
   print(my_plot)
-  print(my_col)
+  # print(my_col)
 }
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-10.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-5.png)<!-- -->
+
+``` r
+# mostrar os módulos nos gráficos positivos e negativos
+# verde são sumidouros e em vermelho as fontes
+```
