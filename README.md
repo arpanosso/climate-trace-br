@@ -135,13 +135,7 @@ states  %>%
 ``` r
 for(i in seq_along(region_names)){
   my_state <- region_names[i]
-  my_plot <- states %>%
-    filter(name_region == my_state) %>% 
-    ggplot() +
-    geom_sf(fill="white", color="black",
-            size=.15, show.legend = FALSE) +
-    tema_mapa() +
-    geom_point(data = emissions_sources %>% 
+  df_aux <- emissions_sources %>% 
                  filter(nome_regiao == my_state,
                         year == 2022,
                         gas == "co2e_100yr",
@@ -152,23 +146,20 @@ for(i in seq_along(region_names)){
                  summarise(
                    emission = sum(emissions_quantity)
                  ) %>% 
-                 ungroup(), 
+                 ungroup()
+  
+  my_plot <- states %>%
+    filter(name_region == my_state) %>% 
+    ggplot() +
+    geom_sf(fill="white", color="black",
+            size=.15, show.legend = FALSE) +
+    tema_mapa() +
+    geom_point(data = df_aux, 
                aes(lon, lat, #size = emission,
                    color=emission))+
     labs(title = my_state)
   
-  my_col <- emissions_sources %>% 
-    filter(nome_regiao == my_state,
-           year == 2022,
-           gas == "co2e_100yr",
-           sector_name == "agriculture",
-           !source_name %in% nomes_uf,
-           sub_sector == "enteric-fermentation-cattle-pasture") %>% 
-    group_by(source_name,lat,lon) %>% 
-    summarise(
-      emission = sum(emissions_quantity),
-    ) %>% 
-    ungroup() %>% 
+  my_col <- df_aux %>% 
     filter(emission > quantile(emission,.75)) %>% 
     mutate(
       perc = emission/sum(emission),
@@ -192,17 +183,11 @@ for(i in seq_along(region_names)){
 ``` r
 for(i in seq_along(region_names)){
   my_state <- region_names[i]
-  my_plot <- states %>%
-    filter(name_region == my_state) %>% 
-    ggplot() +
-    geom_sf(fill="white", color="black",
-            size=.15, show.legend = FALSE) +
-    tema_mapa() +
-    geom_point(data = emissions_sources %>% 
+  df_aux <- emissions_sources %>% 
                  filter(nome_regiao == my_state,
                         year == 2022,
                         gas == "co2e_100yr",
-                        #sector_name == "forestry",
+                        sector_name == "forestry",
                         !source_name %in% nomes_uf,         
                         !sub_sector %in% c("forest-land-clearing",
                             "forest-land-degradation",
@@ -210,7 +195,7 @@ for(i in seq_along(region_names)){
                             "forest-land-fires",
                             "wetland-fires",
                             "removals"),
-                        #sub_sector == "wetland-fires"
+                        # sub_sector == "wetland-fires"
                         ) %>% 
                  group_by(source_name,lat,lon) %>% 
                  summarise(
@@ -219,7 +204,15 @@ for(i in seq_along(region_names)){
                  ungroup() %>% 
                  mutate(
                    fonte_sumidouro = ifelse(emission <=0, "Sumidouro","Fonte"),
-                  ), 
+                  )
+  
+  my_plot <- states %>%
+    filter(name_region == my_state) %>% 
+    ggplot() +
+    geom_sf(fill="white", color="black",
+            size=.15, show.legend = FALSE) +
+    tema_mapa() +
+    geom_point(data = df_aux, 
                aes(lon, lat, #size = fonte_sumidouro,
                    color = fonte_sumidouro))+
     labs(title = my_state) +
@@ -227,43 +220,27 @@ for(i in seq_along(region_names)){
     labs(size="(emission)",
          color="(emission)")
   
-  # my_col <- emissions_sources %>% 
-  #   filter(nome_regiao == my_state,
-  #          year == 2022,
-  #          gas == "co2e_100yr",
-  #          sector_name == "forestry",
-  #          !source_name %in% nomes_uf,
-  #          !sub_sector %in% c("forest-land-clearing",
-  #                             "forest-land-degradation",
-  #                             "shrubgrass-fires",
-  #                             "forest-land-fires",
-  #                             "wetland-fires",
-  #                             "removals"),
-  #          #sub_sector == "wetland-fires"
-  #          ) %>% 
-  #   group_by(source_name,lat,lon) %>% 
-  #   summarise(
-  #     emission = sum(emissions_quantity),
-  #   ) %>% 
-  #   ungroup() %>% 
-  #   filter(emission > quantile(emission,.75)) %>% 
-  #   mutate(
-  #     perc = emission/sum(emission),
-  #     source_name = source_name %>% fct_lump(n=15,w=perc) %>%
-  #       fct_reorder(emission)) %>%
-  #   filter(source_name != "Other") %>% 
-  #   ggplot(aes(x=source_name, y= emission))+
-  #   geom_col(fill="gray",color="black") +
-  #   coord_flip() +
-  #   theme_bw() +
-  #   labs(title = my_state,
-  #        y="(emission)")    
+  my_col <- df_aux %>% 
+    filter(emission > quantile(emission,.99) | emission < quantile(emission,.01)) %>%
+    mutate(
+      # perc = emission/sum(emission),
+      # source_name = source_name %>% fct_lump(n=15,w=perc) %>% fct_reorder(emission)
+      source_name = source_name %>% fct_reorder(emission)
+      ) %>%
+    filter(source_name != "Other") %>%
+    ggplot(aes(x=source_name, y= emission, fill=fonte_sumidouro))+
+    geom_col(color="black") +
+    coord_flip() +
+    theme_bw() +
+    labs(title = my_state,
+          y="(emission)") +
+    scale_fill_manual(values = c("red","green"))
   print(my_plot)
-  # print(my_col)
+  print(my_col)
 }
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-5.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-10.png)<!-- -->
 
 ``` r
 # mostrar os módulos nos gráficos positivos e negativos
