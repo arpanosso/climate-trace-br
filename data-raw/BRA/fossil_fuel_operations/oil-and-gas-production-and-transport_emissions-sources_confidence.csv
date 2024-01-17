@@ -1,0 +1,96 @@
+source_id,source_name,iso3_country,original_inventory_sector,start_time,end_time,source_type,capacity,capacity_factor,activity,co2_emissions_factor,ch4_emissions_factor,n2o_emissions_factor,co2_emissions,ch4_emissions,n2o_emissions,total_co2e_20yrgwp,created_date,modified_date,total_co2e_100yrgwp
+25493997,Albacora,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25493997,Albacora,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25493997,Albacora,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25493997,Albacora,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25493997,Albacora,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25493997,Albacora,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25493997,Albacora,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25493997,Albacora,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494021,Atapu Unitisation (P-70),BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494035,Baleia Azul,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494035,Baleia Azul,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494035,Baleia Azul,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494035,Baleia Azul,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494035,Baleia Azul,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494035,Baleia Azul,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494035,Baleia Azul,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494035,Baleia Azul,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494042,Barracuda,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494042,Barracuda,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494042,Barracuda,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494042,Barracuda,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494042,Barracuda,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494042,Barracuda,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494042,Barracuda,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494046,Berbigao/ Sururu I (x-Iara) (P-68),BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494075,Buzios,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494075,Buzios,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494075,Buzios,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494075,Buzios,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494075,Buzios,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494175,Frade,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494175,Frade,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494175,Frade,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494175,Frade,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494175,Frade,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494175,Frade,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494175,Frade,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494175,Frade,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494235,Iracema,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494235,Iracema,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494235,Iracema,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494235,Iracema,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494235,Iracema,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494235,Iracema,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494235,Iracema,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494235,Iracema,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494249,Jubarte,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494249,Jubarte,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494249,Jubarte,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494249,Jubarte,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494249,Jubarte,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494249,Jubarte,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494249,Jubarte,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494249,Jubarte,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494330,Marlim,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494330,Marlim,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494330,Marlim,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494330,Marlim,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494330,Marlim,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494330,Marlim,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494330,Marlim,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494330,Marlim,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494346,Mexilhao,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494346,Mexilhao,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494346,Mexilhao,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494346,Mexilhao,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494346,Mexilhao,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494346,Mexilhao,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494346,Mexilhao,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494346,Mexilhao,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494468,Roncador,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494468,Roncador,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494468,Roncador,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494468,Roncador,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494468,Roncador,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494468,Roncador,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494468,Roncador,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494468,Roncador,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494499,Sapinhoa,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494499,Sapinhoa,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494499,Sapinhoa,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494499,Sapinhoa,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494499,Sapinhoa,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494499,Sapinhoa,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494499,Sapinhoa,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494499,Sapinhoa,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494563,Tartaruga Verde+Mestica (Cid. Campos dos Goytacazes),BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494586,Tupi,BRA,oil-and-gas-production-and-transport,2015-01-01 00:00:00,2015-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494586,Tupi,BRA,oil-and-gas-production-and-transport,2016-01-01 00:00:00,2016-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494586,Tupi,BRA,oil-and-gas-production-and-transport,2017-01-01 00:00:00,2017-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494586,Tupi,BRA,oil-and-gas-production-and-transport,2018-01-01 00:00:00,2018-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494586,Tupi,BRA,oil-and-gas-production-and-transport,2019-01-01 00:00:00,2019-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494586,Tupi,BRA,oil-and-gas-production-and-transport,2020-01-01 00:00:00,2020-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494586,Tupi,BRA,oil-and-gas-production-and-transport,2021-01-01 00:00:00,2021-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
+25494586,Tupi,BRA,oil-and-gas-production-and-transport,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,low,,low,low,,low,2023-11-02 00:00:00,2023-11-02 17:00:00,low
