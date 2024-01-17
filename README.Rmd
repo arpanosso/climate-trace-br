@@ -128,7 +128,7 @@ for(i in seq_along(region_names)){
     tema_mapa() +
     geom_point(data = emissions_sources %>% 
                  filter(nome_regiao == my_state,
-                        year == 2022,
+                        year == 2015,
                         gas == "co2e_100yr",
                         sector_name == "agriculture",
                         !source_name %in% nomes_uf,
@@ -144,7 +144,7 @@ for(i in seq_along(region_names)){
   
   my_col <- emissions_sources %>% 
     filter(nome_regiao == my_state,
-           year == 2022,
+           year == 2015,
            gas == "co2e_100yr",
            sector_name == "agriculture",
            !source_name %in% nomes_uf,
