@@ -32,10 +32,6 @@ library(geobr)
 source("R/gafico.R")
 ```
 
-
-
-## Mesclando base com ids
-
 ### Carregando as bases de dados
 
 ```{r}

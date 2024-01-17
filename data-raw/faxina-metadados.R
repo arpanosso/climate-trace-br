@@ -7,12 +7,12 @@ tbl_directorys <- as_tibble(
              full.names = TRUE,
              recursive = TRUE)
 ) %>%
-  filter(str_detect(value,"agriculture|forestry_and_land_use|fossil_fuel_operations")) %>%
+  # filter(str_detect(value,"agriculture|forestry_and_land_use|fossil_fuel_operations|transportation")) %>%
   filter(str_detect(value, "emissions-sources.csv"))
 
-list_sector <- list.files("data-raw/BRA/",
-                          full.names = TRUE,
-                          pattern = "agriculture|forestry|fossil_fuel_operations")
+# list_sector <- list.files("data-raw/BRA/",
+#                           full.names = TRUE,
+#                           pattern = "agriculture|forestry|fossil_fuel_operations|transportation")
 
 my_file_stack <- function(sector_name){
   names <- read.csv(sector_name) %>%
