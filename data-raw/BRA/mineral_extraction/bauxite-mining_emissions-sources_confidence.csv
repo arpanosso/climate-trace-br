@@ -1,0 +1,17 @@
+source_id,source_name,iso3_country,original_inventory_sector,start_time,end_time,source_type,capacity,capacity_factor,activity,co2_emissions_factor,ch4_emissions_factor,n2o_emissions_factor,co2_emissions,ch4_emissions,n2o_emissions,total_co2e_20yrgwp,created_date,modified_date,total_co2e_100yrgwp
+25487531,Barro Alto Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487532,Bela Cruz Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487533,Cipo Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487534,Curimbaba Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487535,Itamarati de Minas Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487536,Juruti Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,,,low,,,low,2023-10-10 00:00:00,2023-11-06 11:20:00,low
+25487537,Mineracao Rio do Norte Operation,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,high,medium,,,medium,,,medium,2023-10-10 00:00:00,2023-11-06 11:20:00,medium
+25487538,Mirai Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487539,Monte Branco Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487541,PDC Alcoa Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487540,Paragominas Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,,,low,,,low,2023-10-10 00:00:00,2023-11-06 11:20:00,low
+25487542,Pocos de Caldas Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,,,low,,,low,2023-10-10 00:00:00,2023-11-06 11:20:00,low
+25487543,Sao Luis Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487544,Saraca Leste Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487545,Saraca Oeste Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,
+25487546,Teofilo Mine,BRA,bauxite-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-10 00:00:00,2023-11-06 11:20:00,

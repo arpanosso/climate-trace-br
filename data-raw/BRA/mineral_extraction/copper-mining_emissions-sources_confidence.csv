@@ -1,0 +1,14 @@
+source_id,source_name,iso3_country,original_inventory_sector,start_time,end_time,source_type,capacity,capacity_factor,activity,co2_emissions_factor,ch4_emissions_factor,n2o_emissions_factor,co2_emissions,ch4_emissions,n2o_emissions,total_co2e_20yrgwp,created_date,modified_date,total_co2e_100yrgwp
+25486505,Antas Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,high,high,,,high,,,high,2023-10-30 00:00:00,2023-11-06 11:20:00,high
+25486506,Aripuana Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,,,low,,,low,2023-10-30 00:00:00,2023-11-06 11:20:00,low
+25486507,Celesta Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,low,low,,,low,,,low,2023-10-30 00:00:00,2023-11-06 11:20:00,low
+25486508,Chapada Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,high,low,,,low,,,low,2023-10-30 00:00:00,2023-11-06 11:20:00,low
+25486509,Palito Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,,,low,,,low,2023-10-30 00:00:00,2023-11-06 11:20:00,low
+25486510,Pedra Branca Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,,,low,,,low,2023-10-30 00:00:00,2023-11-06 11:20:00,low
+25486511,Pilar Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-30 00:00:00,2023-11-06 11:20:00,
+25486512,R22 Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-30 00:00:00,2023-11-06 11:20:00,
+25486513,Salobo Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,high,medium,,,medium,,,medium,2023-10-30 00:00:00,2023-11-06 11:20:00,medium
+25486514,Santa Rita Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,,,,,,,,,2023-10-30 00:00:00,2023-11-06 11:20:00,
+25486515,Sossego Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,high,medium,,,medium,,,medium,2023-10-30 00:00:00,2023-11-06 11:20:00,medium
+25486516,Surubim Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,low,,,low,,,low,2023-10-30 00:00:00,2023-11-06 11:20:00,low
+25486517,Vermelhos Mine,BRA,copper-mining,2022-01-01 00:00:00,2022-12-31 00:00:00,high,,,medium,medium,,,medium,,,medium,2023-10-30 00:00:00,2023-11-06 11:20:00,medium

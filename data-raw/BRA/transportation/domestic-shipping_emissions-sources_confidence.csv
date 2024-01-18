@@ -1,0 +1,829 @@
+source_id,source_name,iso3_country,original_inventory_sector,start_time,end_time,source_type,capacity,capacity_factor,activity,co2_emissions_factor,ch4_emissions_factor,n2o_emissions_factor,co2_emissions,ch4_emissions,n2o_emissions,total_co2e_20yrgwp,created_date,modified_date,total_co2e_100yrgwp
+13171944,Admiral Barroso Terminal,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171944,Admiral Barroso Terminal,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171944,Admiral Barroso Terminal,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171944,Admiral Barroso Terminal,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171944,Admiral Barroso Terminal,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171944,Admiral Barroso Terminal,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171944,Admiral Barroso Terminal,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171944,Admiral Barroso Terminal,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171944,Admiral Barroso Terminal,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171945,Alemoa Terminal,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171945,Alemoa Terminal,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171945,Alemoa Terminal,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171945,Alemoa Terminal,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171945,Alemoa Terminal,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171945,Alemoa Terminal,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171945,Alemoa Terminal,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171945,Alemoa Terminal,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171945,Alemoa Terminal,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171946,Alumar,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171946,Alumar,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171946,Alumar,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171946,Alumar,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171946,Alumar,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171946,Alumar,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171946,Alumar,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171946,Alumar,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171946,Alumar,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171947,Angra Dos Reis,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171947,Angra Dos Reis,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171947,Angra Dos Reis,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171947,Angra Dos Reis,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171947,Angra Dos Reis,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171947,Angra Dos Reis,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171947,Angra Dos Reis,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171947,Angra Dos Reis,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171947,Angra Dos Reis,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13433425,Anori,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13433425,Anori,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13433425,Anori,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13433425,Anori,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13433425,Anori,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13433425,Anori,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13433425,Anori,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13433425,Anori,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13433425,Anori,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171948,Antonina,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171948,Antonina,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171948,Antonina,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171948,Antonina,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171948,Antonina,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171948,Antonina,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171948,Antonina,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171948,Antonina,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171948,Antonina,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171949,Aratu,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171949,Aratu,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171949,Aratu,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171949,Aratu,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171949,Aratu,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171949,Aratu,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171949,Aratu,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171949,Aratu,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171949,Aratu,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171950,Belem,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171950,Belem,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171950,Belem,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171950,Belem,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171950,Belem,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171950,Belem,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171950,Belem,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171950,Belem,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171950,Belem,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171951,Bom Despacho Roro Ferry,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171951,Bom Despacho Roro Ferry,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171951,Bom Despacho Roro Ferry,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171951,Bom Despacho Roro Ferry,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171951,Bom Despacho Roro Ferry,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171951,Bom Despacho Roro Ferry,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171951,Bom Despacho Roro Ferry,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171951,Bom Despacho Roro Ferry,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171951,Bom Despacho Roro Ferry,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171952,Brazilia,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171952,Brazilia,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171952,Brazilia,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171952,Brazilia,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171952,Brazilia,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171952,Brazilia,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171952,Brazilia,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171952,Brazilia,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171952,Brazilia,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171953,Cabedelo,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171953,Cabedelo,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171953,Cabedelo,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171953,Cabedelo,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171953,Cabedelo,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171953,Cabedelo,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171953,Cabedelo,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171953,Cabedelo,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171953,Cabedelo,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171954,Campos,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171954,Campos,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171954,Campos,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171954,Campos,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171954,Campos,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171954,Campos,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171954,Campos,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171954,Campos,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171954,Campos,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293887,Carmopolis,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293887,Carmopolis,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293887,Carmopolis,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293887,Carmopolis,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293887,Carmopolis,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293887,Carmopolis,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293887,Carmopolis,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293887,Carmopolis,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293887,Carmopolis,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13426659,Centro,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13426659,Centro,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13426659,Centro,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13426659,Centro,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13426659,Centro,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13426659,Centro,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13426659,Centro,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13426659,Centro,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13426659,Centro,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171955,Coari,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171955,Coari,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171955,Coari,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171955,Coari,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171955,Coari,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171955,Coari,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171955,Coari,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171955,Coari,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171955,Coari,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171956,Codajas,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171956,Codajas,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171956,Codajas,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171956,Codajas,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171956,Codajas,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171956,Codajas,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171956,Codajas,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171956,Codajas,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171956,Codajas,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15304746,Corumba,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15304746,Corumba,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15304746,Corumba,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15304746,Corumba,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15304746,Corumba,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15304746,Corumba,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15304746,Corumba,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15304746,Corumba,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15304746,Corumba,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175690,Forno,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175690,Forno,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175690,Forno,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175690,Forno,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175690,Forno,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175690,Forno,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175690,Forno,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175690,Forno,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175690,Forno,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171957,Fortaleza,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171957,Fortaleza,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171957,Fortaleza,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171957,Fortaleza,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171957,Fortaleza,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171957,Fortaleza,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171957,Fortaleza,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171957,Fortaleza,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171957,Fortaleza,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171958,Gebig,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171958,Gebig,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171958,Gebig,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171958,Gebig,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171958,Gebig,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171958,Gebig,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171958,Gebig,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171958,Gebig,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171958,Gebig,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178707,Golar Winter Offshore Terminal_deleted,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178707,Golar Winter Offshore Terminal_deleted,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178707,Golar Winter Offshore Terminal_deleted,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178707,Golar Winter Offshore Terminal_deleted,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178707,Golar Winter Offshore Terminal_deleted,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178707,Golar Winter Offshore Terminal_deleted,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178707,Golar Winter Offshore Terminal_deleted,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178707,Golar Winter Offshore Terminal_deleted,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178707,Golar Winter Offshore Terminal_deleted,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171959,Guaiba Island Terminal,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171959,Guaiba Island Terminal,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171959,Guaiba Island Terminal,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171959,Guaiba Island Terminal,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171959,Guaiba Island Terminal,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171959,Guaiba Island Terminal,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171959,Guaiba Island Terminal,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171959,Guaiba Island Terminal,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171959,Guaiba Island Terminal,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175694,Guamare Offshore Oil Terminal,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175694,Guamare Offshore Oil Terminal,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175694,Guamare Offshore Oil Terminal,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175694,Guamare Offshore Oil Terminal,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175694,Guamare Offshore Oil Terminal,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175694,Guamare Offshore Oil Terminal,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175694,Guamare Offshore Oil Terminal,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175694,Guamare Offshore Oil Terminal,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175694,Guamare Offshore Oil Terminal,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175695,Guamare Oil Terminal,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175695,Guamare Oil Terminal,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175695,Guamare Oil Terminal,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175695,Guamare Oil Terminal,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175695,Guamare Oil Terminal,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175695,Guamare Oil Terminal,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175695,Guamare Oil Terminal,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175695,Guamare Oil Terminal,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175695,Guamare Oil Terminal,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15588915,Humaita,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15588915,Humaita,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15588915,Humaita,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15588915,Humaita,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15588915,Humaita,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15588915,Humaita,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15588915,Humaita,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15588915,Humaita,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+15588915,Humaita,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183651,Ilheus,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183651,Ilheus,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183651,Ilheus,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183651,Ilheus,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183651,Ilheus,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183651,Ilheus,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183651,Ilheus,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183651,Ilheus,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183651,Ilheus,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171960,Imbituba,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171960,Imbituba,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171960,Imbituba,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171960,Imbituba,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171960,Imbituba,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171960,Imbituba,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171960,Imbituba,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171960,Imbituba,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171960,Imbituba,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171961,Itacoatiara,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171961,Itacoatiara,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171961,Itacoatiara,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171961,Itacoatiara,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171961,Itacoatiara,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171961,Itacoatiara,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171961,Itacoatiara,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171961,Itacoatiara,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171961,Itacoatiara,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171962,Itaguai,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171962,Itaguai,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171962,Itaguai,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171962,Itaguai,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171962,Itaguai,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171962,Itaguai,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171962,Itaguai,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171962,Itaguai,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171962,Itaguai,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171963,Itajai,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171963,Itajai,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171963,Itajai,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171963,Itajai,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171963,Itajai,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171963,Itajai,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171963,Itajai,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171963,Itajai,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171963,Itajai,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171964,Itaqui,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171964,Itaqui,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171964,Itaqui,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171964,Itaqui,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171964,Itaqui,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171964,Itaqui,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171964,Itaqui,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171964,Itaqui,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171964,Itaqui,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13573239,Laguna,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13573239,Laguna,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13573239,Laguna,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13573239,Laguna,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13573239,Laguna,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13573239,Laguna,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13573239,Laguna,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13573239,Laguna,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13573239,Laguna,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171965,Macae,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171965,Macae,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171965,Macae,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171965,Macae,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171965,Macae,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171965,Macae,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171965,Macae,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171965,Macae,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171965,Macae,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171966,Macapa,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171966,Macapa,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171966,Macapa,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171966,Macapa,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171966,Macapa,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171966,Macapa,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171966,Macapa,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171966,Macapa,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171966,Macapa,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171967,Maceio,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171967,Maceio,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171967,Maceio,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171967,Maceio,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171967,Maceio,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171967,Maceio,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171967,Maceio,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171967,Maceio,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171967,Maceio,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171968,Madre De Deus,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171968,Madre De Deus,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171968,Madre De Deus,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171968,Madre De Deus,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171968,Madre De Deus,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171968,Madre De Deus,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171968,Madre De Deus,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171968,Madre De Deus,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171968,Madre De Deus,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171969,Manaus,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171969,Manaus,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171969,Manaus,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171969,Manaus,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171969,Manaus,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171969,Manaus,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171969,Manaus,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171969,Manaus,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171969,Manaus,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171970,Munguba,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171970,Munguba,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171970,Munguba,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171970,Munguba,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171970,Munguba,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171970,Munguba,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171970,Munguba,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171970,Munguba,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171970,Munguba,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175705,Natal,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175705,Natal,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175705,Natal,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175705,Natal,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175705,Natal,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175705,Natal,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175705,Natal,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175705,Natal,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175705,Natal,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402857,Obidos,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402857,Obidos,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402857,Obidos,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402857,Obidos,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402857,Obidos,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402857,Obidos,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402857,Obidos,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402857,Obidos,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402857,Obidos,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171971,Paranagua,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171971,Paranagua,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171971,Paranagua,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171971,Paranagua,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171971,Paranagua,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171971,Paranagua,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171971,Paranagua,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171971,Paranagua,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171971,Paranagua,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178724,Paraty,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178724,Paraty,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178724,Paraty,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178724,Paraty,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178724,Paraty,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178724,Paraty,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178724,Paraty,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178724,Paraty,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13178724,Paraty,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171972,Pecem,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171972,Pecem,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171972,Pecem,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171972,Pecem,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171972,Pecem,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171972,Pecem,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171972,Pecem,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171972,Pecem,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171972,Pecem,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13719969,Pelotas,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13719969,Pelotas,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13719969,Pelotas,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13719969,Pelotas,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13719969,Pelotas,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13719969,Pelotas,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13719969,Pelotas,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13719969,Pelotas,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13719969,Pelotas,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183665,Ponta Ubu,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183665,Ponta Ubu,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183665,Ponta Ubu,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183665,Ponta Ubu,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183665,Ponta Ubu,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183665,Ponta Ubu,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183665,Ponta Ubu,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183665,Ponta Ubu,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13183665,Ponta Ubu,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171973,Porto Alegre,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171973,Porto Alegre,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171973,Porto Alegre,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171973,Porto Alegre,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171973,Porto Alegre,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171973,Porto Alegre,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171973,Porto Alegre,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171973,Porto Alegre,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171973,Porto Alegre,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14332302,Porto Murtinho,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14332302,Porto Murtinho,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14332302,Porto Murtinho,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14332302,Porto Murtinho,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14332302,Porto Murtinho,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14332302,Porto Murtinho,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14332302,Porto Murtinho,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14332302,Porto Murtinho,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14332302,Porto Murtinho,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171974,Porto Trombetas,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171974,Porto Trombetas,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171974,Porto Trombetas,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171974,Porto Trombetas,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171974,Porto Trombetas,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171974,Porto Trombetas,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171974,Porto Trombetas,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171974,Porto Trombetas,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171974,Porto Trombetas,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13469917,Porto-Ilha,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13469917,Porto-Ilha,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13469917,Porto-Ilha,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13469917,Porto-Ilha,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13469917,Porto-Ilha,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13469917,Porto-Ilha,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13469917,Porto-Ilha,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13469917,Porto-Ilha,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13469917,Porto-Ilha,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171975,Portocel,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171975,Portocel,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171975,Portocel,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171975,Portocel,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171975,Portocel,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171975,Portocel,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171975,Portocel,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171975,Portocel,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171975,Portocel,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13627864,Praia Do Machado,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13627864,Praia Do Machado,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13627864,Praia Do Machado,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13627864,Praia Do Machado,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13627864,Praia Do Machado,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13627864,Praia Do Machado,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13627864,Praia Do Machado,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13627864,Praia Do Machado,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13627864,Praia Do Machado,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171976,Praia Mole,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171976,Praia Mole,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171976,Praia Mole,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171976,Praia Mole,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171976,Praia Mole,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171976,Praia Mole,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171976,Praia Mole,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171976,Praia Mole,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171976,Praia Mole,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171977,Quilombo,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171977,Quilombo,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171977,Quilombo,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171977,Quilombo,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171977,Quilombo,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171977,Quilombo,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171977,Quilombo,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171977,Quilombo,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171977,Quilombo,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171978,Recife,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171978,Recife,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171978,Recife,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171978,Recife,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171978,Recife,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171978,Recife,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171978,Recife,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171978,Recife,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171978,Recife,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175714,Regencia,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175714,Regencia,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175714,Regencia,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175714,Regencia,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175714,Regencia,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175714,Regencia,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175714,Regencia,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175714,Regencia,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175714,Regencia,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171979,Rio De Janeiro,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171979,Rio De Janeiro,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171979,Rio De Janeiro,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171979,Rio De Janeiro,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171979,Rio De Janeiro,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171979,Rio De Janeiro,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171979,Rio De Janeiro,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171979,Rio De Janeiro,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171979,Rio De Janeiro,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171980,Rio Grande,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171980,Rio Grande,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171980,Rio Grande,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171980,Rio Grande,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171980,Rio Grande,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171980,Rio Grande,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171980,Rio Grande,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171980,Rio Grande,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171980,Rio Grande,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171981,Salvador,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171981,Salvador,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171981,Salvador,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171981,Salvador,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171981,Salvador,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171981,Salvador,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171981,Salvador,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171981,Salvador,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171981,Salvador,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171982,Santa Clara,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171982,Santa Clara,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171982,Santa Clara,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171982,Santa Clara,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171982,Santa Clara,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171982,Santa Clara,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171982,Santa Clara,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171982,Santa Clara,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171982,Santa Clara,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171983,Santana,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171983,Santana,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171983,Santana,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171983,Santana,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171983,Santana,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171983,Santana,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171983,Santana,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171983,Santana,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171983,Santana,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171984,Santarem,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171984,Santarem,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171984,Santarem,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171984,Santarem,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171984,Santarem,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171984,Santarem,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171984,Santarem,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171984,Santarem,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171984,Santarem,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171985,Santos,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171985,Santos,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171985,Santos,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171985,Santos,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171985,Santos,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171985,Santos,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171985,Santos,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171985,Santos,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171985,Santos,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171986,Sao Francisco Do Sul,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171986,Sao Francisco Do Sul,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171986,Sao Francisco Do Sul,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171986,Sao Francisco Do Sul,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171986,Sao Francisco Do Sul,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171986,Sao Francisco Do Sul,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171986,Sao Francisco Do Sul,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171986,Sao Francisco Do Sul,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171986,Sao Francisco Do Sul,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171987,Sao Francisco Do Sul Marine Terminal,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171987,Sao Francisco Do Sul Marine Terminal,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171987,Sao Francisco Do Sul Marine Terminal,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171987,Sao Francisco Do Sul Marine Terminal,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171987,Sao Francisco Do Sul Marine Terminal,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171987,Sao Francisco Do Sul Marine Terminal,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171987,Sao Francisco Do Sul Marine Terminal,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171987,Sao Francisco Do Sul Marine Terminal,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171987,Sao Francisco Do Sul Marine Terminal,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171988,Sao Sebastiao,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171988,Sao Sebastiao,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171988,Sao Sebastiao,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171988,Sao Sebastiao,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171988,Sao Sebastiao,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171988,Sao Sebastiao,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171988,Sao Sebastiao,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171988,Sao Sebastiao,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171988,Sao Sebastiao,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171989,Suape Marine Terminal,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171989,Suape Marine Terminal,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171989,Suape Marine Terminal,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171989,Suape Marine Terminal,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171989,Suape Marine Terminal,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171989,Suape Marine Terminal,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171989,Suape Marine Terminal,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171989,Suape Marine Terminal,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171989,Suape Marine Terminal,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521157,Tabatinga,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521157,Tabatinga,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521157,Tabatinga,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521157,Tabatinga,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521157,Tabatinga,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521157,Tabatinga,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521157,Tabatinga,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521157,Tabatinga,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521157,Tabatinga,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521158,Tefe,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521158,Tefe,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521158,Tefe,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521158,Tefe,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521158,Tefe,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521158,Tefe,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521158,Tefe,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521158,Tefe,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13521158,Tefe,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175727,Terminal Salineiro de Areia Branca,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175727,Terminal Salineiro de Areia Branca,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175727,Terminal Salineiro de Areia Branca,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175727,Terminal Salineiro de Areia Branca,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175727,Terminal Salineiro de Areia Branca,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175727,Terminal Salineiro de Areia Branca,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175727,Terminal Salineiro de Areia Branca,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175727,Terminal Salineiro de Areia Branca,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175727,Terminal Salineiro de Areia Branca,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175726,Terminal maritimo Inacio Barbosa,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175726,Terminal maritimo Inacio Barbosa,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175726,Terminal maritimo Inacio Barbosa,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175726,Terminal maritimo Inacio Barbosa,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175726,Terminal maritimo Inacio Barbosa,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175726,Terminal maritimo Inacio Barbosa,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175726,Terminal maritimo Inacio Barbosa,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175726,Terminal maritimo Inacio Barbosa,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13175726,Terminal maritimo Inacio Barbosa,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171990,Tramandai,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171990,Tramandai,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171990,Tramandai,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171990,Tramandai,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171990,Tramandai,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171990,Tramandai,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171990,Tramandai,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171990,Tramandai,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171990,Tramandai,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171991,Vila Do Conde,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171991,Vila Do Conde,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171991,Vila Do Conde,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171991,Vila Do Conde,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171991,Vila Do Conde,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171991,Vila Do Conde,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171991,Vila Do Conde,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171991,Vila Do Conde,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171991,Vila Do Conde,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171992,Vitoria,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171992,Vitoria,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171992,Vitoria,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171992,Vitoria,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171992,Vitoria,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171992,Vitoria,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171992,Vitoria,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171992,Vitoria,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171992,Vitoria,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293856,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13474861,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13395074,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14014875,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14108764,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13939816,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14682552,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184569,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290564,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14259555,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290561,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184572,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290563,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171943,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13421033,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290556,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171941,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402823,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171942,,BRA,domestic-shipping,2015-01-01 00:00:00,2015-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293856,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13474861,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13395074,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14014875,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14108764,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13939816,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14682552,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184569,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290564,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14259555,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290561,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184572,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290563,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171943,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13421033,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290556,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171941,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402823,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171942,,BRA,domestic-shipping,2016-01-01 00:00:00,2016-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293856,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13474861,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13395074,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14014875,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14108764,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13939816,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14682552,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184569,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290564,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14259555,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290561,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184572,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290563,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171943,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13421033,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290556,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171941,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402823,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171942,,BRA,domestic-shipping,2017-01-01 00:00:00,2017-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293856,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13474861,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13395074,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14014875,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14108764,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13939816,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14682552,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184569,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290564,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14259555,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290561,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184572,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290563,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171943,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13421033,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290556,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171941,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402823,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171942,,BRA,domestic-shipping,2018-01-01 00:00:00,2018-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293856,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13474861,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13395074,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14014875,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14108764,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13939816,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14682552,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184569,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290564,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14259555,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290561,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184572,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290563,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171943,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13421033,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290556,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171941,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402823,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171942,,BRA,domestic-shipping,2019-01-01 00:00:00,2019-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293856,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13474861,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13395074,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14014875,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14108764,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13939816,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14682552,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184569,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290564,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14259555,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290561,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184572,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290563,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171943,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13421033,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290556,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171941,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402823,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171942,,BRA,domestic-shipping,2020-01-01 00:00:00,2020-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293856,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13474861,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13395074,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14014875,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14108764,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13939816,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14682552,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184569,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290564,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14259555,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290561,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184572,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290563,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171943,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13421033,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290556,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171941,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402823,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171942,,BRA,domestic-shipping,2021-01-01 00:00:00,2021-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293856,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13474861,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13395074,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14014875,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14108764,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13939816,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14682552,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184569,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290564,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14259555,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290561,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184572,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290563,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171943,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13421033,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290556,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171941,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402823,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171942,,BRA,domestic-shipping,2022-01-01 00:00:00,2022-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13293856,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13474861,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13395074,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14014875,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14108764,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13939816,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14682552,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184569,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290564,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14259555,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290561,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+17184572,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290563,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171943,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13421033,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+14290556,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171941,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13402823,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
+13171942,,BRA,domestic-shipping,2023-01-01 00:00:00,2023-12-31 00:00:00,,medium,,medium,very low,,,very low,,,very low,2023-09-01 00:00:00,2023-10-27 16:00:00,very low
