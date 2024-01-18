@@ -1,0 +1,153 @@
+source_id,source_name,iso3_country,original_inventory_sector,start_time,end_time,source_type,capacity,capacity_factor,activity,co2_emissions_factor,ch4_emissions_factor,n2o_emissions_factor,co2_emissions,ch4_emissions,n2o_emissions,total_co2e_20yrgwp,created_date,modified_date,total_co2e_100yrgwp
+18652438,Aracruz Pulp,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652438,Aracruz Pulp,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652438,Aracruz Pulp,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652438,Aracruz Pulp,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652438,Aracruz Pulp,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652438,Aracruz Pulp,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652438,Aracruz Pulp,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652438,Aracruz Pulp,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652432,Belo Oriente Pulp,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652432,Belo Oriente Pulp,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652432,Belo Oriente Pulp,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652432,Belo Oriente Pulp,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652432,Belo Oriente Pulp,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652432,Belo Oriente Pulp,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652432,Belo Oriente Pulp,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652432,Belo Oriente Pulp,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652468,Cacador Pulp Paperboard and Sacks,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652468,Cacador Pulp Paperboard and Sacks,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652468,Cacador Pulp Paperboard and Sacks,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652468,Cacador Pulp Paperboard and Sacks,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652468,Cacador Pulp Paperboard and Sacks,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652468,Cacador Pulp Paperboard and Sacks,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652468,Cacador Pulp Paperboard and Sacks,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652468,Cacador Pulp Paperboard and Sacks,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652455,Camacari Pulp,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652455,Camacari Pulp,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652455,Camacari Pulp,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652455,Camacari Pulp,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652455,Camacari Pulp,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652455,Camacari Pulp,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652455,Camacari Pulp,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652455,Camacari Pulp,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652437,Eunapolis Veracel I Pulp,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652437,Eunapolis Veracel I Pulp,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652437,Eunapolis Veracel I Pulp,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652437,Eunapolis Veracel I Pulp,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652437,Eunapolis Veracel I Pulp,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652437,Eunapolis Veracel I Pulp,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652437,Eunapolis Veracel I Pulp,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652437,Eunapolis Veracel I Pulp,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652473,Fraiburgo Pulp and Paper,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652473,Fraiburgo Pulp and Paper,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652473,Fraiburgo Pulp and Paper,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652473,Fraiburgo Pulp and Paper,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652473,Fraiburgo Pulp and Paper,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652473,Fraiburgo Pulp and Paper,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652473,Fraiburgo Pulp and Paper,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652473,Fraiburgo Pulp and Paper,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652440,Guaiba Eucalyptus Pulp,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652440,Guaiba Eucalyptus Pulp,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652440,Guaiba Eucalyptus Pulp,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652440,Guaiba Eucalyptus Pulp,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652440,Guaiba Eucalyptus Pulp,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652440,Guaiba Eucalyptus Pulp,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652440,Guaiba Eucalyptus Pulp,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652440,Guaiba Eucalyptus Pulp,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652533,Imperatriz Pulp and Paper,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652533,Imperatriz Pulp and Paper,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652533,Imperatriz Pulp and Paper,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652533,Imperatriz Pulp and Paper,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652533,Imperatriz Pulp and Paper,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652533,Imperatriz Pulp and Paper,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652533,Imperatriz Pulp and Paper,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652533,Imperatriz Pulp and Paper,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652466,Lencois Paulista Pulp,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652466,Lencois Paulista Pulp,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652466,Lencois Paulista Pulp,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652466,Lencois Paulista Pulp,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652466,Lencois Paulista Pulp,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652466,Lencois Paulista Pulp,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652466,Lencois Paulista Pulp,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652466,Lencois Paulista Pulp,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652471,Limeira Pulp and Paper,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652471,Limeira Pulp and Paper,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652471,Limeira Pulp and Paper,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652471,Limeira Pulp and Paper,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652471,Limeira Pulp and Paper,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652471,Limeira Pulp and Paper,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652471,Limeira Pulp and Paper,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652471,Limeira Pulp and Paper,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652475,"Luis Antonio Pulp, Paper and Boxboard",BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652475,"Luis Antonio Pulp, Paper and Boxboard",BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652475,"Luis Antonio Pulp, Paper and Boxboard",BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652475,"Luis Antonio Pulp, Paper and Boxboard",BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652475,"Luis Antonio Pulp, Paper and Boxboard",BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652475,"Luis Antonio Pulp, Paper and Boxboard",BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652475,"Luis Antonio Pulp, Paper and Boxboard",BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652475,"Luis Antonio Pulp, Paper and Boxboard",BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652464,Mogi Guacu Pulp and Paper,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652464,Mogi Guacu Pulp and Paper,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652464,Mogi Guacu Pulp and Paper,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652464,Mogi Guacu Pulp and Paper,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652464,Mogi Guacu Pulp and Paper,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652464,Mogi Guacu Pulp and Paper,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652464,Mogi Guacu Pulp and Paper,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652464,Mogi Guacu Pulp and Paper,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652480,Mucuri Pulp and Paper,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652480,Mucuri Pulp and Paper,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652480,Mucuri Pulp and Paper,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652480,Mucuri Pulp and Paper,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652480,Mucuri Pulp and Paper,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652480,Mucuri Pulp and Paper,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652480,Mucuri Pulp and Paper,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652480,Mucuri Pulp and Paper,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652469,"Nova Campina Pulp, Paperboard and Boxboard",BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652469,"Nova Campina Pulp, Paperboard and Boxboard",BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652469,"Nova Campina Pulp, Paperboard and Boxboard",BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652469,"Nova Campina Pulp, Paperboard and Boxboard",BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652469,"Nova Campina Pulp, Paperboard and Boxboard",BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652469,"Nova Campina Pulp, Paperboard and Boxboard",BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652469,"Nova Campina Pulp, Paperboard and Boxboard",BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652469,"Nova Campina Pulp, Paperboard and Boxboard",BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652463,"Pirai do Sul Plywood, Pulp, Paper and Bags",BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652463,"Pirai do Sul Plywood, Pulp, Paper and Bags",BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652463,"Pirai do Sul Plywood, Pulp, Paper and Bags",BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652463,"Pirai do Sul Plywood, Pulp, Paper and Bags",BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652463,"Pirai do Sul Plywood, Pulp, Paper and Bags",BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652463,"Pirai do Sul Plywood, Pulp, Paper and Bags",BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652463,"Pirai do Sul Plywood, Pulp, Paper and Bags",BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652463,"Pirai do Sul Plywood, Pulp, Paper and Bags",BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652481,Suzano Pulp and Paper,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652481,Suzano Pulp and Paper,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652481,Suzano Pulp and Paper,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652481,Suzano Pulp and Paper,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652481,Suzano Pulp and Paper,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652481,Suzano Pulp and Paper,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652481,Suzano Pulp and Paper,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652481,Suzano Pulp and Paper,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652470,Tres Barras Pulp and Paper,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652470,Tres Barras Pulp and Paper,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652470,Tres Barras Pulp and Paper,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652470,Tres Barras Pulp and Paper,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652470,Tres Barras Pulp and Paper,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652470,Tres Barras Pulp and Paper,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652470,Tres Barras Pulp and Paper,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652470,Tres Barras Pulp and Paper,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652537,Tres Lagoas (Eldorado) Pulp,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652537,Tres Lagoas (Eldorado) Pulp,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652537,Tres Lagoas (Eldorado) Pulp,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652537,Tres Lagoas (Eldorado) Pulp,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652537,Tres Lagoas (Eldorado) Pulp,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652537,Tres Lagoas (Eldorado) Pulp,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652537,Tres Lagoas (Eldorado) Pulp,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652537,Tres Lagoas (Eldorado) Pulp,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652453,Tres Lagoas Pulp Mill,BRA,pulp-and-paper,2015-01-01 00:00:00,2015-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652453,Tres Lagoas Pulp Mill,BRA,pulp-and-paper,2016-01-01 00:00:00,2016-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652453,Tres Lagoas Pulp Mill,BRA,pulp-and-paper,2017-01-01 00:00:00,2017-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652453,Tres Lagoas Pulp Mill,BRA,pulp-and-paper,2018-01-01 00:00:00,2018-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652453,Tres Lagoas Pulp Mill,BRA,pulp-and-paper,2019-01-01 00:00:00,2019-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652453,Tres Lagoas Pulp Mill,BRA,pulp-and-paper,2020-01-01 00:00:00,2020-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652453,Tres Lagoas Pulp Mill,BRA,pulp-and-paper,2021-01-01 00:00:00,2021-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
+18652453,Tres Lagoas Pulp Mill,BRA,pulp-and-paper,2022-01-01 00:00:00,2022-01-31 00:00:00,very high,high,low,low,medium,medium,medium,low,low,low,low,2023-10-10 00:00:00,,low
