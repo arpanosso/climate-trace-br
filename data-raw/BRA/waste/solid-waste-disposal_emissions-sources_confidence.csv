@@ -1,0 +1,571 @@
+source_id,source_name,iso3_country,original_inventory_sector,start_time,end_time,source_type,capacity,capacity_factor,activity,co2_emissions_factor,ch4_emissions_factor,n2o_emissions_factor,co2_emissions,ch4_emissions,n2o_emissions,total_co2e_20yrgwp,created_date,modified_date,total_co2e_100yrgwp
+25777947,"Arari, Região Geográfica Imediata De Viana, Região Geográfica Intermediária De São Luís",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777947,"Arari, Região Geográfica Imediata De Viana, Região Geográfica Intermediária De São Luís",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25770976,Asmoc,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25770976,Asmoc,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777917,"Avenida Antônio Fernandes Viana De Assis, Industrial, Boquim",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777917,"Avenida Antônio Fernandes Viana De Assis, Industrial, Boquim",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776767,"Avenida Rui Barbosa, Nova Gloria, Glória Do Goitá",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776767,"Avenida Rui Barbosa, Nova Gloria, Glória Do Goitá",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778061,"Açailândia, Região Geográfica Imediata De Açailândia, Região Geográfica Intermediária De Imperatriz",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778061,"Açailândia, Região Geográfica Imediata De Açailândia, Região Geográfica Intermediária De Imperatriz",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777500,"Ba-001, Nazaré, Região Geográfica Imediata De Nazaré – Maragogipe",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777500,"Ba-001, Nazaré, Região Geográfica Imediata De Nazaré – Maragogipe",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776917,"Ba-046, Cidade De Deus, Itaberaba",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776917,"Ba-046, Cidade De Deus, Itaberaba",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777655,"Ba-046, Distrito De Riachão Do Utinga, Utinga",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777655,"Ba-046, Distrito De Riachão Do Utinga, Utinga",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777279,"Ba-290, Caxangá, Alcobaça",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777279,"Ba-290, Caxangá, Alcobaça",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777866,"Ba-878, Cabuçu, Saubara",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777866,"Ba-878, Cabuçu, Saubara",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777324,"Bacabal, Região Geográfica Imediata De Bacabal, Região Geográfica Intermediária De Santa Inês-Bacabal",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777324,"Bacabal, Região Geográfica Imediata De Bacabal, Região Geográfica Intermediária De Santa Inês-Bacabal",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25770989,Bandeirantes,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,high,low,,,medium,,,low,2023-11-08 00:00:00,,low
+25770989,Bandeirantes,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,high,low,,,medium,,,low,2023-11-08 00:00:00,,low
+25777942,"Barra Da Estiva, Itapé, Região Geográfica Imediata De Ilhéus – Itabuna",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777942,"Barra Da Estiva, Itapé, Região Geográfica Imediata De Ilhéus – Itabuna",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777009,"Baturité, Região Geográfica Imediata De Redenção-Acarape, Região Geográfica Intermediária De Fortaleza",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777009,"Baturité, Região Geográfica Imediata De Redenção-Acarape, Região Geográfica Intermediária De Fortaleza",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772101,Betim,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772101,Betim,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776781,"Boa Vista, Castanhal, Região Geográfica Imediata De Castanhal",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776781,"Boa Vista, Castanhal, Região Geográfica Imediata De Castanhal",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777202,"Br-030, Saquaíra, Maraú",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777202,"Br-030, Saquaíra, Maraú",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777432,"Br-330, Piabanha, Maraú",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777432,"Br-330, Piabanha, Maraú",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777470,"Br-419, Bairro Nova Aquidauana, Aquidauana",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777470,"Br-419, Bairro Nova Aquidauana, Aquidauana",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777585,"Caiapó, Pirapetinga, Região Geográfica Imediata De Além Paraíba",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777585,"Caiapó, Pirapetinga, Região Geográfica Imediata De Além Paraíba",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778043,"Camocim, Região Geográfica Imediata De Camocim, Região Geográfica Intermediária De Sobral",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778043,"Camocim, Região Geográfica Imediata De Camocim, Região Geográfica Intermediária De Sobral",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772119,Campinas,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,high,low,,,medium,,,low,2023-11-08 00:00:00,,low
+25772119,Campinas,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,high,low,,,medium,,,low,2023-11-08 00:00:00,,low
+25777163,"Campo Do Brito, Região Geográfica Imediata De Itabaiana, Região Geográfica Intermediária De Itabaiana",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777163,"Campo Do Brito, Região Geográfica Imediata De Itabaiana, Região Geográfica Intermediária De Itabaiana",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777597,"Campo Formoso, Região Geográfica Imediata De Senhor Do Bonfim, Região Geográfica Intermediária De Juazeiro",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777597,"Campo Formoso, Região Geográfica Imediata De Senhor Do Bonfim, Região Geográfica Intermediária De Juazeiro",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777047,"Campo Grande, Região Geográfica Imediata De Itabaiana, Região Metropolitana De Itabaiana",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777047,"Campo Grande, Região Geográfica Imediata De Itabaiana, Região Metropolitana De Itabaiana",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777154,"Caraparu, Santa Izabel Do Pará, Região Geográfica Imediata De Belém",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777154,"Caraparu, Santa Izabel Do Pará, Região Geográfica Imediata De Belém",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776989,"Cascavel, Região Geográfica Imediata De Fortaleza, Região Geográfica Intermediária De Fortaleza",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776989,"Cascavel, Região Geográfica Imediata De Fortaleza, Região Geográfica Intermediária De Fortaleza",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777006,"Ce-354, Amanari, Maranguape",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777006,"Ce-354, Amanari, Maranguape",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776913,"Ce-497, Corrego Do Moreira, Itapeim",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776913,"Ce-497, Corrego Do Moreira, Itapeim",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776898,"Codó, Região Geográfica Imediata De Codó, Região Geográfica Intermediária De Caxias",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776898,"Codó, Região Geográfica Imediata De Codó, Região Geográfica Intermediária De Caxias",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778065,"Coroatá, Região Geográfica Imediata De Codó, Região Geográfica Intermediária De Caxias",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778065,"Coroatá, Região Geográfica Imediata De Codó, Região Geográfica Intermediária De Caxias",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777728,"Cova Da Onça, Malhador, Região Geográfica Imediata De Itabaiana",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777728,"Cova Da Onça, Malhador, Região Geográfica Imediata De Itabaiana",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777336,"Crato, Região Geográfica Imediata De Juazeiro Do Norte, Região Geográfica Intermediária De Juazeiro Do Norte",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777336,"Crato, Região Geográfica Imediata De Juazeiro Do Norte, Região Geográfica Intermediária De Juazeiro Do Norte",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772178,Ctr Candeias Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772178,Ctr Candeias Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772179,Ctr-Pe,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772179,Ctr-Pe,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772182,Cuiabá,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,high,low,,,medium,,,low,2023-11-08 00:00:00,,low
+25772182,Cuiabá,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,high,low,,,medium,,,low,2023-11-08 00:00:00,,low
+25777696,"Demerval Lobão, Região Geográfica Imediata De Teresina, Região Integrada De Desenvolvimento Da Grande Teresina",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777696,"Demerval Lobão, Região Geográfica Imediata De Teresina, Região Integrada De Desenvolvimento Da Grande Teresina",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777287,"Distrito De Munim, Tibau Do Sul, Região Geográfica Imediata De Canguaretama",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777287,"Distrito De Munim, Tibau Do Sul, Região Geográfica Imediata De Canguaretama",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776594,"Ecit De Guarabira, Pb-073, Distrito Industrial",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776594,"Ecit De Guarabira, Pb-073, Distrito Industrial",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777283,"Encruzilhada De São João, Bezerros, Região Geográfica Imediata De Caruaru",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777283,"Encruzilhada De São João, Bezerros, Região Geográfica Imediata De Caruaru",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776651,"Entre Rios, Região Geográfica Imediata De Alagoinhas, Região Geográfica Intermediária De Salvador",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776651,"Entre Rios, Região Geográfica Imediata De Alagoinhas, Região Geográfica Intermediária De Salvador",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776902,"Estação De Transferência De Resíduos Do Jangurussu, 1665, Estrada Do Itaperi",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776902,"Estação De Transferência De Resíduos Do Jangurussu, 1665, Estrada Do Itaperi",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777111,"Estrada Da Caixa D'Água, Carpina, Região Geográfica Imediata De Carpina",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777111,"Estrada Da Caixa D'Água, Carpina, Região Geográfica Imediata De Carpina",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777083,"Estrada Da Chã Do Ouro, Chã Do Ouro, Paudalho",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777083,"Estrada Da Chã Do Ouro, Chã Do Ouro, Paudalho",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776525,"Estrada Do Aurá, Aurá, Entroncamento",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776525,"Estrada Do Aurá, Aurá, Entroncamento",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777507,"Estrada Malhada Do Coqueiro, Nossa Senhora Das Dores, Região Geográfica Imediata De Aracaju",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777507,"Estrada Malhada Do Coqueiro, Nossa Senhora Das Dores, Região Geográfica Imediata De Aracaju",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778118,Estrutural,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778118,Estrutural,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778026,"Ete Itapipoca, Avenida Perimetral, Itapipoca",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778026,"Ete Itapipoca, Avenida Perimetral, Itapipoca",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776626,"Eunápolis, Região Geográfica Imediata De Eunápolis - Porto Seguro, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776626,"Eunápolis, Região Geográfica Imediata De Eunápolis - Porto Seguro, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772268,Feira De Santana,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772268,Feira De Santana,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777682,"Floresta Azul, Região Geográfica Imediata De Ilhéus – Itabuna, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777682,"Floresta Azul, Região Geográfica Imediata De Ilhéus – Itabuna, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777072,"Floriano, Região Geográfica Imediata De Floriano, Região Geográfica Intermediária De Floriano",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777072,"Floriano, Região Geográfica Imediata De Floriano, Região Geográfica Intermediária De Floriano",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777351,"Gererau, Itaitinga, Região Geográfica Imediata De Fortaleza",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777351,"Gererau, Itaitinga, Região Geográfica Imediata De Fortaleza",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772280,Gericino,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772280,Gericino,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772285,Goiania,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772285,Goiania,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777055,"Guaicurus, Corumbá, Região Geográfica Imediata De Corumbá",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777055,"Guaicurus, Corumbá, Região Geográfica Imediata De Corumbá",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777132,"Ilhéus, Região Geográfica Imediata De Ilhéus – Itabuna, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777132,"Ilhéus, Região Geográfica Imediata De Ilhéus – Itabuna, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777750,"Imbé, Região Geográfica Imediata De Tramandaí - Osório, Aglomeração Urbana Do Litoral Norte",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777750,"Imbé, Região Geográfica Imediata De Tramandaí - Osório, Aglomeração Urbana Do Litoral Norte",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777312,"Itabuna, Região Geográfica Imediata De Ilhéus – Itabuna, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777312,"Itabuna, Região Geográfica Imediata De Ilhéus – Itabuna, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777669,"Itacaré, Região Geográfica Imediata De Ilhéus – Itabuna, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777669,"Itacaré, Região Geográfica Imediata De Ilhéus – Itabuna, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777563,"Itapecuru-Mirim, Região Geográfica Imediata De Itapecuru Mirim, Região Geográfica Intermediária De São Luís",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777563,"Itapecuru-Mirim, Região Geográfica Imediata De Itapecuru Mirim, Região Geográfica Intermediária De São Luís",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777812,"Itaqui Airport, Br-472, Ibicuí",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777812,"Itaqui Airport, Br-472, Ibicuí",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778074,Jardim Gramacho,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778074,Jardim Gramacho,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777200,"Luzilandia, Região Geográfica Imediata De Esperantina, Região Geográfica Intermediária De Parnaíba",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777200,"Luzilandia, Região Geográfica Imediata De Esperantina, Região Geográfica Intermediária De Parnaíba",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777943,"Ma-106, Rio Grande, Alcântara",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777943,"Ma-106, Rio Grande, Alcântara",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777703,"Mar Grande, Vera Cruz, Região Geográfica Imediata De Nazaré – Maragogipe",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777703,"Mar Grande, Vera Cruz, Região Geográfica Imediata De Nazaré – Maragogipe",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773457,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773459,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773460,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773461,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773462,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773463,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773464,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773465,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773466,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773467,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773468,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773469,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773470,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773471,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773472,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773473,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773474,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773475,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773476,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773477,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773478,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773479,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773480,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773481,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773482,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773483,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773484,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773485,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773486,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773487,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773488,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773489,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773490,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773491,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773492,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773493,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773494,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773495,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773496,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773497,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773498,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773499,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773500,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773501,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773502,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773503,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773504,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773505,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773506,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773507,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773508,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773509,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773510,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773511,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773512,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773513,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773514,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773515,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773516,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773517,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773518,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773519,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773520,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773521,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773522,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773523,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773524,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773525,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773526,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773527,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773528,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773529,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773530,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773531,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773532,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773533,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773534,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773535,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773536,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773537,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773538,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773539,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773540,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773541,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773542,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773543,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773544,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773545,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773546,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773547,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773548,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773549,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773550,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773551,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773552,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773553,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773554,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773555,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773556,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773557,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773558,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773559,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773560,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773561,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773562,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773563,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773564,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773565,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773566,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773567,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773568,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773569,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773570,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773571,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773572,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773573,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773574,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773575,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773576,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773577,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773578,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773579,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773580,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773581,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773582,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773584,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773585,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773586,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773587,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773588,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773589,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773590,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773591,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773592,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773593,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773594,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773595,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773596,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773597,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773598,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773599,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773600,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773601,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773602,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773603,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773604,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773605,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773606,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773607,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773608,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773609,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773610,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773611,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773612,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773613,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773614,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773615,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773616,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773617,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773618,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773619,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773620,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773621,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773622,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773623,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773624,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773625,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773626,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773627,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773628,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773629,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773630,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773631,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773632,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773633,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773634,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773635,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773636,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773637,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773638,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773639,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773640,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773643,OpenStreetMap Landfill,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773457,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773459,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773460,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773461,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773462,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773463,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773464,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773465,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773466,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773467,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773468,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773469,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773470,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773471,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773472,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773473,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773474,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773475,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773476,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773477,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773478,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773479,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773480,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773481,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773482,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773483,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773484,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773485,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773486,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773487,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773488,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773489,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773490,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773491,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773492,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773493,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773494,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773495,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773496,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773497,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773498,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773499,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773500,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773501,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773502,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773503,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773504,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773505,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773506,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773507,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773508,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773509,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773510,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773511,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773512,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773513,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773514,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773515,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773516,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773517,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773518,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773519,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773520,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773521,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773522,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773523,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773524,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773525,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773526,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773527,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773528,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773529,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773530,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773531,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773532,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773533,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773534,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773535,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773536,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773537,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773538,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773539,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773540,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773541,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773542,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773543,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773544,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773545,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773546,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773547,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773548,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773549,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773550,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773551,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773552,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773553,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773554,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773555,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773556,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773557,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773558,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773559,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773560,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773561,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773562,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773563,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773564,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773565,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773566,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773567,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773568,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773569,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773570,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773571,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773572,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773573,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773574,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773575,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773576,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773577,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773578,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773579,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773580,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773581,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773582,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773584,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773585,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773586,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773587,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773588,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773589,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773590,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773591,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773592,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773593,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773594,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773595,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773596,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773597,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773598,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773599,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773600,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773601,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773602,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773603,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773604,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773605,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773606,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773607,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773608,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773609,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773610,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773611,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773612,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773613,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773614,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773615,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773616,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773617,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773618,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773619,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773620,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773621,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773622,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773623,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773624,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773625,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773626,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773627,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773628,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773629,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773630,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773631,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773632,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773633,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773634,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773635,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773636,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773637,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773638,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773639,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773640,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25773643,OpenStreetMap Landfill,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,,,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776944,"Orobó, Região Geográfica Imediata De Limoeiro, Região Geográfica Intermediária Do Recife",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776944,"Orobó, Região Geográfica Imediata De Limoeiro, Região Geográfica Intermediária Do Recife",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777895,"Pa-279, Tucumã, Região Geográfica Imediata De Tucumã - São Félix Do Xingu",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777895,"Pa-279, Tucumã, Região Geográfica Imediata De Tucumã - São Félix Do Xingu",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776744,"Pa-287, Redenção, Araguaia River",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776744,"Pa-287, Redenção, Araguaia River",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777215,"Parque Emboaba, Estância Velha, Tramandaí",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777215,"Parque Emboaba, Estância Velha, Tramandaí",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777059,"Pb-048, Pilar, Região Geográfica Imediata De João Pessoa",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777059,"Pb-048, Pilar, Região Geográfica Imediata De João Pessoa",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777262,"Pe-158, Panelas, Região Geográfica Imediata De Caruaru",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777262,"Pe-158, Panelas, Região Geográfica Imediata De Caruaru",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777412,"Perimetral Norte Dois, Tabatinga, Região Geográfica Imediata De Tabatinga",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777412,"Perimetral Norte Dois, Tabatinga, Região Geográfica Imediata De Tabatinga",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772426,Perobas,BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25772426,Perobas,BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,medium,,medium,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776614,"Porto Seguro, Região Geográfica Imediata De Eunápolis - Porto Seguro, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776614,"Porto Seguro, Região Geográfica Imediata De Eunápolis - Porto Seguro, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777552,"Praia De Fagundes, Lucena, Região Geográfica Imediata De João Pessoa",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777552,"Praia De Fagundes, Lucena, Região Geográfica Imediata De João Pessoa",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777161,"Primavera Do Leste, Região Geográfica Imediata De Primavera Do Leste, Região Geográfica Intermediária De Rondonópolis",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777161,"Primavera Do Leste, Região Geográfica Imediata De Primavera Do Leste, Região Geográfica Intermediária De Rondonópolis",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776870,"Primeira Travessa Do Aeroporto, Caxias, Região Geográfica Imediata De Caxias",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776870,"Primeira Travessa Do Aeroporto, Caxias, Região Geográfica Imediata De Caxias",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777831,"Ramal Da Terceira Travessa, Capanema, Região Geográfica Imediata De Capanema",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777831,"Ramal Da Terceira Travessa, Capanema, Região Geográfica Imediata De Capanema",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777228,"Residêncial Mundico Cosme, Barreirinhas, Região Geográfica Imediata De Barreirinhas",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777228,"Residêncial Mundico Cosme, Barreirinhas, Região Geográfica Imediata De Barreirinhas",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777503,"Rio Das Pedras, Paranaguá, Região Geográfica Imediata De Paranaguá",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777503,"Rio Das Pedras, Paranaguá, Região Geográfica Imediata De Paranaguá",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777898,"Rodovia Governador Mário Covas, Estância, Região Geográfica Imediata De Estância",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777898,"Rodovia Governador Mário Covas, Estância, Região Geográfica Imediata De Estância",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777934,"Rodovia Padre Manoel Da Nóbrega, Parque Das Bandeiras, São Vicente",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777934,"Rodovia Padre Manoel Da Nóbrega, Parque Das Bandeiras, São Vicente",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777884,"Rodovia Prefeito Homero Corrêa Leite, Mococa, Região Imediata De São José Do Rio Pardo-Mococa",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777884,"Rodovia Prefeito Homero Corrêa Leite, Mococa, Região Imediata De São José Do Rio Pardo-Mococa",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777584,"Rodovia Rio-Santos, Mangaratiba, Região Geográfica Imediata Do Rio De Janeiro",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777584,"Rodovia Rio-Santos, Mangaratiba, Região Geográfica Imediata Do Rio De Janeiro",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777060,"Rodovia Santos Dumont, Triângulo, Chorozinho",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777060,"Rodovia Santos Dumont, Triângulo, Chorozinho",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777425,"Rsc-377, Alegrete, Região Geográfica Imediata De Uruguaiana",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777425,"Rsc-377, Alegrete, Região Geográfica Imediata De Uruguaiana",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776831,"Rua Antônio Manoel Menineia, Pioneiro, Barcarena",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776831,"Rua Antônio Manoel Menineia, Pioneiro, Barcarena",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777730,"Rua Floriano, Luís Correia, Região Geográfica Imediata De Parnaíba",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777730,"Rua Floriano, Luís Correia, Região Geográfica Imediata De Parnaíba",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777743,"Ruy Barbosa, Região Geográfica Imediata De Itaberaba, Região Geográfica Intermediária De Feira De Santana",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777743,"Ruy Barbosa, Região Geográfica Imediata De Itaberaba, Região Geográfica Intermediária De Feira De Santana",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776819,"Santa Luzia, Região Geográfica Imediata De Santa Inês, Região Geográfica Intermediária De Santa Inês-Bacabal",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776819,"Santa Luzia, Região Geográfica Imediata De Santa Inês, Região Geográfica Intermediária De Santa Inês-Bacabal",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778039,"Santaluz, Região Geográfica Imediata De Conceição Do Coité, Região Geográfica Intermediária De Feira De Santana",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778039,"Santaluz, Região Geográfica Imediata De Conceição Do Coité, Região Geográfica Intermediária De Feira De Santana",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778029,"Santo Antônio, Barbalha, Região Geográfica Imediata De Juazeiro Do Norte",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25778029,"Santo Antônio, Barbalha, Região Geográfica Imediata De Juazeiro Do Norte",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776911,"Sapé, Região Geográfica Imediata De João Pessoa, Região Geográfica Intermediária De João Pessoa",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776911,"Sapé, Região Geográfica Imediata De João Pessoa, Região Geográfica Intermediária De João Pessoa",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777968,"Soure, Região Geográfica Imediata De Soure-Salvaterra, Região Geográfica Intermediária De Breves",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777968,"Soure, Região Geográfica Imediata De Soure-Salvaterra, Região Geográfica Intermediária De Breves",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777907,"Tabuleiro, Lagarto, Região Geográfica Imediata De Lagarto",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777907,"Tabuleiro, Lagarto, Região Geográfica Imediata De Lagarto",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776775,"Teixeira De Freitas, Região Geográfica Imediata De Teixeira De Freitas, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776775,"Teixeira De Freitas, Região Geográfica Imediata De Teixeira De Freitas, Região Geográfica Intermediária De Ilhéus-Itabuna",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776887,"Tomé-Açu, Região Geográfica Imediata De Belém, Região Geográfica Intermediária De Belém",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776887,"Tomé-Açu, Região Geográfica Imediata De Belém, Região Geográfica Intermediária De Belém",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777240,"Urb-146, São João De Dentro, Sítio São João",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777240,"Urb-146, São João De Dentro, Sítio São João",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777415,"Valença, Região Geográfica Imediata De Valença, Região Geográfica Intermediária De Santo Antônio De Jesus",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25777415,"Valença, Região Geográfica Imediata De Valença, Região Geográfica Intermediária De Santo Antônio De Jesus",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776895,"Via Periférica I, Vila Valéria, Simões Filho",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776895,"Via Periférica I, Vila Valéria, Simões Filho",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776832,"Zimbo, Gamboa, Cairu",BRA,solid-waste-disposal,2021-01-01 00:00:00,2021-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low
+25776832,"Zimbo, Gamboa, Cairu",BRA,solid-waste-disposal,2022-01-01 00:00:00,2022-12-31 00:00:00,high,very high,,low,low,,,low,,,low,2023-11-08 00:00:00,,low

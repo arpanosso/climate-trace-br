@@ -1,0 +1,41 @@
+iso3_country,start_time,end_time,original_inventory_sector,gas,emissions_quantity,emissions_quantity_units,temporal_granularity,created_date,modified_date
+BRA,2022-01-01 00:00:00,2022-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,n2o,91.409665,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:42.175118
+BRA,2022-01-01 00:00:00,2022-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,ch4,1218.795539,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:42.175118
+BRA,2022-01-01 00:00:00,2022-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_20yr,126510.976836,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:42.175118
+BRA,2021-01-01 00:00:00,2021-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,n2o,90.480314,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:48.433022
+BRA,2021-01-01 00:00:00,2021-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,ch4,1206.404192,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:48.433022
+BRA,2021-01-01 00:00:00,2021-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_20yr,125224.75502400001,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:48.433022
+BRA,2021-01-01 00:00:00,2021-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_100yr,57756.600586,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:48.433022
+BRA,2020-01-01 00:00:00,2020-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,n2o,89.560412,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:55.327329
+BRA,2020-01-01 00:00:00,2020-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,ch4,1194.138827,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:55.327329
+BRA,2020-01-01 00:00:00,2020-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_20yr,123951.61023600001,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:55.327329
+BRA,2020-01-01 00:00:00,2020-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_100yr,57169.396336,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:55.327329
+BRA,2019-01-01 00:00:00,2019-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,n2o,88.678464,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:02.39531
+BRA,2019-01-01 00:00:00,2019-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,ch4,1182.3795260000002,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:02.39531
+BRA,2019-01-01 00:00:00,2019-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_20yr,122730.99468,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:02.39531
+BRA,2019-01-01 00:00:00,2019-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_100yr,56606.41968800001,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:02.39531
+BRA,2018-01-01 00:00:00,2018-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,n2o,87.777544,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:09.186295
+BRA,2018-01-01 00:00:00,2018-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,ch4,1170.367247,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:09.186295
+BRA,2018-01-01 00:00:00,2018-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_20yr,121484.12036399999,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:09.186295
+BRA,2018-01-01 00:00:00,2018-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_100yr,56031.332076,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:09.186295
+BRA,2017-01-01 00:00:00,2017-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,n2o,86.85754,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:15.681365
+BRA,2017-01-01 00:00:00,2017-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,ch4,1158.100531,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:15.681365
+BRA,2017-01-01 00:00:00,2017-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_20yr,120210.835164,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:15.681365
+BRA,2017-01-01 00:00:00,2017-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_100yr,55444.062968,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:15.681365
+BRA,2016-01-01 00:00:00,2016-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_20yr,118911.50964,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:22.567416
+BRA,2016-01-01 00:00:00,2016-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_100yr,54844.783497000004,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:22.567416
+BRA,2015-01-01 00:00:00,2015-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,n2o,84.96090000000001,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:29.386223
+BRA,2015-01-01 00:00:00,2015-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,ch4,1132.812,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:29.386223
+BRA,2015-01-01 00:00:00,2015-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_20yr,117585.88559999998,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:29.386223
+BRA,2015-01-01 00:00:00,2015-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_100yr,54233.3745,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:29.386223
+BRA,2022-01-01 00:00:00,2022-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2,0,tonnes,,2023-10-09 10:24:58.541435,
+BRA,2022-01-01 00:00:00,2022-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2e_100yr,58349.836316999994,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:12:42.175118
+BRA,2021-01-01 00:00:00,2021-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2,0,tonnes,,2023-10-09 10:24:58.541435,
+BRA,2020-01-01 00:00:00,2020-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2,0,tonnes,,2023-10-09 10:24:58.541435,
+BRA,2019-01-01 00:00:00,2019-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2,0,tonnes,,2023-10-09 10:24:58.541435,
+BRA,2018-01-01 00:00:00,2018-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2,0,tonnes,,2023-10-09 10:24:58.541435,
+BRA,2017-01-01 00:00:00,2017-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2,0,tonnes,,2023-10-09 10:24:58.541435,
+BRA,2016-01-01 00:00:00,2016-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2,0,tonnes,,2023-10-09 10:24:58.541435,
+BRA,2016-01-01 00:00:00,2016-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,n2o,85.918721,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:22.567416
+BRA,2016-01-01 00:00:00,2016-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,ch4,1145.582944,tonnes,,2023-10-09 10:24:58.541435,2023-11-03 15:13:22.567416
+BRA,2015-01-01 00:00:00,2015-12-31 00:00:00,biological-treatment-of-solid-waste-and-biogenic,co2,0,tonnes,,2023-10-09 10:24:58.541435,
