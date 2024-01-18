@@ -13,6 +13,7 @@ def_pol <- function(x, y, pol){
 abbrev_states <- states$abbrev_state
 list_pol <- map(1:27, get_geobr_pol)
 names(list_pol) <- abbrev_states
+
 get_geobr_state <- function(x,y){
   x <- as.vector(x[1])
   y <- as.vector(y[1])
@@ -29,3 +30,10 @@ get_geobr_state <- function(x,y){
   return(as.vector(resul))
 }
 
+
+# Função para ler 01 arquivo csv
+my_file_read <- function(sector_name){
+  read.csv(sector_name) %>%
+    select(!starts_with("other")) %>%
+    mutate(directory = sector_name)
+}

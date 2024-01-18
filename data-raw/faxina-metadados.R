@@ -49,34 +49,44 @@ base_sigla_uf <- dados %>%
 base_sigla_uf$sigla_uf %>% unique()
 citys <- geobr::read_municipality()
 
-get_geobr_city <- function(x,y,state){
-  my_state <- as.vector(state[1])
-  x <- as.vector(x[1])
-  y <- as.vector(y[1])
-  my_citys_obj <- citys %>%
-    filter(abbrev_state == my_state)
+get_geobr_city <- function(x,y,estado,dff){
+  my_citys_obj <- dff[dff$abbrev_state == estado,]
   n_citys <- nrow(my_citys_obj)
-  my_citys_names <- my_citys_obj %>% pull(name_muni)
-  resul <- "Other"
-  lgv <- FALSE
-  for(i in 1:n_citys){
-    pol_city <- my_citys_obj$geom %>%
-      purrr::pluck(i)  %>%
-      as.matrix()
-    lgv <-def_pol(x, y, pol_city)
-    if(lgv){
-      resul <- my_citys_names[i]
+  # my_citys_names <- my_citys_obj %>% pull(name_muni)
+  # resul <- "Other"
+  # for(i in 1:n_citys){
+  #   pol_city <- my_citys_obj$geom  %>%
+  #     purrr::pluck(i) %>%
+  #     as.matrix()
+  #   if(def_pol(x[1], y[1], pol_city[])){
+  #     resul <- my_citys_names[i]
+  #   }
+  # }
+  return(n_citys)
+};get_geobr_city(-47.2, -23.1,"SP",citys)
+
+resul <- vector()
+estado <- base_sigla_uf$sigla_uf
+for(i in 1:nrow(base_sigla_uf)){
+  if(estado[i]!="Other"){
+    my_citys_obj <- citys %>%
+      filter(abbrev_state == estado[i])
+    n_citys <- nrow(my_citys_obj)
+    my_citys_names <- my_citys_obj %>% pull(name_muni)
+    resul[i] <- "Other"
+    for(j in 1:n_citys){
+      pol_city <- my_citys_obj$geom  %>%
+        purrr::pluck(j) %>%
+        as.matrix()
+      if(def_pol(base_sigla_uf$lon[i],
+                 base_sigla_uf$lat[i],
+                 pol_city)){
+        resul[i] <- my_citys_names[j]
+      }
     }
   }
-  return(as.vector(resul))
-};get_geobr_city(-54.3, -24.6,"PR")
-
-base_sigla_uf %>%
-  ungroup() %>%
-  sample_n(10) %>%
-  mutate(
-    city_ref = get_geobr_city(lon,lat,sigla_uf)
-  )
+}
+base_sigla_uf$city_ref <- resul
 
 # Final da faxina ---------------------------------------------------------
 # lendo arquivo da base nacional
@@ -94,7 +104,7 @@ dados_sigla <- left_join(
   dados,
   base_sigla_uf %>%
     ungroup() %>%
-    select(source_name, lon, lat, sigla_uf, nome_regiao),
+    select(source_name, lon, lat, sigla_uf, nome_regiao, city_ref),
   by = c("source_name","lat","lon")
 ) %>% as_tibble()
 dados_sigla$nome_regiao %>%  unique()

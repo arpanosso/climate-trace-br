@@ -35,16 +35,74 @@ source("R/gafico.R")
 ### Carregando as bases de dados
 
 ```{r}
-emissions_sources <- read_rds("data/emissions_sources.rds")
+emissions_sources <- read_rds("data/emissions_sources.rds") %>% 
+  mutate(source_name_1 = str_to_title(source_name))
 states <- read_rds("data/states.rds") %>% 
   mutate(name_region = ifelse(name_region == "Centro Oeste","Centro-Oeste",name_region))
 
 brazil_ids <- read_rds("data/df_nome.rds")
-glimpse(brazil_ids)
+glimpse(emissions_sources)
 nomes_uf <- c(brazil_ids$nome_uf %>% unique(),"Brazil")
 abbrev_states <- brazil_ids$sigla_uf %>% unique()
 region_names <- brazil_ids$nome_regiao %>% unique()
 ```
+
+### tabela resumo
+
+```{r}
+emissions_sources %>% 
+  filter(
+    year == 2022,
+    gas == "co2e_100yr",
+    !source_name %in% nomes_uf,
+    !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")
+    ) %>% 
+  group_by(source_name) %>% 
+  summarise(
+    emission = mean(emissions_quantity, na.rm=TRUE)
+  ) %>% 
+  arrange(emission %>% desc()) %>% 
+  mutate(
+    acumulada = cumsum(emission)
+    ) 
+```
+
+```{r}
+emissions_sources %>% 
+  filter(str_detect(city_ref,"Palmas"),
+         sigla_uf == "TO",
+         year == 2022,
+         gas == "co2e_100yr",
+         !source_name %in% nomes_uf,
+         !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")
+         ) %>% 
+  group_by(sector_name,source_name,sub_sector) %>% 
+  summarise(
+    emission = mean(emissions_quantity, na.rm=TRUE)
+  ) %>% 
+  arrange(emission %>% desc())  %>% 
+  mutate(cumsum = cumsum(emission))
+
+# nomenclatura no site
+# net-forest-land => Forest land
+# net-wetland => Wetland
+# net-shrubgrass => Net shrubgrass
+# cropland-fires => Crop fire
+# synthetic-fertilizer-application => Crop field
+# enteric-fermentation-cattle-pasture => Cattle pasture
+# manure-left-on-pasture-cattle => Pasture cattle
+```
+
 
 ### Lendo o polígono dos estados
 
@@ -56,7 +114,7 @@ states  %>%
   geom_point(
     data = emissions_sources %>%
       filter(nome_regiao == "Nordeste",
-             year == 2020
+             year == 2022
              ),
     aes(lon,lat)) +
   tema_mapa()
@@ -86,12 +144,12 @@ emissions_sources %>%
   mutate(
     emission_cum = cumsum(emission)
   )
-
 ```
 
 
 ```{r}
 states  %>%
+  filter(name_state == "São Paulo") |> 
   ggplot() +
   geom_sf(fill="white", color="black",
           size=.15, show.legend = FALSE) +
@@ -100,12 +158,12 @@ states  %>%
   filter(sigla_uf == "SP",
          year == 2022,
          gas == "co2e_100yr",
-         sector_name == "agriculture",
+         # sector_name == "agriculture",
          source_name != "São Paulo") %>% 
     group_by(sector_name,lat,lon) %>% 
     summarise(
       emission = sum(emissions_quantity)
-    ),
+    ) ,
     aes(lon,lat,color=emission)) +
   tema_mapa()
 ```
@@ -140,34 +198,20 @@ for(i in seq_along(region_names)){
                    color=emission))+
     labs(title = my_state)
   
-
-#   my_col <- emissions_sources %>% 
-#     filter(nome_regiao == my_state,
-#            year == 2015,
-#            gas == "co2e_100yr",
-#            sector_name == "agriculture",
-#            !source_name %in% nomes_uf,
-#            sub_sector == "enteric-fermentation-cattle-pasture") %>% 
-#     group_by(source_name,lat,lon) %>% 
-#     summarise(
-#       emission = sum(emissions_quantity),
-#     ) %>% 
-#     ungroup() %>% 
-# 
-#   my_col <- df_aux %>% 
-#     filter(emission > quantile(emission,.75)) %>% 
-#     mutate(
-#       perc = emission/sum(emission),
-#       source_name = source_name %>% fct_lump(n=15,w=perc) %>%
-#         fct_reorder(emission)) %>%
-#     filter(source_name != "Other") %>% 
-#     ggplot(aes(x=source_name, y= emission))+
-#     geom_col(fill="gray",color="black") +
-#     coord_flip() +
-#     theme_bw() +
-#     labs(title = my_state)    
+  my_col <- df_aux %>%
+    filter(emission > quantile(emission,.75)) %>%
+    mutate(
+      perc = emission/sum(emission),
+      source_name = source_name %>% fct_lump(n=15,w=perc) %>%
+        fct_reorder(emission)) %>%
+    filter(source_name != "Other") %>%
+    ggplot(aes(x=source_name, y= emission))+
+    geom_col(fill="gray",color="black") +
+    coord_flip() +
+    theme_bw() +
+    labs(title = my_state)
   print(my_plot)
-#   print(my_col)
+  print(my_col)
 }
 
 ```
