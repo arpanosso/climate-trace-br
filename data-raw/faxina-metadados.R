@@ -48,25 +48,9 @@ base_sigla_uf <- dados %>%
 # Classificando pelo pol da cidade ----------------------------------------
 base_sigla_uf$sigla_uf %>% unique()
 citys <- geobr::read_municipality()
-
-get_geobr_city <- function(x,y,estado,dff){
-  my_citys_obj <- dff[dff$abbrev_state == estado,]
-  n_citys <- nrow(my_citys_obj)
-  # my_citys_names <- my_citys_obj %>% pull(name_muni)
-  # resul <- "Other"
-  # for(i in 1:n_citys){
-  #   pol_city <- my_citys_obj$geom  %>%
-  #     purrr::pluck(i) %>%
-  #     as.matrix()
-  #   if(def_pol(x[1], y[1], pol_city[])){
-  #     resul <- my_citys_names[i]
-  #   }
-  # }
-  return(n_citys)
-};get_geobr_city(-47.2, -23.1,"SP",citys)
-
 resul <- vector()
 estado <- base_sigla_uf$sigla_uf
+tictoc::tic()
 for(i in 1:nrow(base_sigla_uf)){
   if(estado[i]!="Other"){
     my_citys_obj <- citys %>%
@@ -86,7 +70,65 @@ for(i in 1:nrow(base_sigla_uf)){
     }
   }
 }
+tictoc::toc()
 base_sigla_uf$city_ref <- resul
+
+get_geobr_city_n <- function(x, y, estado){
+  my_citys_obj <- citys %>%
+    tibble() %>%
+    filter(abbrev_state == estado)
+  n_citys <-  my_citys_obj %>% nrow()
+  return(n_citys)
+};get_geobr_city_n(-47.2, -23.1,"SP")
+
+get_geobr_city <- function(arg){
+  resul <- "Other"
+  arg <- as.vector(arg)
+  marg <- str_split(arg," ",simplify = TRUE)
+  n_citys <- marg[1,1] %>% as.numeric()
+  x <- marg[1,2] %>% as.numeric()
+  y <- marg[1,3] %>% as.numeric()
+  estado <- marg[1,4]
+  my_citys_obj <- citys %>%
+    tibble() %>%
+    filter(abbrev_state == estado)
+  my_citys_names <- my_citys_obj %>% pull(name_muni)
+  if(estado != "Other"){
+    for(i in 1:n_citys){
+      pol_city <- my_citys_obj$geom  %>%
+        purrr::pluck(i) %>%
+        as.matrix()
+      if(def_pol(x, y, pol_city)){
+        resul <- my_citys_names[i]
+      }
+    }
+  }
+  return(resul)
+};get_geobr_city("645 -47.2 -23.1 SP")
+
+
+base_sigla_uf <- base_sigla_uf %>%
+  group_by(sigla_uf) %>%
+  nest() %>%
+  filter(sigla_uf != "DF") %>%
+  mutate(
+    nr = purrr::map(sigla_uf,
+                    ~get_geobr_city_n(data$lon,
+                                    data$lat,
+                                    .x))
+  ) %>%
+  unnest(cols = c(data, nr)) %>%
+#  sample_n(10) %>%
+  mutate(
+    list_par = str_c(nr, lon, lat, sigla_uf,sep=" "),
+  ) %>%
+  mutate(
+    city_ref_2 = map(list_par,get_geobr_city)
+  ) %>%
+  unnest(cols = c(city_ref_2)) %>%
+  select(city_ref, city_ref_2)
+
+
 
 # Final da faxina ---------------------------------------------------------
 # lendo arquivo da base nacional
