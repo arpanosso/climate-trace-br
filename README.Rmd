@@ -74,8 +74,9 @@ emissions_sources %>%
 
 ```{r}
 emissions_sources %>% 
-  filter(str_detect(city_ref,"Palmas"),
-         sigla_uf == "TO",
+  filter(str_detect(city_ref,"Santos"),
+         # city_ref == "Santos",
+         sigla_uf == "SP",
          year == 2022,
          gas == "co2e_100yr",
          !source_name %in% nomes_uf,
@@ -90,9 +91,10 @@ emissions_sources %>%
   summarise(
     emission = mean(emissions_quantity, na.rm=TRUE)
   ) %>% 
-  arrange(emission %>% desc())  %>% 
-  mutate(cumsum = cumsum(emission))
-
+  arrange(emission )  %>% 
+  ungroup() %>% 
+  mutate(Cumsum = cumsum(emission)) 
+  
 # nomenclatura no site
 # net-forest-land => Forest land
 # net-wetland => Wetland
@@ -101,6 +103,39 @@ emissions_sources %>%
 # synthetic-fertilizer-application => Crop field
 # enteric-fermentation-cattle-pasture => Cattle pasture
 # manure-left-on-pasture-cattle => Pasture cattle
+```
+###
+
+
+```{r}
+# unidades unesp
+cidades_unesp <- read.table("data-raw/unidades-unesp.txt", h=TRUE) %>% 
+  pull(V1)
+
+for(i in seq_along(cidades_unesp)){
+  resumo_unesp<-emissions_sources %>% 
+    filter(str_detect(city_ref,cidades_unesp[i]),
+           sigla_uf == "SP",
+           year == 2022,
+           gas == "co2e_100yr",
+           !source_name %in% nomes_uf,
+           !sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")
+    ) %>% 
+    group_by(sector_name,source_name,sub_sector) %>% 
+    summarise(
+      emission = mean(emissions_quantity, na.rm=TRUE)
+    ) %>% 
+    arrange(emission )  %>% 
+    ungroup() %>% 
+    mutate(Cumsum = cumsum(emission))
+  print(resumo_unesp)
+  } 
+
 ```
 
 
