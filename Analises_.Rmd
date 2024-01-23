@@ -110,10 +110,10 @@ emissions_sources |>
     summarise(
       ghg_balance = sum(emissions_quantity, na.rm=TRUE)
     ) |> 
-  ggplot(aes(x=year,y=ghg_balance/1e7,fill=region))+
+  ggplot(aes(x=year,y=ghg_balance/1e6,fill=region))+
   geom_col(position = 'dodge')+
   scale_fill_viridis_d()+
-  labs(x='Year',y=expression('CO'[2]~'eq Balance ('~year^-1~')'),fill='Region')
+  labs(x='Year',y=expression('CO'[2]~'eq Balance (M ton  CO'[2]~'eq '~year^-1~')'),fill='Region')
 
 ```
 
@@ -144,10 +144,115 @@ emissions_sources |>
     summarise(
       ghg_balance = sum(emissions_quantity, na.rm=TRUE)
     ) |> 
-  ggplot(aes(x=year,y=ghg_balance/1e7,fill=sub_sector))+
+  ggplot(aes(x=year,y=ghg_balance/1e6,fill=sub_sector))+
   geom_col(position = 'dodge')+
   scale_fill_viridis_d()+
   facet_wrap(~region,scales='free')+
-  labs(x='Year',y=expression('CO'[2]~'eq Balance ('~year^-1~')'),fill='Sector')
+  labs(x='Year',y=expression('CO'[2]~'eq Balance (M ton  CO'[2]~'eq '~ year^-1~')'),fill='Sector')
+
+ggplot2::ggsave('img/co2_balance_sector.png',
+                units="in",width=10,heigh=6,dpi=1000)
 
 ```
+
+
+```{r}
+emissions_sources |>
+  filter(year > 2018 & year < 2023,
+           gas == "co2e_100yr",
+           !source_name %in% nomes_uf,
+           !sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")
+    ) |> 
+  mutate(
+    region = case_when(
+      nome_regiao=='Norte'~'North',
+      nome_regiao=='Nordeste'~'Northeast',
+      nome_regiao=='Sul'~'South',
+      nome_regiao=='Sudeste'~'Southeast',
+      nome_regiao=='Centro-Oeste'~'Midweast',
+      .default = 'Other'
+      )
+    ) |> 
+    group_by(year) |> 
+    summarise(
+      ghg_balance = sum(emissions_quantity, na.rm=TRUE)
+    ) |> 
+  ggplot(aes(x=year,y=ghg_balance/1e6))+
+  geom_col(position = 'dodge')+
+  scale_fill_viridis_d()+
+  labs(x='Year',y=expression('CO'[2]~'eq Balance (M ton  CO'[2]~'eq '~ year^-1~')'),fill='Sector')
+```
+
+
+```{r}
+emissions_sources |>
+  filter(year > 2018 & year < 2023,
+           gas == "co2e_100yr",
+           !source_name %in% nomes_uf,
+           !sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")
+    ) |> 
+  mutate(
+    region = case_when(
+      nome_regiao=='Norte'~'North',
+      nome_regiao=='Nordeste'~'Northeast',
+      nome_regiao=='Sul'~'South',
+      nome_regiao=='Sudeste'~'Southeast',
+      nome_regiao=='Centro-Oeste'~'Midweast',
+      .default = 'Other'
+      )
+    ) |> 
+    group_by(year,sub_sector) |> 
+    summarise(
+      ghg_balance = sum(emissions_quantity, na.rm=TRUE)
+    ) |> 
+  filter(sub_sector=='agriculture') |> 
+  mutate(ghg_balance=ghg_balance/1e6)
+  ggplot(aes(x=year,y=ghg_balance/1e6,fill=sub_sector))+
+  geom_col(position = 'dodge')+
+  scale_fill_viridis_d()+
+  labs(x='Year',y=expression('CO'[2]~'eq Balance (M ton  CO'[2]~'eq '~ year^-1~')'),fill='Sector')
+
+ggplot2::ggsave('img/co2_brazil_balance_sector.png',
+                units="in",width=8,heigh=6,dpi=1000)
+```
+
+```{r}
+emissions_sources |> 
+  filter(  gas == "co2e_100yr",
+           !source_name %in% nomes_uf,
+           !sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")
+    ) |> 
+  group_by(lon,lat,year,city_ref) |> 
+  summarise(
+      emission = sum(emissions_quantity, na.rm=TRUE)
+    ) |> 
+  mutate(
+      fonte_sumidouro = ifelse(emission <=0, "Sink","Source"),
+      ni=1
+      ) |> 
+  group_by(year) |> 
+  summarise(
+    ni = n()
+  )
+  dplyr::ungroup() |> 
+  group_by(fonte_sumidouro,year) |> 
+  summarise(
+    perc = sum(ni)
+  )
+```
+
