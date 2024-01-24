@@ -36,14 +36,17 @@ glimpse(dados)
 
 # agrupando a base por nome e coordenada
 # Classificando o ponto em um estado
+
 base_sigla_uf <- dados %>%
   group_by(source_name, lon, lat) %>%
   summarise(
     ano = mean(year)
   ) %>%
   mutate(
-    sigla_uf = get_geobr_state(lon,lat)
+    sigla_uf = get_geobr_state(lon,lat),
+    biome = get_geobr_biomes(lon,lat)
   )
+base_sigla_uf |> dplyr::glimpse()
 
 # Classificando pelo pol da cidade ----------------------------------------
 base_sigla_uf$sigla_uf %>% unique()
@@ -148,10 +151,12 @@ dados_sigla <- left_join(
   dados,
   base_sigla_uf %>%
     ungroup() %>%
-    select(source_name, lon, lat, sigla_uf, nome_regiao, city_ref),
+    select(source_name, lon, lat, sigla_uf, nome_regiao, biome,city_ref),
   by = c("source_name","lat","lon")
 ) %>% as_tibble()
+
 dados_sigla$nome_regiao %>%  unique()
+
 write_rds(dados_sigla, "data/emissions_sources.rds")
 
 
