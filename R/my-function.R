@@ -38,8 +38,11 @@ get_geobr_state <- function(x,y){
 }
 ####
 
-names_biomes<- biomes$name_biome
-list_pol_biomes <- map(1:7, get_geobr_biomes_pol)
+names_biomes<- biomes |>
+  filter(name_biome!='Sistema Costeiro') |>
+  pull(name_biome)
+
+list_pol_biomes <- map(1:6, get_geobr_biomes_pol)
 names(list_pol_biomes) <- names_biomes
 
 get_geobr_biomes <- function(x,y){
@@ -47,7 +50,7 @@ get_geobr_biomes <- function(x,y){
   y <- as.vector(y[1])
   resul <- "Other"
   lgv <- FALSE
-  for(i in 1:7){
+  for(i in 1:6){
     lgv <- def_pol(x,y,list_pol_biomes[[i]])
     if(lgv){
       resul <- names(list_pol_biomes[i])
