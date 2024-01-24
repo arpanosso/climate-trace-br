@@ -1,7 +1,14 @@
 states <- geobr::read_state()
+biomes <- geobr::read_biomes()
+
 get_geobr_pol <- function(i) {
   states$geom |> purrr::pluck(i) |> as.matrix()
 }
+
+get_geobr_biomes_pol <- function(i) {
+  biomes$geom |> purrr::pluck(i) |> as.matrix()
+}
+
 
 def_pol <- function(x, y, pol){
   as.logical(sp::point.in.polygon(point.x = x,
@@ -29,7 +36,27 @@ get_geobr_state <- function(x,y){
   }
   return(as.vector(resul))
 }
+####
 
+names_biomes<- biomes$name_biome
+list_pol_biomes <- map(1:7, get_geobr_biomes_pol)
+names(list_pol_biomes) <- names_biomes
+
+get_geobr_biomes <- function(x,y){
+  x <- as.vector(x[1])
+  y <- as.vector(y[1])
+  resul <- "Other"
+  lgv <- FALSE
+  for(i in 1:7){
+    lgv <- def_pol(x,y,list_pol_biomes[[i]])
+    if(lgv){
+      resul <- names(list_pol_biomes[i])
+    }else{
+      resul <- resul
+    }
+  }
+  return(as.vector(resul))
+}
 
 # Função para ler 01 arquivo csv
 my_file_read <- function(sector_name){
