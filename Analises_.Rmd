@@ -20,6 +20,7 @@ knitr::opts_chunk$set(
 library(tidyverse)
 library(geobr)
 source("R/gafico.R")
+source("R/my-function.R")
 ```
 
 ### Carregando as bases de dados
@@ -106,7 +107,8 @@ emissions_sources |>
       .default = 'Other'
       )
     ) |> 
-    group_by(region,year) |> 
+    group_by(region,year) |>
+  filter(year!=2019) |> 
     summarise(
       ghg_balance = sum(emissions_quantity, na.rm=TRUE)
     ) |> 
@@ -141,6 +143,7 @@ emissions_sources |>
       )
     ) |> 
     group_by(region,sub_sector,year) |> 
+  filter(year!=2019) |> 
     summarise(
       ghg_balance = sum(emissions_quantity, na.rm=TRUE)
     ) |> 
@@ -179,6 +182,7 @@ emissions_sources |>
       )
     ) |> 
     group_by(year) |> 
+  filter(year!=2019) |> 
     summarise(
       ghg_balance = sum(emissions_quantity, na.rm=TRUE)
     ) |> 
@@ -212,10 +216,11 @@ emissions_sources |>
       )
     ) |> 
     group_by(year,sub_sector) |> 
+  filter(year!=2019) |> 
     summarise(
       ghg_balance = sum(emissions_quantity, na.rm=TRUE)
     ) |> 
-  filter(sub_sector=='agriculture') |> 
+  #filter(sub_sector=='agriculture') |> 
   mutate(ghg_balance=ghg_balance/1e6) |> 
   ggplot(aes(x=year,y=ghg_balance/1e6,fill=sub_sector))+
   geom_col(position = 'dodge')+
@@ -232,9 +237,77 @@ ggplot2::ggsave('img/co2_brazil_balance_sector.png',
 ```{r}
 biomes <- geobr::read_biomes()
 biomes |> 
+  filter(name_biome!='Sistema Costeiro') |> 
   ggplot(aes(fill=name_biome))+
   geom_sf()+
   tema_mapa()
+```
+
+```{r}
+
+emissions_sources |> 
+  group_by(lon,lat,year) |> 
+  mutate(
+    biome=get_geobr_biomes(lon,lat)
+  ) |> 
+  filter(year > 2018 & year < 2023,
+           gas == "co2e_100yr",
+           !source_name %in% nomes_uf,
+           !sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")
+    ) |> 
+  mutate(
+    biomes_n =
+      case_when(
+        biome=='Other'& lon>=-45 & lat <0~'AF',
+        biome=='Amazônia'~'AMZ',
+        biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
+        biome == 'Mata Atlântica' ~ 'AF',
+        biome=='Cerrado'~'CERR',
+        biome =='Pampa'~'PMP',
+        biome == 'Pantanal' ~ 'PNT',
+        biome=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )) |> 
+  ggplot(aes(x=lon,y=lat,col=biomes_n))+
+  geom_point()
+  
+```
+
+
+```{r}
+
+emissions_sources |> 
+  mutate(
+    biome=get_geobr_biomes(lon,lat)
+    ) |> 
+  filter(year > 2018 & year < 2023,
+         gas == "co2e_100yr",
+         !source_name %in% nomes_uf,
+         !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")
+         ) |> 
+  mutate(
+    biomes_n =
+      case_when(
+        biome=='Other'& lon>=-45 & lat <0~'AF',
+        biome=='Amazônia'~'AMZ',
+        biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
+        biome == 'Mata Atlântica' ~ 'AF',
+        biome=='Cerrado'~'CERR',
+        biome =='Pampa'~'PMP',
+        biome == 'Pantanal' ~ 'PNT',
+        biome=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )) 
 ```
 
 
@@ -249,24 +322,12 @@ emissions_sources |>
                               "forest-land-fires",
                               "wetland-fires",
                               "removals")
-    ) |> 
-  mutate(
-    biomes = case_when(
-      biome=='Caatinga'~'CAAT',
-      biome=='Amazônia'~'AMZ',
-      biome=='Pantanal'~'PNT',
-      biome=='Mata Atlântica'~'AF',
-      biome=='Cerrado'~'CERR',
-      biome=='Pampa' ~'PMP',
-      biome=='Sistema Costeiro' ~'Coast',
-      .default = 'Other'
-      )
-    ) |> 
-    group_by(biomes,year) |> 
+    ) 
+    group_by(biomes_n,year)
     summarise(
       ghg_balance = sum(emissions_quantity, na.rm=TRUE)
     ) |> 
-  ggplot(aes(x=year,y=ghg_balance/1e6,fill=biomes))+
+  ggplot(aes(x=year,y=ghg_balance/1e6,fill=biomes_n))+
   geom_col(position = 'dodge')+
   scale_fill_viridis_d()+
   labs(x='Year',y=expression('CO'[2]~'eq Balance (M ton  CO'[2]~'eq '~year^-1~')'),fill='Biome')
@@ -342,6 +403,7 @@ emissions_sources |>
   mutate(ghg_balance_class=cut(emissions_quantity,8)) |> 
   filter(year==2020) |> 
   ggplot(aes(x=emissions_quantity/1e6,y=biomes,fill=biomes))+
-  ggridges::geom_density_ridges(alpha=.4)
+  ggridges::geom_density_ridges(alpha=.4)+
+  xlim(-2.5,2.5)
 
 ```
