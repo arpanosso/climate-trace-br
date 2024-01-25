@@ -9,6 +9,20 @@ tbl_directorys <- as_tibble(
 # Extraindo os caminhos dos arquvios
 value <- tbl_directorys %>% pull(value)
 
+# Mapeando Transportation -------------------------------------------------
+trans_values <- tbl_directorys %>%
+  filter(str_detect(value,"transportation")) %>%
+  pull(value)
+
+row_count <- function(sector_name){
+  read.csv(sector_name) %>%
+    nrow()
+}
+
+row_count(value[1])
+map_dbl(value, row_count) %>% sum
+
+# Atualizando o banco todo ------------------------------------------------
 # Empilhando todos os arquivos no objeto dados
 my_file_read(value[1])
 dados <- map_dfr(value, my_file_read)

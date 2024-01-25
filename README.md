@@ -64,6 +64,53 @@ region_names <- brazil_ids$nome_regiao %>% unique()
 
 ### tabela resumo
 
+### Brasil
+
+``` r
+dd <- emissions_sources %>% 
+  filter(
+    year == 2022,
+    gas == "co2e_100yr",
+    sector_name == "transportation",
+    !source_name %in% nomes_uf,
+    !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")
+     ) %>% 
+  group_by(source_id,source_name, sub_sector) %>% 
+  summarise(
+    emission = sum(emissions_quantity, na.rm=TRUE)
+  ) %>% 
+  arrange(emission %>% desc()) %>% 
+  ungroup() %>% 
+  mutate(Acumulada = cumsum(emission)) %>% 
+  tail(10);dd
+#> # A tibble: 10 × 5
+#>    source_id source_name                           sub_sector emission Acumulada
+#>        <int> <chr>                                 <chr>         <dbl>     <dbl>
+#>  1   3173329 Senadora Eunice Micheles Airport      domestic-…        0    1.60e8
+#>  2   3173541 Pampulha - Carlos Drummond de Andrad… domestic-…        0    1.60e8
+#>  3   3173562 Paranaguá Airport                     domestic-…        0    1.60e8
+#>  4   3173658 Paranavaí Airport                     domestic-…        0    1.60e8
+#>  5   3173710 Mário Pereira Lopes–São Carlos Airpo… domestic-…        0    1.60e8
+#>  6   3173785 Rio Grande Regional Airport           domestic-…        0    1.60e8
+#>  7   3174017 Professor Urbano Ernesto Stumpf Airp… domestic-…        0    1.60e8
+#>  8   3174516 Ubatuba Gastão Madeira State Airport  domestic-…        0    1.60e8
+#>  9   3174626 Valença Airport                       domestic-…        0    1.60e8
+#> 10   3174693 Vila Rica Airport                     domestic-…        0    1.60e8
+```
+
+``` r
+dd %>% 
+  ggplot(aes(x=emission)) +
+  geom_histogram()
+```
+
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
 ``` r
 emissions_sources %>% 
   filter(
@@ -529,7 +576,7 @@ states  %>%
   tema_mapa()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
 emissions_sources %>% 
@@ -584,7 +631,7 @@ states  %>%
   tema_mapa()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 # Agriculture
 
@@ -632,7 +679,7 @@ for(i in seq_along(region_names)){
 }
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-10.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-12-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-12-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-12-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-12-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-12-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-12-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-12-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-12-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-12-10.png)<!-- -->
 
 # Forestry and land use
 
@@ -696,7 +743,7 @@ for(i in seq_along(region_names)){
 }
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-10.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-10.png)<!-- -->
 
 ``` r
 # mostrar os módulos nos gráficos positivos e negativos
