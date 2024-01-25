@@ -46,6 +46,55 @@ base_sigla_uf <- dados %>%
     sigla_uf = get_geobr_state(lon,lat),
     biome = get_geobr_biomes(lon,lat)
   )
+
+
+### testando classificação por bioma
+base_sigla_uf |>
+  ggplot(aes(x=lon,y=lat,col=biome))+
+  geom_point()
+### Arrumando classificação
+
+base_sigla_uf |>
+  mutate(
+    biomes =
+      case_when(
+        biome=='Other'& lon>=-45 & lat <0~'AF',
+        biome=='Amazônia'~'AMZ',
+        biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
+        biome == 'Mata Atlântica' & lon> -40 & lat < -20 ~'Other',
+        biome == 'Mata Atlântica' & lon> -34 & lat > -5 ~'Other',
+        biome == 'Mata Atlântica' ~ 'AF',
+        biome=='Cerrado'~'CERR',
+        biome =='Pampa'~'PMP',
+        biome == 'Pantanal' ~ 'PNT',
+        biome=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )
+  ) |>
+  ggplot(aes(x=lon,y=lat,col=biomes))+
+  geom_point()
+
+
+base_sigla_uf <- base_sigla_uf |>
+  mutate(
+    biomes =
+      case_when(
+        biome=='Other'& lon>=-45 & lat <0~'AF',
+        biome=='Amazônia'~'AMZ',
+        biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
+        biome == 'Mata Atlântica' & lon> -40 & lat < -20 ~'Other',
+        biome == 'Mata Atlântica' & lon> -34 & lat > -5 ~'Other',
+        biome == 'Mata Atlântica' ~ 'AF',
+        biome=='Cerrado'~'CERR',
+        biome =='Pampa'~'PMP',
+        biome == 'Pantanal' ~ 'PNT',
+        biome=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )
+    )
+
+###
+
 base_sigla_uf |> dplyr::glimpse()
 
 # Classificando pelo pol da cidade ----------------------------------------
@@ -151,7 +200,7 @@ dados_sigla <- left_join(
   dados,
   base_sigla_uf %>%
     ungroup() %>%
-    select(source_name, lon, lat, sigla_uf, nome_regiao, biome,city_ref),
+    select(source_name, lon, lat, sigla_uf, nome_regiao, biomes,city_ref),
   by = c("source_name","lat","lon")
 ) %>% as_tibble()
 
