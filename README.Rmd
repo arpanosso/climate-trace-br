@@ -49,6 +49,41 @@ region_names <- brazil_ids$nome_regiao %>% unique()
 
 ### tabela resumo
 
+
+
+### Brasil
+
+
+```{r}
+dd <- emissions_sources %>% 
+  filter(
+    year == 2022,
+    gas == "co2e_100yr",
+    sector_name == "transportation",
+    !source_name %in% nomes_uf,
+    !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")
+     ) %>% 
+  group_by(source_id,source_name, sub_sector) %>% 
+  summarise(
+    emission = sum(emissions_quantity, na.rm=TRUE)
+  ) %>% 
+  arrange(emission %>% desc()) %>% 
+  ungroup() %>% 
+  mutate(Acumulada = cumsum(emission));dd
+```
+
+```{r}
+dd %>% 
+  ggplot(aes(x=emission)) +
+  geom_histogram()
+```
+
+
 ```{r}
 emissions_sources %>% 
   filter(
