@@ -6,3 +6,5 @@
 .quarto
 SIF/data-raw/
 SIF/data/
+precipitation/data-raw/
+precipitation/data/
