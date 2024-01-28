@@ -80,21 +80,19 @@ base_sigla_uf %>%
 ### Arrumando classificação
 base_sigla_uf |>
   mutate(
-    biome = as.character(biome),
-    biome_n = ifelse(biome == "Amazônia","AMZ","Other")
-      # case_when(
-      #   #biome=='Other'& lon>= -45 & lat < -6~'AF',
-      #   biome == "Amazônia" ~ "AMZ",
-      #   # biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
-      #   # biome == 'Mata Atlântica' & lon> -40 & lat < -20 ~'Other',
-      #   # biome == 'Mata Atlântica' & lon> -34 & lat > -5 ~'Other',
-      #   # biome == 'Mata Atlântica' ~ 'AF',
-      #   # biome=='Cerrado'~'CERR',
-      #   # biome =='Pampa'~'PMP',
-      #   # biome == 'Pantanal' ~ 'PNT',
-      #   # biome=='Caatinga'~'CAAT',
-      #   TRUE ~ 'Other'
-      # )
+    biome_n = case_when(
+        biome=='Other'& lon>= -45 & lat < -6~'AF',
+        biome == "Amazônia" ~ "AMZ",
+        biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
+        biome == 'Mata Atlântica' & lon> -40 & lat < -20 ~'Other',
+        biome == 'Mata Atlântica' & lon> -34 & lat > -5 ~'Other',
+        biome == 'Mata Atlântica' ~ 'AF',
+        biome=='Cerrado'~'CERR',
+        biome =='Pampa'~'PMP',
+        biome == 'Pantanal' ~ 'PNT',
+        biome=='Caatinga'~'CAAT',
+        TRUE ~ 'Other'
+      )
   ) |>
   ggplot(aes(x=lon,y=lat,color=biome_n))+
   geom_point()

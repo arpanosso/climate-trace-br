@@ -189,10 +189,9 @@ states  %>%
           size=.15, show.legend = FALSE) +
   geom_point(
     data = emissions_sources %>%
-      filter(nome_regiao == "Nordeste",
-             year == 2022
+      filter(year == 2022
              ),
-    aes(lon,lat)) +
+    aes(lon,lat, color = biome)) +
   tema_mapa()
 ```
 
@@ -396,7 +395,11 @@ tab_country_emissions <- dados_country %>%
   filter(sector_name != "forestry") %>%
   group_by(year) %>% 
   summarize(emission = sum(emissions_quantity,
-                           na.rm = TRUE)) 
+                           na.rm = TRUE)) |> 
+  mutate(
+    emission_c = as.character(emission/1e9),
+    emission_c = str_sub(emission_c,1,4)
+  ); tab_country_emissions
 ```
 
 ## Retirando forestry
@@ -481,7 +484,7 @@ rbind(df1,df2) %>%
   geom_col() +
   annotate("text",
           x=2015:2022,
-          y=max(altura)/1e9+.35,
+          y=altura/1e9+.35,
           label = paste0("(",round(balanço$emission/1e9,2),")"),
           size=4, fontface="italic") +
   geom_col(color="black") +
@@ -500,8 +503,8 @@ rbind(df1,df2) %>%
   ) +
     annotate("text",
           x=2015:2022,
-          y=min(tab_country_emissions$emission)/1e9-.05,
-          label = round(tab_country_emissions$emission/1e9,2),
+          y=altura/1e9+.13,
+          label = tab_country_emissions$emission_c,
           size=4, fontface="bold")
 ```
 
