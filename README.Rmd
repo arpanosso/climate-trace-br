@@ -62,19 +62,24 @@ emissions_sources %>%
                             "wetland-fires",
                             "removals")
     ) %>% 
-  group_by(source_name) %>% 
+  group_by(sector_name) %>% 
   summarise(
-    emission = mean(emissions_quantity, na.rm=TRUE)
+    emission = sum(emissions_quantity, na.rm=TRUE)
   ) %>% 
-  arrange(emission %>% desc()) %>% 
+  ungroup() %>% 
   mutate(
-    acumulada = cumsum(emission)
-    ) 
+    Acumulada = cumsum(emission)
+  )
+# %>% 
+#   arrange(emission %>% desc()) %>% 
+#   mutate(
+#     acumulada = cumsum(emission)
+#     ) 
 ```
 
 ```{r}
 emissions_sources %>% 
-  filter(str_detect(city_ref,"Santos"),
+  filter(str_detect(city_ref,"Pradópolis"),
          # city_ref == "Santos",
          sigla_uf == "SP",
          year == 2022,
