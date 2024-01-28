@@ -1,0 +1,154 @@
+---
+title: "SIF analise"
+date: "2024-01-24"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE, 
+  message = FALSE, 
+  error = FALSE, 
+  warning = FALSE,
+  comment = "#>"
+)
+```
+
+### Carregando bibliotecas
+```{r}
+library(tidyverse)
+library(geobr)
+source("R/gafico.R")
+source("R/my-function.R")
+```
+
+
+
+### Carregando dados
+
+```{r}
+
+
+sif_file <- list.files('SIF/data/',full.names = T)
+sif_df <- read_rds(sif_file) |> filter(year>2018 & year <2023) |> 
+  filter(sif_757> -0.1)
+  
+
+states <- read_rds("data/states.rds") |> 
+  mutate(name_region = ifelse(name_region == "Centro Oeste","Centro-Oeste",name_region))
+```
+
+
+####
+
+```{r}
+
+anos <- 2019:2022
+for(i in seq_along(anos)){
+  plot_sif <- biomes |> 
+    filter(name_biome!='Sistema Costeiro') |> 
+  ggplot() +
+  geom_sf(fill="white", color="black",
+          size=.15, show.legend = FALSE) +
+  geom_tile(data= sif_df |> 
+               filter(dist_sif<0.25) |> 
+               filter(year==anos[i]) |> 
+               #mutate(sif_757=cut(sif_757,5)) |> 
+               group_by(lon_grid,lat_grid) |> 
+               summarise(
+                 sif = mean(sif_757)
+                 ) |> 
+               mutate(
+                 sifn=case_when(
+                   sif <=.1 ~ '<= 0.1',
+                   sif <=.2 ~ '<= 0.2',
+                   sif <=.3 ~ '<= 0.3',
+                   sif<= .4 ~ '<= 0.4',
+                   sif >.4  ~ '> 0.4'
+                   )
+               )
+               ,
+             aes(lon_grid,lat_grid,fill=sifn))+
+    scale_fill_manual(values=c('red','orange','yellow','green','blue'))+
+    tema_mapa()+
+    labs(x='Longitude',y='Latitude',
+         fill=expression('SIF 757nm (Wm'^-2~'sr'^-1~mu~'m'^-1~')')
+         )
+  ggplot2::ggsave(paste0('img/sif_media_',anos[i],'.png'),
+                  units="in", width=8, height=6,
+                  dpi=1000)
+  print(plot_sif)
+}
+
+  
+
+
+```
+```{r}
+
+sif_df |> 
+  filter(dist_sif<0.25) |> 
+  group_by(lon_grid,lat_grid,year) |> 
+  summarise(sif = mean(sif_757)) |> 
+  mutate(
+    biomes = get_geobr_biomes(lon_grid,lat_grid)
+  ) |>
+  mutate(
+    biomes_n =
+      case_when(
+        biomes=='Other'& lon_grid>=-45 & lat_grid <0~'AF',
+        biomes=='Amazônia'~'AMZ',
+        biomes=='Other'& lon_grid< -45 & lat_grid >=-10 ~'AMZ',
+        biomes == 'Mata Atlântica' ~ 'AF',
+        biomes=='Cerrado'~'CERR',
+        biomes =='Pampa'~'PMP',
+        biomes == 'Pantanal' ~ 'PNT',
+        biomes=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )
+  ) |>
+  ggplot(aes(x=lon_grid,y=lat_grid,col=biomes_n))+
+  geom_point()
+
+```
+```{r}
+
+sif_df |> 
+  filter(dist_sif<0.25) |> 
+  group_by(lon_grid,lat_grid,year) |> 
+  summarise(sif = mean(sif_757)) |> 
+  mutate(
+    biomes = get_geobr_biomes(lon_grid,lat_grid)
+  ) |>
+  mutate(
+    biomes_n =
+      case_when(
+        biomes=='Other'& lon_grid>=-45 & lat_grid <0~'AF',
+        biomes=='Amazônia'~'AMZ',
+        biomes=='Other'& lon_grid< -45 & lat_grid >=-10 ~'AMZ',
+        biomes == 'Mata Atlântica' ~ 'AF',
+        biomes=='Cerrado'~'CERR',
+        biomes =='Pampa'~'PMP',
+        biomes == 'Pantanal' ~ 'PNT',
+        biomes=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )
+  ) |>
+  filter(biomes_n!='Other',
+         year>2019) |> 
+  ggplot(aes(x=sif,y=as.factor(year),fill=as.factor(year)))+
+  ggridges::geom_density_ridges(alpha=.4)+
+  facet_wrap(~biomes_n,scales='free_x')+
+  labs(x=expression('SIF 757nm (Wm'^-2~'sr'^-1~mu~'m'^-1~')'),
+       y='year',
+       fill=''
+  )+
+  scale_fill_viridis_d()+
+  theme_bw()
+
+ggplot2::ggsave('img/sif_distribution.png',
+                  units="in", width=8, height=6,
+                  dpi=1000)
+```
