@@ -241,6 +241,11 @@ biomes |>
   ggplot(aes(fill=name_biome))+
   geom_sf()+
   tema_mapa()
+
+
+emissions_sources |> 
+  ggplot(aes(x=lon,y=lat,col=biomes))+
+  geom_point()
 ```
 
 ```{r}

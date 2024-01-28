@@ -12,7 +12,7 @@ for (i in 1:nrow(df)){
   repeat{
     dw <- try(
       power_data_download(df[i,1],df[i,2],
-                          startdate='2020-01-01',
+                          startdate='2015-01-01',
                           enddate = '2023-01-01')
     )
     if (!(inherits(dw,"try-error")))
