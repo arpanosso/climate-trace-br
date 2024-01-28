@@ -11,6 +11,7 @@
 
 ``` r
 library(tidyverse)
+library(ggsci)
 library(geobr)
 source("R/gafico.R")
 ```
@@ -26,7 +27,7 @@ states <- read_rds("data/states.rds") %>%
 brazil_ids <- read_rds("data/df_nome.rds")
 glimpse(emissions_sources)
 #> Rows: 2,853,440
-#> Columns: 30
+#> Columns: 31
 #> $ source_id                 <int> 10805081, 10722332, 10722332, 10722332, 1072…
 #> $ iso3_country              <chr> "BRA", "BRA", "BRA", "BRA", "BRA", "BRA", "B…
 #> $ original_inventory_sector <chr> "cropland-fires", "cropland-fires", "croplan…
@@ -55,6 +56,7 @@ glimpse(emissions_sources)
 #> $ sub_sector                <chr> "cropland-fires", "cropland-fires", "croplan…
 #> $ sigla_uf                  <chr> "AL", "PE", "PE", "PE", "PE", "PE", "PE", "P…
 #> $ nome_regiao               <chr> "Nordeste", "Nordeste", "Nordeste", "Nordest…
+#> $ biome                     <chr> "AF", "CAAT", "CAAT", "CAAT", "CAAT", "CAAT"…
 #> $ city_ref                  <chr> "Coqueiro Seco", "Betânia", "Betânia", "Betâ…
 #> $ source_name_1             <chr> "Coqueiro Seco", "Pernambuco", "Pernambuco",…
 nomes_uf <- c(brazil_ids$nome_uf %>% unique(),"Brazil")
@@ -86,21 +88,21 @@ dd <- emissions_sources %>%
   ) %>% 
   arrange(emission %>% desc()) %>% 
   ungroup() %>% 
-  mutate(Acumulada = cumsum(emission)) %>% 
-  tail(10);dd
-#> # A tibble: 10 × 5
+  mutate(Acumulada = cumsum(emission));dd
+#> # A tibble: 1,092 × 5
 #>    source_id source_name                           sub_sector emission Acumulada
 #>        <int> <chr>                                 <chr>         <dbl>     <dbl>
-#>  1   3173329 Senadora Eunice Micheles Airport      domestic-…        0    1.60e8
-#>  2   3173541 Pampulha - Carlos Drummond de Andrad… domestic-…        0    1.60e8
-#>  3   3173562 Paranaguá Airport                     domestic-…        0    1.60e8
-#>  4   3173658 Paranavaí Airport                     domestic-…        0    1.60e8
-#>  5   3173710 Mário Pereira Lopes–São Carlos Airpo… domestic-…        0    1.60e8
-#>  6   3173785 Rio Grande Regional Airport           domestic-…        0    1.60e8
-#>  7   3174017 Professor Urbano Ernesto Stumpf Airp… domestic-…        0    1.60e8
-#>  8   3174516 Ubatuba Gastão Madeira State Airport  domestic-…        0    1.60e8
-#>  9   3174626 Valença Airport                       domestic-…        0    1.60e8
-#> 10   3174693 Vila Rica Airport                     domestic-…        0    1.60e8
+#>  1    104607 São Paulo Urban Area in São Paulo Mu… road-tran… 9272765.  9272765.
+#>  2    104430 Rio de Janeiro Urban Area in Rio de … road-tran… 4665274. 13938039.
+#>  3   3166820 Guarulhos - Governador André Franco … internati… 4012655. 17950694.
+#>  4  13166865 Itaqui                                internati… 3594713. 21545408.
+#>  5  13166882 Santos                                internati… 2391643. 23937050.
+#>  6    104684 Belo Horizonte Urban Area in Belo Ho… road-tran… 2345134. 26282184.
+#>  7    104550 Curitiba Urban Area in Curitiba Muni… road-tran… 2329040. 28611224.
+#>  8    104719 Fortaleza Urban Area in Fortaleza Mu… road-tran… 2237480. 30848704.
+#>  9    104651 Goiânia Urban Area in Goiânia Munici… road-tran… 2220180. 33068884.
+#> 10    104814 Campinas Urban Area in Campinas Muni… road-tran… 1809441. 34878325.
+#> # ℹ 1,082 more rows
 ```
 
 ``` r
@@ -124,33 +126,35 @@ emissions_sources %>%
                             "wetland-fires",
                             "removals")
     ) %>% 
-  group_by(source_name) %>% 
+  group_by(sector_name) %>% 
   summarise(
-    emission = mean(emissions_quantity, na.rm=TRUE)
+    emission = sum(emissions_quantity, na.rm=TRUE)
   ) %>% 
-  arrange(emission %>% desc()) %>% 
+  ungroup() %>% 
   mutate(
-    acumulada = cumsum(emission)
-    ) 
-#> # A tibble: 9,842 × 3
-#>    source_name                                               emission acumulada
-#>    <chr>                                                        <dbl>     <dbl>
-#>  1 Tupi                                                     36338342. 36338342.
-#>  2 São Paulo Urban Area in São Paulo Municipality            9272765. 45611107.
-#>  3 Buzios                                                    7412823. 53023929.
-#>  4 Porto do Pecém power station                              5956000  58979929.
-#>  5 Marlim                                                    5402369. 64382298.
-#>  6 Petrobras REPLAN Paulinia Refinery                        4991726. 69374025.
-#>  7 Jorge Lacerda power station                               4704000  74078025.
-#>  8 Rio de Janeiro Urban Area in Rio de Janeiro Municipality  4665274. 78743299.
-#>  9 Tres Lagoas Pulp Mill                                     3987092  82730391.
-#> 10 Sapinhoa                                                  3609112. 86339503.
-#> # ℹ 9,832 more rows
+    Acumulada = cumsum(emission)
+  )
+#> # A tibble: 8 × 3
+#>   sector_name        emission   Acumulada
+#>   <chr>                 <dbl>       <dbl>
+#> 1 agriculture      622263753.  622263753.
+#> 2 forestry       -1069945057. -447681304.
+#> 3 fossil            92340743. -355340561.
+#> 4 manufacturing     95008049  -260332512.
+#> 5 mineral           14773711  -245558801.
+#> 6 power             45507000  -200051801.
+#> 7 transportation   159785403.  -40266398.
+#> 8 waste             55688769.   15422371.
+# %>% 
+#   arrange(emission %>% desc()) %>% 
+#   mutate(
+#     acumulada = cumsum(emission)
+#     ) 
 ```
 
 ``` r
 emissions_sources %>% 
-  filter(str_detect(city_ref,"Santos"),
+  filter(str_detect(city_ref,"Pradópolis"),
          # city_ref == "Santos",
          sigla_uf == "SP",
          year == 2022,
@@ -170,19 +174,18 @@ emissions_sources %>%
   arrange(emission )  %>% 
   ungroup() %>% 
   mutate(Cumsum = cumsum(emission)) 
-#> # A tibble: 10 × 5
-#>    sector_name    source_name                        sub_sector emission  Cumsum
-#>    <chr>          <chr>                              <chr>         <dbl>   <dbl>
-#>  1 forestry       Santos                             net-fores… -7.54e+4 -75393.
-#>  2 forestry       Santos                             net-wetla… -3.09e+3 -78484.
-#>  3 forestry       Santos                             net-shrub… -4.10e+1 -78525.
-#>  4 agriculture    Santos                             manure-le…  5.97e-1 -78525.
-#>  5 agriculture    Santos                             cropland-…  1.44e+0 -78523.
-#>  6 agriculture    Santos                             enteric-f…  2.08e+0 -78521.
-#>  7 agriculture    Santos                             synthetic…  1.96e+1 -78501.
-#>  8 transportation Quilombo                           domestic-…  2.42e+3 -76077.
-#>  9 transportation Quilombo                           internati…  9.95e+3 -66129.
-#> 10 transportation Santos Urban Area in Santos Munic… road-tran…  2.51e+5 184795.
+#> # A tibble: 9 × 5
+#>   sector_name source_name                sub_sector             emission  Cumsum
+#>   <chr>       <chr>                      <chr>                     <dbl>   <dbl>
+#> 1 forestry    Pradópolis                 net-forest-land         -1.43e4 -14265.
+#> 2 forestry    Pradópolis                 net-shrubgrass          -5.97e3 -20232.
+#> 3 forestry    Pradópolis                 net-wetland             -7.21e2 -20953.
+#> 4 power       São Martinho power station electricity-generation   0      -20953.
+#> 5 agriculture Pradópolis                 manure-left-on-pastur…   1.71e0 -20951.
+#> 6 agriculture Pradópolis                 enteric-fermentation-…   5.96e0 -20945.
+#> 7 agriculture Pradópolis                 synthetic-fertilizer-…   5.99e2 -20347.
+#> 8 waste       ETE PRADoPOLIS             wastewater-treatment-…   1.26e3 -19085.
+#> 9 agriculture Pradópolis                 cropland-fires           1.68e5 148465.
   
 # nomenclatura no site
 # net-forest-land => Forest land
@@ -745,7 +748,156 @@ for(i in seq_along(region_names)){
 
 ![](README_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-5.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-6.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-7.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-8.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-9.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-13-10.png)<!-- -->
 
+## Criando o arquvo granular
+
 ``` r
-# mostrar os módulos nos gráficos positivos e negativos
-# verde são sumidouros e em vermelho as fontes
+###########################################################
+granular <- emissions_sources %>%
+  filter(
+    gas == "co2e_100yr",
+    !source_name %in% nomes_uf,
+    !sub_sector %in% c("forest-land-clearing",
+                       "forest-land-degradation",
+                       "shrubgrass-fires",
+                       "forest-land-fires",
+                       "wetland-fires",
+                       "removals")
+  ) %>%
+  group_by(year, sector_name) %>%
+  summarise(
+    emission = sum(emissions_quantity, na.rm=TRUE)
+  ) %>%
+  ungroup()
 ```
+
+## Carregando country emissions
+
+``` r
+dados_country <- read_rds("data/country_emissions.rds")
+tab_country_emissions <- dados_country %>%
+  filter(gas == "co2e_100yr",
+         year < 2023) %>%
+  # filter(!original_inventory_sector %in% c("forest-land-clearing",
+  #                               "forest-land-degradation",
+  #                               "shrubgrass-fires",
+  #                               "forest-land-fires",
+  #                               "wetland-fires",
+  #                               "removals")) %>%
+  group_by(year,sector_name) %>%
+  filter(sector_name != "forestry") %>%
+  group_by(year) %>% 
+  summarize(emission = sum(emissions_quantity,
+                           na.rm = TRUE)) 
+```
+
+## Retirando forestry
+
+``` r
+country <- dados_country %>%
+  group_by(year,sector_name) %>%
+  filter(sector_name != "forestry",
+         gas == "co2e_100yr") %>%
+  summarize(emission = sum(emissions_quantity,
+                           na.rm = TRUE))
+```
+
+## Juntanado as bases
+
+``` r
+add <- rbind(granular %>%
+               filter(sector_name == "forestry"), country)
+```
+
+## Somente forestry
+
+``` r
+add %>%
+  filter(sector_name == "forestry") %>%
+  group_by(year) %>%
+  summarise(
+    emission = sum(emission)
+  ) %>%
+  ggplot(aes(x=year,y=emission)) +
+  geom_col(fill="darkgreen") +
+  theme_bw()
+```
+
+![](README_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+
+``` r
+df1 <- add %>%
+  filter(sector_name == "forestry") %>%
+  group_by(year) %>%
+  summarise(
+    emission = sum(emission)
+  )
+
+df2 <- dados_country %>%
+  # filter(!original_inventory_sector %in% c("forest-land-clearing",
+  #                               "forest-land-degradation",
+  #                               "shrubgrass-fires",
+  #                               "forest-land-fires",
+  #                               "wetland-fires",
+  #                               "removals")) %>%
+  group_by(year,sector_name) %>%
+  filter(sector_name != "forestry",
+         gas == "co2e_100yr") %>%
+  summarize(emission = sum(emissions_quantity,
+                           na.rm = TRUE))
+df1$sector_name <- "forestry"
+
+
+balanço <- rbind(df1,df2) %>%
+  group_by(year) %>%
+  summarise(
+    emission = sum(emission)
+  ) %>%
+  filter(year != 2023)
+
+altura <- rbind(df1,df2) %>%
+  mutate(emission = ifelse(emission < 0, 0, emission)
+  ) %>%
+  filter(year != 2023) %>%
+  group_by(year) %>%
+  summarise(
+    emission = sum(emission)
+  ) %>% pull(emission)
+
+cores <- c("#00A087FF", "#4DBBD5FF", "#E64B35FF", "#3C5488FF",
+           "#F39B7FFF", "#8491B4FF",
+           "#91D1C2FF", "#DC0000FF", "#7E6148FF", "#B09C85FF")
+rbind(df1,df2) %>%
+  filter(year != 2023) %>%
+  mutate(
+    sector_name = sector_name %>% as_factor()
+  ) %>%
+  ggplot(aes(x=year,y=emission/1e9,
+             fill=sector_name)) +
+  geom_col() +
+  annotate("text",
+          x=2015:2022,
+          y=max(altura)/1e9+.35,
+          label = paste0("(",round(balanço$emission/1e9,2),")"),
+          size=4, fontface="italic") +
+  geom_col(color="black") +
+  theme_bw() +
+  scale_fill_manual(values = cores) +
+  labs(x="Year",
+       y="Emission (G ton)",
+       fill = "Sector")+
+  theme(
+    axis.text.x = element_text(size = rel(1.25)),
+    axis.title.x = element_text(size = rel(1.5)),
+    axis.text.y = element_text(size = rel(1.25)),
+    axis.title.y = element_text(size = rel(1.5)),
+    legend.text = element_text(size = rel(1.3)),
+    legend.title = element_text(size = rel(1.3))
+  ) +
+    annotate("text",
+          x=2015:2022,
+          y=min(tab_country_emissions$emission)/1e9-.05,
+          label = round(tab_country_emissions$emission/1e9,2),
+          size=4, fontface="bold")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->

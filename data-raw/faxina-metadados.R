@@ -11,6 +11,20 @@ tbl_directorys <- as_tibble(
 # Extraindo os caminhos dos arquvios
 value <- tbl_directorys %>% pull(value)
 
+# Mapeando Transportation -------------------------------------------------
+trans_values <- tbl_directorys %>%
+  filter(str_detect(value,"transportation")) %>%
+  pull(value)
+
+row_count <- function(sector_name){
+  read.csv(sector_name) %>%
+    nrow()
+}
+
+row_count(value[1])
+map_dbl(value, row_count) %>% sum
+
+# Atualizando o banco todo ------------------------------------------------
 # Empilhando todos os arquivos no objeto dados
 my_file_read(value[1])
 dados <- map_dfr(value, my_file_read)
@@ -41,7 +55,6 @@ dados$type_of_data %>% unique()
 
 # agrupando a base por nome e coordenada
 # Classificando o ponto em um estado
-
 base_sigla_uf <- dados %>%
   group_by(source_name, lon, lat) %>%
   summarise(
@@ -51,8 +64,65 @@ base_sigla_uf <- dados %>%
     sigla_uf = get_geobr_state(lon,lat),
     biome = get_geobr_biomes(lon,lat)
   )
-base_sigla_uf %>% dplyr::glimpse()
 
+### testando classificação por bioma
+base_sigla_uf |>
+  ggplot(aes(x=lon,y=lat,col=biome))+
+  geom_point()
+base_sigla_uf$biome %>% unique() == "Amazônia"
+
+
+base_sigla_uf %>%
+  mutate(
+    biome_n = biome == "Amaz<U+00F4>nia"
+  ) %>% glimpse()
+
+### Arrumando classificação
+base_sigla_uf |>
+  mutate(
+    biome = as.character(biome),
+    biome_n = ifelse(biome == "Amazônia","AMZ","Other")
+      # case_when(
+      #   #biome=='Other'& lon>= -45 & lat < -6~'AF',
+      #   biome == "Amazônia" ~ "AMZ",
+      #   # biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
+      #   # biome == 'Mata Atlântica' & lon> -40 & lat < -20 ~'Other',
+      #   # biome == 'Mata Atlântica' & lon> -34 & lat > -5 ~'Other',
+      #   # biome == 'Mata Atlântica' ~ 'AF',
+      #   # biome=='Cerrado'~'CERR',
+      #   # biome =='Pampa'~'PMP',
+      #   # biome == 'Pantanal' ~ 'PNT',
+      #   # biome=='Caatinga'~'CAAT',
+      #   TRUE ~ 'Other'
+      # )
+  ) |>
+  ggplot(aes(x=lon,y=lat,color=biome_n))+
+  geom_point()
+
+base_sigla_uf <- base_sigla_uf |>
+  mutate(
+    biomes =
+      case_when(
+        biome=='Other'& lon>=-45 & lat <0~'AF',
+        biome=='Amazônia'~'AMZ',
+        biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
+        biome == 'Mata Atlântica' & lon> -40 & lat < -20 ~'Other',
+        biome == 'Mata Atlântica' & lon> -34 & lat > -5 ~'Other',
+        biome == 'Mata Atlântica' ~ 'AF',
+        biome=='Cerrado'~'CERR',
+        biome =='Pampa'~'PMP',
+        biome == 'Pantanal' ~ 'PNT',
+        biome=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )
+    )
+
+base_sigla_uf |>
+  ggplot(aes(x=lon,y=lat,col=biomes))+
+  geom_point()
+
+
+###
 # Classificando pelo pol da cidade ----------------------------------------
 base_sigla_uf$sigla_uf %>% unique()
 citys <- geobr::read_municipality()
@@ -116,6 +186,10 @@ get_geobr_city <- function(arg){
   return(resul)
 };get_geobr_city(NA)
 
+
+
+
+
 # tictoc::tic()
 # base_sigla_uf <- base_sigla_uf %>%
 #   group_by(sigla_uf) %>%
@@ -140,6 +214,10 @@ get_geobr_city <- function(arg){
 # tictoc::toc()
 
 
+
+
+
+
 # Final da faxina ---------------------------------------------------------
 # lendo arquivo da base nacional
 brazil_ids <- read_rds("data/df_nome.rds")
@@ -156,13 +234,14 @@ dados_sigla <- left_join(
   dados,
   base_sigla_uf %>%
     ungroup() %>%
-    select(source_name, lon, lat, sigla_uf, nome_regiao, biome,city_ref),
+    select(source_name, lon, lat, sigla_uf, nome_regiao, biomes,city_ref),
   by = c("source_name","lat","lon")
 ) %>% as_tibble()
 
 dados_sigla$nome_regiao %>%  unique()
 
-write_rds(dados_sigla, "data/emissions_sources.rds")
+write_rds(dados_sigla %>%
+            rename(biome = biomes), "data/emissions_sources.rds")
 
 # country data -----------------------------------------------------------------
 # buscando o caminho dos setores
@@ -195,143 +274,6 @@ dados_country <- dados_country %>%
   )
 write_rds(dados_country, "data/country_emissions.rds")
 
-###########################################################
-emissions_sources <- read_rds("data/emissions_sources.rds") %>%
-  mutate(source_name_1 = str_to_title(source_name))
-states <- read_rds("data/states.rds") %>%
-  mutate(name_region = ifelse(name_region == "Centro Oeste","Centro-Oeste",name_region))
-
-brazil_ids <- read_rds("data/df_nome.rds")
-glimpse(emissions_sources)
-nomes_uf <- c(brazil_ids$nome_uf %>% unique(),"Brazil")
-abbrev_states <- brazil_ids$sigla_uf %>% unique()
-region_names <- brazil_ids$nome_regiao %>% unique()
-
-granular <- emissions_sources %>%
-  filter(
-    gas == "co2e_100yr",
-    !source_name %in% nomes_uf,
-    !sub_sector %in% c("forest-land-clearing",
-                       "forest-land-degradation",
-                       "shrubgrass-fires",
-                       "forest-land-fires",
-                       "wetland-fires",
-                       "removals")
-  ) %>%
-  group_by(year, sector_name) %>%
-  summarise(
-    emission = sum(emissions_quantity, na.rm=TRUE)
-  ) %>%
-  ungroup()
-
-dados_country <- read_rds("data/country_emissions.rds")
-dados_country %>%
-  filter(gas == "co2e_100yr",
-         year < 2023) %>%
-  # filter(!original_inventory_sector %in% c("forest-land-clearing",
-  #                               "forest-land-degradation",
-  #                               "shrubgrass-fires",
-  #                               "forest-land-fires",
-  #                               "wetland-fires",
-  #                               "removals")) %>%
-  group_by(year,sector_name) %>%
-  filter(sector_name != "forestry") %>%
-  summarize(emission = sum(emissions_quantity,
-                           na.rm = TRUE)) %>%
-  ggplot(aes(x=year,y=emission,
-             fill=sector_name)) +
-  geom_col(color="black") +
-  theme_bw() +
-  scale_fill_npg()
-
-country <- dados_country %>%
-  group_by(year,sector_name) %>%
-  filter(sector_name != "forestry",
-         gas == "co2e_100yr") %>%
-  summarize(emission = sum(emissions_quantity,
-                           na.rm = TRUE))
-
-add <- rbind(granular %>%
-               filter(sector_name == "forestry"), country)
-
-add %>%
-  filter(sector_name == "forestry") %>%
-  group_by(year) %>%
-  summarise(
-    emission = sum(emission)
-  ) %>%
-  ggplot(aes(x=year,y=emission)) +
-  geom_col(fill="darkgreen")
-
-
-df1 <- add %>%
-  filter(sector_name == "forestry") %>%
-  group_by(year) %>%
-  summarise(
-    emission = sum(emission)
-  )
-
-df2 <- dados_country %>%
-  # filter(!original_inventory_sector %in% c("forest-land-clearing",
-  #                               "forest-land-degradation",
-  #                               "shrubgrass-fires",
-  #                               "forest-land-fires",
-  #                               "wetland-fires",
-  #                               "removals")) %>%
-  group_by(year,sector_name) %>%
-  filter(sector_name != "forestry",
-         gas == "co2e_100yr") %>%
-  summarize(emission = sum(emissions_quantity,
-                           na.rm = TRUE))
-df1$sector_name <- "forestry"
-
-
-balanço <- rbind(df1,df2) %>%
-  group_by(year) %>%
-  summarise(
-    emission = sum(emission)
-  ) %>%
-  filter(year != 2023)
-
-altura <- rbind(df1,df2) %>%
-  mutate(emission = ifelse(emission < 0, 0, emission)
-  ) %>%
-  filter(year != 2023) %>%
-  group_by(year) %>%
-  summarise(
-    emission = sum(emission)
-  ) %>% pull(emission)
-
-cores <- c("#00A087FF", "#4DBBD5FF", "#E64B35FF", "#3C5488FF",
-           "#F39B7FFF", "#8491B4FF",
-           "#91D1C2FF", "#DC0000FF", "#7E6148FF", "#B09C85FF")
-rbind(df1,df2) %>%
-  filter(year != 2023) %>%
-  mutate(
-    sector_name = sector_name %>% as_factor()
-  ) %>%
-  ggplot(aes(x=year,y=emission/1e9,
-             fill=sector_name)) +
-  geom_col() +
-  annotate("text",
-          x=2015:2022,
-          y=altura/1e9+.10,
-          label = round(balanço$emission/1e9,2),
-          size=4, fontface="bold") +
-  geom_col(color="black") +
-  theme_bw() +
-  scale_fill_manual(values = cores) +
-  labs(x="Year",
-       y="Emission (G ton)",
-       fill = "Sector")+
-  theme(
-    axis.text.x = element_text(size = rel(1.25)),
-    axis.title.x = element_text(size = rel(1.5)),
-    axis.text.y = element_text(size = rel(1.25)),
-    axis.title.y = element_text(size = rel(1.5)),
-    legend.text = element_text(size = rel(1.3)),
-    legend.title = element_text(size = rel(1.3) )
-  )
 
 
 

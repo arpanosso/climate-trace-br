@@ -28,6 +28,7 @@ knitr::opts_chunk$set(
 
 ```{r}
 library(tidyverse)
+library(ggsci)
 library(geobr)
 source("R/gafico.R")
 ```
@@ -48,6 +49,41 @@ region_names <- brazil_ids$nome_regiao %>% unique()
 ```
 
 ### tabela resumo
+
+
+
+### Brasil
+
+
+```{r}
+dd <- emissions_sources %>% 
+  filter(
+    year == 2022,
+    gas == "co2e_100yr",
+    sector_name == "transportation",
+    !source_name %in% nomes_uf,
+    !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals")
+     ) %>% 
+  group_by(source_id,source_name, sub_sector) %>% 
+  summarise(
+    emission = sum(emissions_quantity, na.rm=TRUE)
+  ) %>% 
+  arrange(emission %>% desc()) %>% 
+  ungroup() %>% 
+  mutate(Acumulada = cumsum(emission));dd
+```
+
+```{r}
+dd %>% 
+  ggplot(aes(x=emission)) +
+  geom_histogram()
+```
+
 
 ```{r}
 emissions_sources %>% 
@@ -321,8 +357,151 @@ for(i in seq_along(region_names)){
 ```
 
 
+
+## Criando o arquvo granular
 ```{r}
-# mostrar os módulos nos gráficos positivos e negativos
-# verde são sumidouros e em vermelho as fontes
+###########################################################
+granular <- emissions_sources %>%
+  filter(
+    gas == "co2e_100yr",
+    !source_name %in% nomes_uf,
+    !sub_sector %in% c("forest-land-clearing",
+                       "forest-land-degradation",
+                       "shrubgrass-fires",
+                       "forest-land-fires",
+                       "wetland-fires",
+                       "removals")
+  ) %>%
+  group_by(year, sector_name) %>%
+  summarise(
+    emission = sum(emissions_quantity, na.rm=TRUE)
+  ) %>%
+  ungroup()
+```
+
+
+## Carregando country emissions
+```{r}
+dados_country <- read_rds("data/country_emissions.rds")
+tab_country_emissions <- dados_country %>%
+  filter(gas == "co2e_100yr",
+         year < 2023) %>%
+  # filter(!original_inventory_sector %in% c("forest-land-clearing",
+  #                               "forest-land-degradation",
+  #                               "shrubgrass-fires",
+  #                               "forest-land-fires",
+  #                               "wetland-fires",
+  #                               "removals")) %>%
+  group_by(year,sector_name) %>%
+  filter(sector_name != "forestry") %>%
+  group_by(year) %>% 
+  summarize(emission = sum(emissions_quantity,
+                           na.rm = TRUE)) 
+```
+
+## Retirando forestry
+```{r}
+country <- dados_country %>%
+  group_by(year,sector_name) %>%
+  filter(sector_name != "forestry",
+         gas == "co2e_100yr") %>%
+  summarize(emission = sum(emissions_quantity,
+                           na.rm = TRUE))
+```
+
+## Juntanado as bases
+```{r}
+add <- rbind(granular %>%
+               filter(sector_name == "forestry"), country)
+```
+
+## Somente forestry
+```{r}
+add %>%
+  filter(sector_name == "forestry") %>%
+  group_by(year) %>%
+  summarise(
+    emission = sum(emission)
+  ) %>%
+  ggplot(aes(x=year,y=emission)) +
+  geom_col(fill="darkgreen") +
+  theme_bw()
+```
+
+
+```{r}
+df1 <- add %>%
+  filter(sector_name == "forestry") %>%
+  group_by(year) %>%
+  summarise(
+    emission = sum(emission)
+  )
+
+df2 <- dados_country %>%
+  # filter(!original_inventory_sector %in% c("forest-land-clearing",
+  #                               "forest-land-degradation",
+  #                               "shrubgrass-fires",
+  #                               "forest-land-fires",
+  #                               "wetland-fires",
+  #                               "removals")) %>%
+  group_by(year,sector_name) %>%
+  filter(sector_name != "forestry",
+         gas == "co2e_100yr") %>%
+  summarize(emission = sum(emissions_quantity,
+                           na.rm = TRUE))
+df1$sector_name <- "forestry"
+
+
+balanço <- rbind(df1,df2) %>%
+  group_by(year) %>%
+  summarise(
+    emission = sum(emission)
+  ) %>%
+  filter(year != 2023)
+
+altura <- rbind(df1,df2) %>%
+  mutate(emission = ifelse(emission < 0, 0, emission)
+  ) %>%
+  filter(year != 2023) %>%
+  group_by(year) %>%
+  summarise(
+    emission = sum(emission)
+  ) %>% pull(emission)
+
+cores <- c("#00A087FF", "#4DBBD5FF", "#E64B35FF", "#3C5488FF",
+           "#F39B7FFF", "#8491B4FF",
+           "#91D1C2FF", "#DC0000FF", "#7E6148FF", "#B09C85FF")
+rbind(df1,df2) %>%
+  filter(year != 2023) %>%
+  mutate(
+    sector_name = sector_name %>% as_factor()
+  ) %>%
+  ggplot(aes(x=year,y=emission/1e9,
+             fill=sector_name)) +
+  geom_col() +
+  annotate("text",
+          x=2015:2022,
+          y=max(altura)/1e9+.35,
+          label = paste0("(",round(balanço$emission/1e9,2),")"),
+          size=4, fontface="italic") +
+  geom_col(color="black") +
+  theme_bw() +
+  scale_fill_manual(values = cores) +
+  labs(x="Year",
+       y="Emission (G ton)",
+       fill = "Sector")+
+  theme(
+    axis.text.x = element_text(size = rel(1.25)),
+    axis.title.x = element_text(size = rel(1.5)),
+    axis.text.y = element_text(size = rel(1.25)),
+    axis.title.y = element_text(size = rel(1.5)),
+    legend.text = element_text(size = rel(1.3)),
+    legend.title = element_text(size = rel(1.3))
+  ) +
+    annotate("text",
+          x=2015:2022,
+          y=min(tab_country_emissions$emission)/1e9-.05,
+          label = round(tab_country_emissions$emission/1e9,2),
+          size=4, fontface="bold")
 ```
 

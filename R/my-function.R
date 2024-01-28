@@ -1,5 +1,7 @@
 states <- geobr::read_state()
 biomes <- geobr::read_biomes()
+conservation_units <- geobr::read_conservation_units()
+indigenous_land <- geobr::read_indigenous_land()
 
 get_geobr_pol <- function(i) {
   states$geom |> purrr::pluck(i) |> as.matrix()
@@ -36,8 +38,8 @@ get_geobr_state <- function(x,y){
   }
   return(as.vector(resul))
 }
-####
 
+####
 names_biomes<- biomes |>
   filter(name_biome!='Sistema Costeiro') |>
   pull(name_biome)
@@ -67,7 +69,6 @@ my_file_read <- function(sector_name){
     select(!starts_with("other")) %>%
     mutate(directory = sector_name)
 }
-
 
 ### função download precipitação
 power_data_download <- function(lon,lat, startdate, enddate){
