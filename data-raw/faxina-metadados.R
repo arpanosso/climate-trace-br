@@ -62,8 +62,41 @@ base_sigla_uf <- dados %>%
   ) %>%
   mutate(
     sigla_uf = get_geobr_state(lon,lat),
-    biome = get_geobr_biomes(lon,lat)
+    biome = get_geobr_biomes(lon,lat),
+    flag_conservation = get_geobr_conservation(lon,lat),
+    flag_indigenous = get_geobr_indigenous(lon,lat)
   )
+
+### testando flag_indigenous
+base_sigla_uf |>
+  filter(flag_indigenous) %>%
+  ggplot(aes(x=lon,y=lat))+
+  geom_point()
+
+indigenous   %>%
+  ggplot() +
+  geom_sf(fill="white", color="black",
+          size=.15, show.legend = FALSE) +
+  geom_point(
+    data = base_sigla_uf %>%
+      filter(flag_indigenous),
+    aes(lon,lat))
+
+
+### testando flag_conservation
+base_sigla_uf |>
+  filter(flag_conservation) %>%
+  ggplot(aes(x=lon,y=lat))+
+  geom_point()
+
+conservation   %>%
+  ggplot() +
+  geom_sf(fill="white", color="black",
+          size=.15, show.legend = FALSE) +
+  geom_point(
+    data = base_sigla_uf %>%
+      filter(flag_conservation),
+    aes(lon,lat))
 
 ### testando classificação por bioma
 base_sigla_uf |>
@@ -71,10 +104,9 @@ base_sigla_uf |>
   geom_point()
 base_sigla_uf$biome %>% unique() == "Amazônia"
 
-
 base_sigla_uf %>%
   mutate(
-    biome_n = biome == "Amaz<U+00F4>nia"
+    biome_n = biome == "Amazônia"
   ) %>% glimpse()
 
 ### Arrumando classificação
@@ -118,7 +150,6 @@ base_sigla_uf <- base_sigla_uf |>
 base_sigla_uf |>
   ggplot(aes(x=lon,y=lat,col=biomes))+
   geom_point()
-
 
 ###
 # Classificando pelo pol da cidade ----------------------------------------
@@ -184,10 +215,6 @@ get_geobr_city <- function(arg){
   return(resul)
 };get_geobr_city(NA)
 
-
-
-
-
 # tictoc::tic()
 # base_sigla_uf <- base_sigla_uf %>%
 #   group_by(sigla_uf) %>%
@@ -211,11 +238,6 @@ get_geobr_city <- function(arg){
 #   unnest(cols = c(city_ref_2))
 # tictoc::toc()
 
-
-
-
-
-
 # Final da faxina ---------------------------------------------------------
 # lendo arquivo da base nacional
 brazil_ids <- read_rds("data/df_nome.rds")
@@ -232,7 +254,8 @@ dados_sigla <- left_join(
   dados,
   base_sigla_uf %>%
     ungroup() %>%
-    select(source_name, lon, lat, sigla_uf, nome_regiao, biomes,city_ref),
+    select(source_name, lon, lat, sigla_uf, nome_regiao, biomes,
+           flag_indigenous, flag_conservation, city_ref),
   by = c("source_name","lat","lon")
 ) %>% as_tibble()
 
@@ -271,7 +294,3 @@ dados_country <- dados_country %>%
                             simplify = TRUE)[,3]
   )
 write_rds(dados_country, "data/country_emissions.rds")
-
-
-
-

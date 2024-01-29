@@ -1,7 +1,7 @@
 states <- geobr::read_state()
 biomes <- geobr::read_biomes()
-conservation_units <- geobr::read_conservation_units()
-indigenous_land <- geobr::read_indigenous_land()
+conservation <- geobr::read_conservation_units()
+indigenous <- geobr::read_indigenous_land()
 
 get_geobr_pol <- function(i) {
   states$geom |> purrr::pluck(i) |> as.matrix()
@@ -9,6 +9,14 @@ get_geobr_pol <- function(i) {
 
 get_geobr_biomes_pol <- function(i) {
   biomes$geom |> purrr::pluck(i) |> as.matrix()
+}
+
+get_geobr_conservation_pol <- function(i) {
+  conservation$geom |> purrr::pluck(i) |> as.matrix()
+}
+
+get_geobr_indigenous_pol <- function(i) {
+  indigenous$geom |> purrr::pluck(i) |> as.matrix()
 }
 
 
@@ -19,6 +27,7 @@ def_pol <- function(x, y, pol){
                                   pol.y = pol[,2]))
 }
 
+###
 abbrev_states <- states$abbrev_state
 list_pol <- map(1:27, get_geobr_pol)
 names(list_pol) <- abbrev_states
@@ -62,6 +71,39 @@ get_geobr_biomes <- function(x,y){
   }
   return(as.vector(resul))
 }
+
+###
+list_pol_conservation <- map(1:1934, get_geobr_conservation_pol)
+list_pol_indigenous <- map(1:615, get_geobr_indigenous_pol)
+names(list_pol_biomes) <- names_biomes
+
+get_geobr_conservation <- function(x,y){
+  x <- as.vector(x[1])
+  y <- as.vector(y[1])
+  lgv <- FALSE
+  for(i in 1:1934){
+    lgv <- def_pol(x,y,list_pol_conservation[[i]])
+    if(lgv) break
+  }
+  return(lgv)
+}
+
+get_geobr_indigenous <- function(x,y){
+  x <- as.vector(x[1])
+  y <- as.vector(y[1])
+  lgv <- FALSE
+  for(i in 1:615){
+    lgv <- def_pol(x,y,list_pol_indigenous[[i]])
+    if(lgv) break
+  }
+  return(lgv)
+}
+
+
+conservation$geom %>% tibble() #1,934
+indigenous$geom %>% tibble() #615
+
+
 
 # Função para ler 01 arquivo csv
 my_file_read <- function(sector_name){
