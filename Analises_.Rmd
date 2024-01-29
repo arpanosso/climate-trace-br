@@ -43,10 +43,11 @@ region_names <- brazil_ids$nome_regiao %>% unique()
 
 ```{r}
 
-anos <- 2019:2022
+anos <- 2015:2022
 
 for(i in seq_along(anos)){
-  plot_source_sink <- states |> 
+  plot_source_sink <- biomes |>
+    filter(name_biome!='Sistema Costeiro') |> 
   ggplot() +
   geom_sf(fill="white", color="black",
           size=.15, show.legend = FALSE) +
@@ -69,10 +70,11 @@ for(i in seq_along(anos)){
     mutate(
       fonte_sumidouro = ifelse(emission <=0, "Sink","Source")
       ),
-    aes(lon,lat,color=fonte_sumidouro)) +
+    aes(lon,lat,color=fonte_sumidouro),
+    alpha=.25) +
     scale_color_manual(values = c("green","darkred"))+
     tema_mapa()+
-    labs(x='Longitude',y='Latitude',col=expression('CO'[2]))
+    labs(x='Longitude',y='Latitude',col=expression('CO'[2]~'eq'))
     
   
   ggplot2::ggsave(paste0('img/source_sink_',anos[i],'.png'),
