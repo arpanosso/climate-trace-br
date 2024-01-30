@@ -31,6 +31,7 @@ library(tidyverse)
 library(ggsci)
 library(geobr)
 source("R/gafico.R")
+source("R/my-function.R")
 ```
 
 ### Carregando as bases de dados
@@ -50,6 +51,22 @@ region_names <- brazil_ids$nome_regiao %>% unique()
 
 ### tabela resumo
 
+```{r}
+emissions_sources %>%
+  filter(flag_conservation) %>%
+  ggplot(aes(x=lon,y=lat))+
+  geom_point()
+
+indigenous   %>%
+  ggplot() +
+  geom_sf(fill="white", color="black",
+          size=.15, show.legend = FALSE) +
+  geom_point(
+    data = emissions_sources %>%
+      filter(year == 2022) %>% 
+      filter(flag_indigenous),
+    aes(lon,lat))
+```
 
 
 ### Brasil
@@ -506,5 +523,31 @@ rbind(df1,df2) %>%
           y=altura/1e9+.13,
           label = tab_country_emissions$emission_c,
           size=4, fontface="bold")
+```
+
+
+# reservas indígenas e áreas de conservação
+
+```{r}
+emissions_sources %>%
+  filter(
+    #flag_indigenous,
+    flag_conservation,
+    gas == "co2e_100yr",
+    !source_name %in% nomes_uf,
+    !sub_sector %in% c("forest-land-clearing",
+                       "forest-land-degradation",
+                       "shrubgrass-fires",
+                       "forest-land-fires",
+                       "wetland-fires",
+                       "removals")
+  ) %>%
+  group_by(year, sector_name) %>%
+  summarise(
+    emission = sum(emissions_quantity, na.rm=TRUE)
+  ) %>%
+  ungroup() %>% 
+  ggplot(aes(x=year,y=emission,fill=sector_name)) +
+  geom_col(color="black")
 ```
 
