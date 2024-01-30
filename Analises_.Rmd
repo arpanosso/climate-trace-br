@@ -348,3 +348,23 @@ emissions_sources |>
   #xlim(-2.5,2.5)
 
 ```
+
+
+```{r}
+emissions_sources |>
+  filter(year > 2014 & year < 2023,
+           gas == "co2e_100yr",
+           !source_name %in% nomes_uf,
+           !sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")
+    ) |> 
+    group_by(biome,sub_sector,year) |> 
+    summarise(
+      ghg_balance = round(sum(emissions_quantity, na.rm=TRUE)/1e9,4)
+    )
+```
+
