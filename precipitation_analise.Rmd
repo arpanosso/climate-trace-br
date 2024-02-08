@@ -145,4 +145,110 @@ df_n |>
   filter(biomes_n=='CAAT') |> 
   arrange(prec)
 ```
+```{r}
+df_n |>
+  filter(year!=2023) |> 
+  mutate(
+    biomes = get_geobr_biomes(longitude,latitude)
+  ) |>
+  mutate(
+    biomes_n =
+      case_when(
+        biomes=='Other'& longitude>=-45 & latitude <0~'AF',
+        biomes=='Amazônia'~'AMZ',
+        biomes=='Other'& longitude< -45 & latitude >=-10 ~'AMZ',
+        biomes == 'Mata Atlântica' ~ 'AF',
+        biomes=='Cerrado'~'CERR',
+        biomes =='Pampa'~'PMP',
+        biomes == 'Pantanal' ~ 'PNT',
+        biomes=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )
+  ) |> 
+  filter(biomes_n!='Other') |> 
+  group_by(biomes_n,year) |> 
+  summarise(prec=mean(prec)) |> 
+  ggplot(aes(x=year,y=prec,col=biomes_n))+
+  geom_point()+
+  geom_smooth(method = 'lm',se=F)+
+  ggpubr::stat_cor()+
+  labs(x='',
+       y='Precipitation',
+       col='Biome')+
+  ylim(0,3000)+
+  theme_bw()
+```
+
+```{r}
+df |>
+  mutate(year= year(YYYYMMDD),
+                month = month(YYYYMMDD),
+                longitude=LON,
+                latitude=LAT) |>
+  group_by(longitude, latitude, year, month) |>
+  summarise(
+    prec = sum(PRECTOTCORR)
+  ) |> 
+  filter(year!=2023) |> 
+  mutate(
+    biomes = get_geobr_biomes(longitude,latitude)
+  ) |>
+  mutate(
+    biomes_n =
+      case_when(
+        biomes=='Other'& longitude>=-45 & latitude <0~'AF',
+        biomes=='Amazônia'~'AMZ',
+        biomes=='Other'& longitude< -45 & latitude >=-10 ~'AMZ',
+        biomes == 'Mata Atlântica' ~ 'AF',
+        biomes=='Cerrado'~'CERR',
+        biomes =='Pampa'~'PMP',
+        biomes == 'Pantanal' ~ 'PNT',
+        biomes=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )
+  ) |> 
+  filter(biomes_n!='Other') |> 
+  group_by(biomes_n,year,month) |> 
+  summarise(prec=mean(prec)) |> 
+  dplyr::mutate(date=make_date(year,month,'15')) |> 
+  ggplot(aes(x=date,y=prec,col=biomes_n))+
+  geom_point()+
+  geom_smooth(method = 'lm',se=F)+
+  ggpubr::stat_cor()
+```
+
+```{r}
+df |>
+  mutate(year= year(YYYYMMDD),
+                month = month(YYYYMMDD),
+                longitude=LON,
+                latitude=LAT) |>
+  group_by(longitude, latitude, year, month) |>
+  summarise(
+    prec = sum(PRECTOTCORR)
+  ) |> 
+  filter(year!=2023) |> 
+  mutate(
+    biomes = get_geobr_biomes(longitude,latitude)
+  ) |>
+  mutate(
+    biomes_n =
+      case_when(
+        biomes=='Other'& longitude>=-45 & latitude <0~'AF',
+        biomes=='Amazônia'~'AMZ',
+        biomes=='Other'& longitude< -45 & latitude >=-10 ~'AMZ',
+        biomes == 'Mata Atlântica' ~ 'AF',
+        biomes=='Cerrado'~'CERR',
+        biomes =='Pampa'~'PMP',
+        biomes == 'Pantanal' ~ 'PNT',
+        biomes=='Caatinga'~'CAAT',
+        .default = 'Other'
+      )
+  ) |> 
+  filter(biomes_n=='CAAT') |> 
+  group_by(biomes_n,year,month) |> 
+  summarise(prec=mean(prec)) |> 
+  pull(prec) |> 
+  trend::mk.test()
+```
 
