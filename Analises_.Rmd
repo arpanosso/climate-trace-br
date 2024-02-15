@@ -39,13 +39,18 @@ region_names <- brazil_ids$nome_regiao %>% unique()
 ```
 
 
-### Mapeando  Fontes e Sumidouros
+### Mapeando  Fontes e Sumidouros (anomalias)
+
 
 ```{r}
 
 anos <- 2015:2022
 
 for(i in seq_along(anos)){
+  emission_median <- emissions_sources |> 
+    pull(emissions_quantity) |>
+    median(na.rm=TRUE)
+  
   plot_source_sink <- biomes |>
     filter(name_biome!='Sistema Costeiro') |> 
   ggplot() +
@@ -55,29 +60,20 @@ for(i in seq_along(anos)){
     data = emissions_sources |> 
     filter(year == anos[i],
            gas == "co2e_100yr",
-           !source_name %in% nomes_uf,
-           !sub_sector %in% c("forest-land-clearing",
-                              "forest-land-degradation",
-                              "shrubgrass-fires",
-                              "forest-land-fires",
-                              "wetland-fires",
-                              "removals")
-    ) %>% 
-    group_by(lon,lat,city_ref) %>% 
-    summarise(
-      emission = sum(emissions_quantity, na.rm=TRUE)
+           !source_name %in% nomes_uf
     ) %>% 
     mutate(
-      fonte_sumidouro = ifelse(emission <=0, "Sink","Source")
-      ),
-    aes(lon,lat,color=fonte_sumidouro),
-    alpha=.25) +
-    scale_color_manual(values = c("green","darkred"))+
+      anomalie = emissions_quantity- emission_median,
+      class_anomalie = ifelse(anomalie<0,'Removal','Emission')
+      ) |> 
+      filter(class_anomalie=='Removal'|class_anomalie=='Emission'),
+    aes(lon,lat,col=class_anomalie), alpha=.25) +
+    scale_color_manual(values=c("darkred",'darkgreen'))+
     tema_mapa()+
-    labs(x='Longitude',y='Latitude',col=expression('CO'[2]~'eq'))
+    labs(x='Longitude',y='Latitude',col=expression('GHG'))
     
   
-  ggplot2::ggsave(paste0('img/source_sink_',anos[i],'.png'),
+  ggplot2::ggsave(paste0('img/source_sink_anomalie',anos[i],'.png'),
                   units="in", width=8, height=6,
                   dpi=1000)
   print(plot_source_sink)
