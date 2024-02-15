@@ -625,7 +625,7 @@ emissions_sources %>%
   mutate(
     sector_name = sector_name %>% as_factor() %>% fct_relevel("forestry")
   ) %>%
-  ggplot(aes(x=year,y=emission,fill=sector_name)) +
+  ggplot(aes(x=year,y=emission/1e9,fill=sector_name)) +
   geom_col(color="black") +
   facet_wrap(~biome) +
   labs(x="Year",

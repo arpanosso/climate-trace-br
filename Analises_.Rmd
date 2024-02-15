@@ -368,3 +368,68 @@ emissions_sources |>
     )
 ```
 
+
+```{r}
+
+biomes |>
+  filter(name_biome!='Sistema Costeiro') |> 
+  ggplot() +
+  geom_sf(fill="white", color="black",
+          size=.15, show.legend = FALSE) +
+  geom_point(
+    data = emissions_sources |> 
+    filter(year == 2022,
+           gas == "co2e_100yr",
+           !source_name %in% nomes_uf,
+           sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")
+    ) |>
+    group_by(lon,lat,sub_sector) %>% 
+    summarise(
+      emission = sum(emissions_quantity, na.rm=TRUE)
+    ) %>% 
+    mutate(
+      fonte_sumidouro = ifelse(emission <=0, "Sink","Source")
+      ),
+    aes(lon,lat,col=fonte_sumidouro),
+    alpha=.25
+    ) +
+    scale_color_manual(values = c("green","darkred"))+
+    tema_mapa()+
+    labs(x='Longitude',y='Latitude',col=expression('CO'[2]~'eq'))
+
+```
+```{r}
+emissions_sources |> 
+  filter(year>2014 & year < 2023) |> 
+    filter(gas == "co2e_100yr",
+           !source_name %in% nomes_uf,
+           sub_sector %in% c("forest-land-clearing",
+                              "forest-land-degradation",
+                              "shrubgrass-fires",
+                              "forest-land-fires",
+                              "wetland-fires",
+                              "removals")|
+             sector_name=='forestry'
+    ) |> 
+    group_by(sub_sector,year) %>%
+    summarise(
+      emission = sum(emissions_quantity, na.rm=TRUE)
+    ) %>%
+  ggplot(aes(x=sub_sector,y=emission/1e9,group=year,
+             fill=forcats::as_factor(year)))+
+  geom_col(position = 'dodge')+
+  scale_fill_viridis_d()+
+  labs(x='',
+       y=expression('Emission (G ton )'),
+       fill='Year')+
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 35, vjust = 1, hjust=1))
+  
+  
+```
+
