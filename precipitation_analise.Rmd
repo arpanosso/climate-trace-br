@@ -88,6 +88,8 @@ for(i in seq_along(anos)){
   print(plot_prec)
 }
 ```
+
+
 ```{r}
 df_n |>
   mutate(
