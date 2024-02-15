@@ -132,9 +132,9 @@ emissions_sources %>%
 
 ```{r}
 emissions_sources %>% 
-  filter(str_detect(city_ref,"Pradópolis"),
+  filter(str_detect(city_ref,"Alta Floresta"),
          # city_ref == "Santos",
-         sigla_uf == "SP",
+         sigla_uf == "MT",
          year == 2022,
          gas == "co2e_100yr",
          !source_name %in% nomes_uf,
@@ -151,8 +151,11 @@ emissions_sources %>%
   ) %>% 
   arrange(emission )  %>% 
   ungroup() %>% 
-  mutate(Cumsum = cumsum(emission)) 
-  
+  mutate(Cumsum = cumsum(emission))
+```
+
+
+```{r}
 # nomenclatura no site
 # net-forest-land => Forest land
 # net-wetland => Wetland
