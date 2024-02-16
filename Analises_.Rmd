@@ -62,13 +62,14 @@ for(i in seq_along(anos)){
            gas == "co2e_100yr",
            !source_name %in% nomes_uf
     ) %>% 
-    mutate(
-      anomalie = emissions_quantity- emission_median,
+    group_by(lon,lat,city_ref) |> 
+    summarise(
+      anomalie = mean(emissions_quantity,na.rm=T)- emission_median,
       class_anomalie = ifelse(anomalie<0,'Removal','Emission')
       ) |> 
       filter(class_anomalie=='Removal'|class_anomalie=='Emission'),
     aes(lon,lat,col=class_anomalie), alpha=.25) +
-    scale_color_manual(values=c("darkred",'darkgreen'))+
+    scale_color_manual(values=c("red",'green'))+
     tema_mapa()+
     labs(x='Longitude',y='Latitude',col=expression('GHG'))
     
@@ -104,17 +105,18 @@ for(i in seq_along(anos)){
     ) %>% 
     group_by(lon,lat,city_ref) |> 
     summarise(
-      emission = ,
-      class_anomalie = ifelse(anomalie<0,'Removal','Emission')
-      ) |> 
-      filter(class_anomalie=='Removal'|class_anomalie=='Emission'),
-    aes(lon,lat,col=class_anomalie), alpha=.25) +
-    scale_color_manual(values=c("darkred",'darkgreen'))+
+      emission = sum(emissions_quantity, na.rm=TRUE)
+    ) %>% 
+    mutate(
+      fonte_sumidouro = ifelse(emission <=0, 'Removal','Emission')
+      ),
+    aes(lon,lat,col=fonte_sumidouro), alpha=.25) +
+    scale_color_manual(values=c("red",'green'))+
     tema_mapa()+
     labs(x='Longitude',y='Latitude',col=expression('GHG'))
     
   
-  ggplot2::ggsave(paste0('img/source_sink_anomalie',anos[i],'.png'),
+  ggplot2::ggsave(paste0('img/Balance_',anos[i],'.png'),
                   units="in", width=8, height=6,
                   dpi=1000)
   print(plot_source_sink)
