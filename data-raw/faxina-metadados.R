@@ -271,8 +271,8 @@ dados_sigla <- left_join(
 
 dados_sigla$nome_regiao %>%  unique()
 
-# write_rds(dados_sigla %>%
-#             rename(biome = biomes), "data/emissions_sources.rds")
+ write_rds(dados_sigla %>%
+             rename(biome = biomes), "data/emissions_sources.rds")
 
 # country data -----------------------------------------------------------------
 # buscando o caminho dos setores
@@ -301,9 +301,12 @@ dados_country <- dados_country %>%
   mutate(
     sector_name = str_split(directory,
                             "/",
-                            simplify = TRUE)[,4],
+                            simplify = TRUE)[,3],
     sector_name = str_remove(sector_name,"_country_emissions.csv")
   )
+
+dados_country$directory[1]
+
 dados_country %>%
   select( sector_name ) %>%
   distinct()
