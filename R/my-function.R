@@ -123,3 +123,9 @@ power_data_download <- function(lon,lat, startdate, enddate){
   )
   write.csv(df,paste0('precipitation/data-raw/',lon,'_',lat,'.csv'))
 }
+
+### função para o download dos dados do BR no CT
+download_arquivo <- function(url, dir){
+  download.file(url, dir)
+  return(dir)
+}

@@ -2,6 +2,13 @@ library(tidyverse)
 library(ggsci)
 source("R/my-function.R")
 
+
+# download do arquivo zip - climate trace ---------------------------------
+my_url <- "https://downloads.climatetrace.org/v02/country_packages/BRA.zip"
+temp_file_path <- tempfile(fileext = ".zip")
+# download.file(my_url, destfile = "data-raw/BRA.zip", mode = "wb")
+# unzip("data-raw/BRA.zip", exdir = "data-raw/BRA")
+
 # arquivo emissions-sources -----------------------------------------------
 # buscando o caminho dos setores
 tbl_directorys <- as_tibble(
@@ -21,12 +28,12 @@ row_count <- function(sector_name){
     nrow()
 }
 
-row_count(value[1])
-map_dbl(value, row_count) %>% sum
+# row_count(value[1])
+# map_dbl(value, row_count) %>% sum
 
 # Atualizando o banco todo ------------------------------------------------
 # Empilhando todos os arquivos no objeto dados
-my_file_read(value[1])
+# my_file_read(value[1])
 dados <- map_dfr(value, my_file_read)
 glimpse(dados)
 
@@ -41,18 +48,20 @@ dados <- dados %>%
   ) %>%
   mutate(
     sector_name = str_split(directory,
-                            "/|_",
-                            simplify = TRUE)[,4],
+                            "/",
+                            simplify = TRUE)[,3],
     sub_sector = str_split(directory,
                            "/",
-                           simplify = TRUE)[,5],
+                           simplify = TRUE)[,4],
     sub_sector = str_remove(sub_sector,"_emissions-sources.csv|_country_emissions.csv")
   )
 
+# dados$sector_name %>% unique()
+# dados$sub_sector %>% unique()
+# dados$type_of_data %>% unique()
+# dados$year %>% table()
 
-dados$sector_name %>% unique()
-dados$sub_sector %>% unique()
-dados$type_of_data %>% unique()
+
 
 # agrupando a base por nome e coordenada
 # Classificando o ponto em um estado
@@ -295,4 +304,4 @@ dados_country <- dados_country %>%
                             simplify = TRUE)[,4]
   )
 
-write_rds(dados_country, "data/country_emissions.rds")
+write_rds(dados_country, "data/country_emissions_2024_3.rds")
