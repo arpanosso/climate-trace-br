@@ -268,19 +268,21 @@ states  %>%
 
 ```{r}
 emissions_sources %>% 
-  filter(sigla_uf == "BA",
-         year == 2022,
-         gas == "co2e_100yr",
-         sector_name == "forestry",
-         #source_name == "Amapá",
-         !source_name %in% nomes_uf,
-         !sub_sector %in% c("forest-land-clearing",
-                            "forest-land-degradation",
-                            "shrubgrass-fires",
-                            "forest-land-fires",
-                            "wetland-fires",
-                            "removals")) %>% 
-  group_by(sub_sector) %>% 
+  filter(
+    sigla_uf == "BA",
+    year == 2022,
+    gas == "co2e_100yr",
+    sector_name == "forestry_and_land_use",
+    #source_name == "Amapá",
+    !source_name %in% nomes_uf,
+    !sub_sector %in% c("forest-land-clearing",
+                       "forest-land-degradation",
+                       "shrubgrass-fires",
+                       "forest-land-fires",
+                       "wetland-fires",
+                       "removals")
+  ) %>% 
+  group_by(sector_name) %>% 
   arrange(emissions_quantity %>% desc()) %>%  
   select(source_name, emissions_quantity) %>% 
   summarise(
@@ -371,7 +373,7 @@ for(i in seq_along(region_names)){
                  filter(nome_regiao == my_state,
                         year == 2022,
                         gas == "co2e_100yr",
-                        sector_name == "forestry",
+                        sector_name == "forestry_and_land_use",
                         !source_name %in% nomes_uf,         
                         !sub_sector %in% c("forest-land-clearing",
                             "forest-land-degradation",
@@ -485,13 +487,13 @@ country <- dados_country %>%
 ## Juntanado as bases
 ```{r}
 add <- rbind(granular %>%
-               filter(sector_name == "forestry"), country)
+               filter(sector_name == "forestry_and_land_use"), country)
 ```
 
 ## Somente forestry
 ```{r}
 add %>%
-  filter(sector_name == "forestry") %>%
+  filter(sector_name == "forestry_and_land_use") %>%
   group_by(year) %>%
   summarise(
     emission = sum(emission)
@@ -504,7 +506,7 @@ add %>%
 
 ```{r}
 df1 <- add %>%
-  filter(sector_name == "forestry") %>%
+  filter(sector_name == "forestry_and_land_use") %>%
   group_by(year) %>%
   summarise(
     emission = sum(emission)
@@ -518,13 +520,15 @@ df2 <- dados_country %>%
   #                               "wetland-fires",
   #                               "removals")) %>%
   group_by(year,sector_name) %>%
-  filter(sector_name != "forestry",
+  filter(sector_name != "forestry_and_land_use",
          gas == "co2e_100yr") %>%
   summarize(emission = sum(emissions_quantity,
                            na.rm = TRUE))
-df1$sector_name <- "forestry"
+df1$sector_name <- "forestry_and_land_use"
+```
 
 
+```{r}
 balanço <- rbind(df1,df2) %>%
   group_by(year) %>%
   summarise(
@@ -585,7 +589,7 @@ rbind(df1,df2) %>%
     sector_name = sector_name %>% as_factor()
   ) %>% 
   filter(year == 2022,
-         sector_name != "forestry") %>% 
+         sector_name != "forestry_and_land_use") %>% 
   mutate(
     emission_p = emission / sum(emission) *100
   ) %>% 
@@ -669,24 +673,27 @@ precipitation %>%
 ```
 
 
+
+
+
 ```{r}
 tab_cer <- expand.grid(year=2015:2022,
             biome = "CERR",
-            sector_name = "fossil",
+            sector_name = "fossil_fuel_operations",
             emission = 0
 ) %>% 
   tibble()
 
 tab_pmp <- expand.grid(year=2015:2022,
             biome = "PMP",
-            sector_name = "mineral",
+            sector_name = "mineral_extraction",
             emission = 0
 ) %>% 
   tibble()
 
 tab_pnt<- expand.grid(year=2015:2022,
             biome = "PNT",
-            sector_name = c("power","fossil"),
+            sector_name = c("power","fossil_fuel_operations"),
             emission = 0
 ) %>% 
   tibble()
@@ -713,13 +720,18 @@ tab_aux <- emissions_sources %>%
   ungroup() %>% 
   bind_rows(tab_cer,tab_pmp,tab_pnt) %>% 
   mutate(
-    sector_name = sector_name %>% as_factor() %>% fct_relevel("forestry","agriculture","fossil", 
-        "manufacturing", "mineral" , "power",
+    sector_name = sector_name %>% as_factor() %>% fct_relevel("forestry_and_land_use","agriculture","fossil_fuel_operations", 
+        "manufacturing", "mineral_extraction" , "power",
         "transportation","waste")
   ) %>%  left_join(
     precipitation,
     by = c("biome", "year")
   )
+```
+
+
+```{r}
+emissions_sources$sector_name |> unique()
 ```
 
 
