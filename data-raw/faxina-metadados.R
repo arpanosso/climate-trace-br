@@ -5,7 +5,6 @@ source("R/my-function.R")
 
 # download do arquivo zip - climate trace ---------------------------------
 # my_url <- "https://downloads.climatetrace.org/v02/country_packages/BRA.zip"
-# temp_file_path <- tempfile(fileext = ".zip")
 # download.file(my_url, destfile = "data-raw/BRA.zip", mode = "wb")
 # unzip("data-raw/BRA.zip", exdir = "data-raw/BRA")
 
@@ -271,7 +270,7 @@ dados_sigla <- left_join(
 
 dados_sigla$nome_regiao %>%  unique()
 
- write_rds(dados_sigla %>%
+write_rds(dados_sigla %>%
              rename(biome = biomes), "data/emissions_sources.rds")
 
 # country data -----------------------------------------------------------------

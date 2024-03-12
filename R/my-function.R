@@ -1,3 +1,4 @@
+library(nmle)
 states <- geobr::read_state()
 biomes <- geobr::read_biomes()
 conservation <- geobr::read_conservation_units()
