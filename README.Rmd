@@ -464,7 +464,7 @@ tab_country_emissions <- dados_country %>%
   #                               "wetland-fires",
   #                               "removals")) %>%
   group_by(year,sector_name) %>%
-  filter(sector_name != "forestry") %>%
+  filter(sector_name != "forestry_and_land_use") %>%
   group_by(year) %>% 
   summarize(emission = sum(emissions_quantity,
                            na.rm = TRUE)) |> 
@@ -478,7 +478,7 @@ tab_country_emissions <- dados_country %>%
 ```{r}
 country <- dados_country %>%
   group_by(year,sector_name) %>%
-  filter(sector_name != "forestry",
+  filter(sector_name != "forestry_and_land_use",
          gas == "co2e_100yr") %>%
   summarize(emission = sum(emissions_quantity,
                            na.rm = TRUE))
