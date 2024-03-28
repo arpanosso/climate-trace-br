@@ -101,9 +101,16 @@ dd <- emissions_sources %>%
 ```{r}
 dd %>% 
   ggplot(aes(x=emission)) +
-  geom_histogram()
+  geom_histogram(boundary=0,
+                 bins = nclass.FD(dd$emission))
 ```
-
+```{r}
+dd %>% 
+  ggplot(aes(x=emission)) +
+  geom_histogram(boundary=0,
+                 bins = nclass.FD(dd$emission)) +
+  xlim(0,25e4)
+```
 
 ```{r}
 emissions_sources %>% 
