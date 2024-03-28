@@ -41,7 +41,10 @@ emissions_sources <- read_rds("data/emissions_sources.rds") %>%
   mutate(source_name_1 = str_to_title(source_name))
 states <- read_rds("data/states.rds") %>% 
   mutate(name_region = ifelse(name_region == "Centro Oeste","Centro-Oeste",name_region))
+```
 
+
+```{r}
 brazil_ids <- read_rds("data/df_nome.rds")
 glimpse(emissions_sources)
 nomes_uf <- c(brazil_ids$nome_uf %>% unique(),"Brazil")
