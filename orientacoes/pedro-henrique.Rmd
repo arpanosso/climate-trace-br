@@ -26,8 +26,8 @@ source("../R/my-function.R")
 ## IMPORTANDO A BASE DE DADOS 
 
 ```{r}
-dados2 <- read_rds('../data/emissions_sources.rds')
-glimpse(dados2)
+dados2 <- read_rds('../data/emissions_sources.rds') %>% 
+  mutate(source_name_1 = str_to_title(source_name))
 ```
 
 
@@ -96,26 +96,23 @@ states %>%
 ## VISUALIZANDO MAIORES EMISSORES PARA O SETOR DE AGRICULTURA 
 ```{r}
 dados2 %>%
-  select(original_inventory_sector, sub_sector, city_ref, lat, lon, gas, emissions_quantity,sigla_uf, activity_units, year, sector_name) %>%
   rename(Longitude = lon,
          Latitude = lat) %>%
   filter(
     year == 2022,
-    sigla_uf == 'PA',                       #comentar linha caso queira para todo o Brasil
-    sub_sector == 'agriculture',  #comentando linha para poder visualizar todos os setores
-    gas == 'co2e_100yr') %>%
+    sigla_uf == 'PA',                       
+    sector_name == 'agriculture',  
+    sub_sector != "cropland-fires",
+    gas == 'co2e_100yr'
+    ) %>%
   mutate(
     classe_emissao = case_when(
       emissions_quantity <0.1e6 ~ '< 0.1 Mton',
       emissions_quantity <0.4e6 ~ '< 0.4 Mton',
       emissions_quantity <0.7e6 ~ '< 0.7 Mton',
       emissions_quantity >=1 ~ '>= 1 Mton'
-    ))
-```
-
-
-```{r}
-group_by(city_ref, sub_sector) %>%
+    )) %>% 
+  group_by(city_ref, sub_sector) %>%
   summarise(
     emission = sum(emissions_quantity, na.rm = T)
   ) %>%
@@ -134,61 +131,54 @@ group_by(city_ref, sub_sector) %>%
   geom_col(col="black") +
   labs(x = 'Emissao',
        y = 'Cidade',
-       fill = 'Setor') +
+       fill = '') +
   theme_bw() +
   theme(
-    axis.text.x = element_text(size = rel(1.25)),
-    axis.title.x = element_text(size = rel(2)),
-    axis.text.y = element_text(size = rel(1.3)),
-    axis.title.y = element_text(size = rel(2)),
-    legend.text = element_text(size = rel(1.3)),
-    legend.title = element_text(size = rel(1.7)),
-    title = element_text(face = 'bold'))
+    # axis.text.x = element_text(size = rel(1.25)),
+    # axis.title.x = element_text(size = rel(2)),
+    # axis.text.y = element_text(size = rel(1.3)),
+    # axis.title.y = element_text(size = rel(2)),
+    #legend.text = element_text(size = rel(1.3)),
+    #legend.title = element_text(size = rel(1.7)),
+    title = element_text(face = 'bold'),
+    legend.position = "top")
+```
+
+## SUBSETORES 
+
+### CARACTERIZANDO SUBSETORES 
+
+#### CARACTERIZANDO SUBSETORES PARA EMISSÕES DE GADO 
+
+VERIFICANDO VARIÁVEL
+
+```{r}
+dados2 %>%
+  pull(original_inventory_sector) %>%
+  unique()
+```
+
+
+###VERIFICANDO SE O FILTRO ESTA CORRETO###
+```{r}
+dados2 %>%
+  filter(original_inventory_sector == c('enteric-fermentation-cattle-pasture',
+'manure-management-cattle-feedlot',"enteric-fermentation-cattle-feedlot","manure-left-on-pasture-cattle")) %>%
+  pull(original_inventory_sector) %>% 
+  unique()
 ```
 
 
 ```{r}
-# SUBSETORES --------------------------------------------------------------
-
-## CARACTERIZANDO SUBSETORES -----------------------------------------------
-
-## CARACTERIZANDO SUBSETORES PARA EMISSÕES DE GADO -------------------------
-
-### VERIFICANDO VARIÁVEL
-
 dados2 %>%
-  pull(original_inventory_sector) %>%
-  unique()
-
-
-###VERIFICANDO SE O FILTRO ESTA CORRETO###
-dados2 %>%
-  select(original_inventory_sector) %>%
-  filter(original_inventory_sector == c('enteric-fermentation-cattle-pasture',
-                                        'manure-management-cattle-feedlot',
-                                        "enteric-fermentation-cattle-feedlot",
-                                        "manure-left-on-pasture-cattle")) %>%
-  unique()
-
-
-# -------------------------------------------------------------------------
-
-
-dados2 %>%
-  select(original_inventory_sector, sub_sector, city_ref, lat, lon,
-         gas, emissions_quantity, sigla_uf,
-         activity_units, year, sector_name) %>%
   rename(Longitude = lon,
          Latitude = lat) %>%
   filter(
          year == 2022,
-         sigla_uf == 'MG',                       #comentar linha caso queira para todo o Brasil
+         sigla_uf == 'MG',    
          str_detect(activity_units, 'animal'),
          gas == 'co2e_100yr',
-         original_inventory_sector == c('enteric-fermentation-cattle-pasture',
-                                        'manure-management-cattle-feedlot',
-                                        "enteric-fermentation-cattle-feedlot",
-                                        "manure-left-on-pasture-cattle")) %>%
+         original_inventory_sector ==c('enteric-fermentation-cattle-pasture','manure-management-cattle-feedlot',"enteric-fermentation-cattle-feedlot","manure-left-on-pasture-cattle")) %>%
   mutate(
     classe_emissao = case_when(
       emissions_quantity <0.1e6 ~ '< 0.1 Mton',
@@ -226,14 +216,16 @@ dados2 %>%
         legend.title = element_text(size = rel(1.7)),
         title = element_text(face = 'bold'),
         legend.background = element_rect(fill = "#fffff0", color = "black"))
+```
 
 
 
+
+
+
+```{r}
 # DESMEMBRANDO OS SUBSETORES ----------------------------------------------
-
 dados2 %>%
-  select(original_inventory_sector, sub_sector, city_ref, lat, lon,
-         gas, emissions_quantity, sigla_uf, activity_units, year) %>%
   rename(Longitude = lon,
          Latitude = lat) %>%
   filter(
@@ -282,14 +274,12 @@ dados2 %>%
     legend.text = element_text(size = rel(1.3)),
     legend.title = element_text(size = rel(1.7)),
     title = element_text(face = 'bold'))
-
-
+```
 
 # RANKEANDO AS 10 CIDADES COM SUBSETORES DE MAIOR EMISSÃO DENTRE OS 5 ESTADOS
 
+```{r}
 dados2 %>%
-  select(original_inventory_sector, sub_sector, city_ref, lat, lon,
-         gas, emissions_quantity, sigla_uf, activity_units, year) %>%
   rename(Longitude = lon,
          Latitude = lat) %>%
   filter(
@@ -344,8 +334,10 @@ dados2 %>%
     legend.text = element_text(size = rel(1.3)),
     legend.title = element_text(size = rel(1.7)),
     title = element_text(face = 'bold'))
+```
 
 
+```{r}
 # mudando-------------------------------------------------------------------------
 
 dados2 %>%
@@ -403,17 +395,13 @@ select(original_inventory_sector, emissions_quantity, sigla_uf) %>%
     legend.text = element_text(size = rel(1.3)),
     legend.title = element_text(size = rel(1.7)),
     title = element_text(face = 'bold'))
+```
 
-
-
-# -------------------------------------------------------------------------
 # SLA QUE GAMBIARRA TENTEI FAZER MAS TAVA TENTANDO SOMAR POR CONDIÇÃO, TENTANDO
 # AGRUPAR POR ESTADO, EMISSÃO E SETOR
 
-
+```{r}
 dados2 %>%
-  select(original_inventory_sector, sub_sector, city_ref, lat, lon,
-         gas, emissions_quantity, sigla_uf, activity_units, year) %>%
   rename(Longitude = lon,
          Latitude = lat) %>%
   filter(
@@ -488,11 +476,10 @@ mutate(
     legend.text = element_text(size = rel(1.3)),
     legend.title = element_text(size = rel(1.7)),
     title = element_text(face = 'bold'))
+```
 
 
-
-
-
+```{r}
 # FAZER MEDIA PARA OS ESTADOS ----------------------------------------------
 
 dados2 %>%
