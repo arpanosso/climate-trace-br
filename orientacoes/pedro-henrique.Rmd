@@ -20,13 +20,13 @@ library(gstat)
 library(skimr)
 library(ggsci)
 library(geobr)
-source("../climate-trace-br-master//R/my-function.R")
+source("../R/my-function.R")
 ```
 
 ## IMPORTANDO A BASE DE DADOS 
 
 ```{r}
-dados2 <- read_rds('../climate-trace-br-master/data/emissions_sources.rds') %>% 
+dados2 <- read_rds('../data/emissions_sources.rds') %>% 
   mutate(source_name_1 = str_to_title(source_name))
 ```
 
@@ -101,7 +101,7 @@ dados2 %>%
   filter(
     year == 2022,
     sigla_uf == my_state,                       
-    sub_sector == 'agriculture',  
+    sector_name == 'agriculture',  
     gas == 'co2e_100yr'
     ) %>%
   group_by(city_ref, sub_sector) %>%
@@ -115,7 +115,7 @@ dados2 %>%
   ungroup() %>%
   mutate(
     city_ref = city_ref %>% fct_reorder(emission_total) %>%
-      fct_lump(n = 5, w = emission_total)) %>%
+      fct_lump(n = 10, w = emission_total)) %>%
   filter(city_ref != "Other") %>%
   ggplot(aes(emission,
              city_ref,
@@ -135,6 +135,62 @@ dados2 %>%
     title = element_text(face = 'bold'),
     legend.position = "top")
 ```
+
+
+```{r}
+estados <- c("MS","MG","MT","SP","PA")
+
+
+my_plot_col_states <- function(.estado){
+  dados2 %>%
+  rename(Longitude = lon,
+         Latitude = lat) %>%
+  filter(
+    year == 2022,
+    sigla_uf == .estado,                       
+    sector_name == 'agriculture',  
+    gas == 'co2e_100yr'
+    ) %>%
+  group_by(city_ref, sub_sector) %>%
+  summarise(
+    emission = sum(emissions_quantity, na.rm = T)
+  ) %>%
+  group_by(city_ref) %>%
+  mutate(
+    emission_total = sum(emission, na.rm = T)
+  ) %>%
+  ungroup() %>%
+  mutate(
+    city_ref = city_ref %>% fct_reorder(emission_total) %>%
+      fct_lump(n = 10, w = emission_total)) %>%
+  filter(city_ref != "Other") %>%
+  ggplot(aes(emission,
+             city_ref,
+             fill = sub_sector)) +
+  geom_col(col="black", lwd = 0.1) +
+  labs(x = 'Emission',
+       y = 'City',
+       fill = 'Sector') +
+  theme_bw() +
+  theme(
+    # axis.text.x = element_text(size = rel(1.25)),
+    # axis.title.x = element_text(size = rel(2)),
+    # axis.text.y = element_text(size = rel(1.3)),
+    # axis.title.y = element_text(size = rel(2)),
+    #legend.text = element_text(size = rel(1.3)),
+    #legend.title = element_text(size = rel(1.7)),
+    title = element_text(face = 'bold'),
+    legend.position = "top")
+}
+
+
+map(estados,my_plot_col_states)
+
+
+```
+
+
+
 
 ## SUBSETORES 
 
