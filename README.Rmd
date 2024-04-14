@@ -38,7 +38,10 @@ source("R/my-function.R")
 
 ```{r}
 emissions_sources <- read_rds("data/emissions_sources.rds") %>% 
-  mutate(source_name_1 = str_to_title(source_name))
+  mutate(source_name_1 = str_to_title(source_name)) %>% 
+  filter(year >=2015, year<=2023)
+
+emissions_sources$year %>% unique()
 states <- read_rds("data/states.rds") %>% 
   mutate(name_region = ifelse(name_region == "Centro Oeste","Centro-Oeste",name_region))
 ```
@@ -337,7 +340,8 @@ for(i in seq_along(region_names)){
                         gas == "co2e_100yr",
                         sector_name == "agriculture",
                         !source_name %in% nomes_uf,
-                        sub_sector == "enteric-fermentation-cattle-pasture") %>% 
+                        sub_sector == "enteric-fermentation-cattle-pasture"
+                        ) %>% 
                  group_by(source_name,lat,lon) %>% 
                  summarise(
                    emission = sum(emissions_quantity)
