@@ -2,7 +2,6 @@ library(tidyverse)
 library(ggsci)
 source("R/my-function.R")
 
-
 # download do arquivo zip - climate trace ---------------------------------
 # my_url <- "https://downloads.climatetrace.org/v02/country_packages/BRA.zip"
 # download.file(my_url, destfile = "data-raw/BRA.zip", mode = "wb")
@@ -12,7 +11,7 @@ source("R/my-function.R")
 # buscando o caminho dos setores
 tbl_directorys <- as_tibble(
   list.files("data-raw/BRA/", full.names = TRUE, recursive = TRUE)) %>%
-  filter(str_detect(value, "emissions-sources.csv"))
+  filter(str_detect(value, "emissions_sources.csv"))
 
 # Extraindo os caminhos dos arquvios
 value <- tbl_directorys %>% pull(value)
@@ -52,13 +51,13 @@ dados <- dados %>%
     sub_sector = str_split(directory,
                            "/",
                            simplify = TRUE)[,4],
-    sub_sector = str_remove(sub_sector,"_emissions-sources.csv|_country_emissions.csv")
+    sub_sector = str_remove(sub_sector,"_emissions_sources.csv|_country_emissions.csv")
   )
 
-# dados$sector_name %>% unique()
-# dados$sub_sector %>% unique()
-# dados$type_of_data %>% unique()
-# dados$year %>% table()
+ dados$sector_name %>% unique()
+ dados$sub_sector %>% unique()
+ # dados$type_of_data %>% unique()
+ # dados$year %>% table()
 
 
 
@@ -77,7 +76,7 @@ base_sigla_uf <- dados %>%
   )
 
 ### testando flag_indigenous
-base_sigla_uf |>
+base_sigla_uf %>%
   filter(flag_indigenous) %>%
   ggplot(aes(x=lon,y=lat))+
   geom_point()
@@ -93,7 +92,7 @@ indigenous   %>%
 
 
 ### testando flag_conservation
-base_sigla_uf |>
+base_sigla_uf %>%
   filter(flag_conservation) %>%
   ggplot(aes(x=lon,y=lat))+
   geom_point()
@@ -108,7 +107,7 @@ conservation   %>%
     aes(lon,lat))
 
 ### testando classificação por bioma
-base_sigla_uf |>
+base_sigla_uf %>%
   ggplot(aes(x=lon,y=lat,col=biome))+
   geom_point()
 base_sigla_uf$biome %>% unique() == "Amazônia"
@@ -119,7 +118,7 @@ base_sigla_uf %>%
   ) %>% glimpse()
 
 ### Arrumando classificação
-base_sigla_uf |>
+base_sigla_uf %>%
   mutate(
     biome_n = case_when(
         biome=='Other'& lon>= -45 & lat < -6~'AF',
@@ -134,11 +133,11 @@ base_sigla_uf |>
         biome=='Caatinga'~'CAAT',
         TRUE ~ 'Other'
       )
-  ) |>
+  ) %>%
   ggplot(aes(x=lon,y=lat,color=biome_n))+
   geom_point()
 
-base_sigla_uf <- base_sigla_uf |>
+base_sigla_uf <- base_sigla_uf %>%
   mutate(
     biomes =
       case_when(
@@ -156,7 +155,7 @@ base_sigla_uf <- base_sigla_uf |>
       )
     )
 
-base_sigla_uf |>
+base_sigla_uf %>%
   ggplot(aes(x=lon,y=lat,col=biomes))+
   geom_point()
 
