@@ -36,6 +36,7 @@ dados <- map_dfr(value, my_file_read)
 glimpse(dados)
 
 # Tratanto as colunas de data, nome de setores e sub setores
+n_position <- ncol(str_split(tbl_directorys[1,1],"/",simplify = TRUE))
 dados <- dados %>%
   mutate(
     start_time = as_date(start_time),
@@ -47,15 +48,15 @@ dados <- dados %>%
   mutate(
     sector_name = str_split(directory,
                             "/",
-                            simplify = TRUE)[,3],
+                            simplify = TRUE)[,n_position -1],
     sub_sector = str_split(directory,
                            "/",
-                           simplify = TRUE)[,4],
+                           simplify = TRUE)[,n_position],
     sub_sector = str_remove(sub_sector,"_emissions_sources.csv|_country_emissions.csv")
   )
 
- dados$sector_name %>% unique()
- dados$sub_sector %>% unique()
+dados$sector_name %>% unique()
+dados$sub_sector %>% unique()
  # dados$type_of_data %>% unique()
  # dados$year %>% table()
 
