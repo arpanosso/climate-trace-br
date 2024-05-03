@@ -10,7 +10,9 @@ source("R/my-function.R")
 # arquivo emissions-sources -----------------------------------------------
 # buscando o caminho dos setores
 tbl_directorys <- as_tibble(
-  list.files("data-raw/BRA/", full.names = TRUE, recursive = TRUE)) %>%
+  list.files("data-raw/BRA/",
+             full.names = TRUE,
+             recursive = TRUE)) %>%
   filter(str_detect(value, "emissions_sources.csv"))
 
 # Extraindo os caminhos dos arquvios
@@ -21,11 +23,11 @@ trans_values <- tbl_directorys %>%
   filter(str_detect(value,"transportation")) %>%
   pull(value)
 
-row_count <- function(sector_name){
-  read.csv(sector_name) %>%
-    nrow()
-}
-
+# Contando as linhas dos arquivos
+# row_count <- function(sector_name){
+#   read.csv(sector_name) %>%
+#     nrow()
+# }
 # row_count(value[1])
 # map_dbl(value, row_count) %>% sum
 
@@ -35,8 +37,11 @@ row_count <- function(sector_name){
 dados <- map_dfr(value, my_file_read)
 glimpse(dados)
 
-# Tratanto as colunas de data, nome de setores e sub setores
+# Numéro de posições no caminho divididas por "/"
 n_position <- ncol(str_split(tbl_directorys[1,1],"/",simplify = TRUE))
+
+
+# Tratanto as colunas de data, nome de setores e sub setores
 dados <- dados %>%
   mutate(
     start_time = as_date(start_time),
@@ -54,12 +59,9 @@ dados <- dados %>%
                            simplify = TRUE)[,n_position],
     sub_sector = str_remove(sub_sector,"_emissions_sources.csv|_country_emissions.csv")
   )
-
 dados$sector_name %>% unique()
 dados$sub_sector %>% unique()
- # dados$type_of_data %>% unique()
- # dados$year %>% table()
-
+dados$year %>% table()
 
 
 # agrupando a base por nome e coordenada
@@ -77,66 +79,66 @@ base_sigla_uf <- dados %>%
   )
 
 ### testando flag_indigenous
-base_sigla_uf %>%
-  filter(flag_indigenous) %>%
-  ggplot(aes(x=lon,y=lat))+
-  geom_point()
+# base_sigla_uf %>%
+#   filter(flag_indigenous) %>%
+#   ggplot(aes(x=lon,y=lat))+
+#   geom_point()
 
-indigenous   %>%
-  ggplot() +
-  geom_sf(fill="white", color="black",
-          size=.15, show.legend = FALSE) +
-  geom_point(
-    data = base_sigla_uf %>%
-      filter(flag_indigenous),
-    aes(lon,lat))
+# indigenous   %>%
+#   ggplot() +
+#   geom_sf(fill="white", color="black",
+#           size=.15, show.legend = FALSE) +
+#   geom_point(
+#     data = base_sigla_uf %>%
+#       filter(flag_indigenous),
+#     aes(lon,lat))
 
 
 ### testando flag_conservation
-base_sigla_uf %>%
-  filter(flag_conservation) %>%
-  ggplot(aes(x=lon,y=lat))+
-  geom_point()
+# base_sigla_uf %>%
+#   filter(flag_conservation) %>%
+#   ggplot(aes(x=lon,y=lat))+
+#   geom_point()
 
-conservation   %>%
-  ggplot() +
-  geom_sf(fill="white", color="black",
-          size=.15, show.legend = FALSE) +
-  geom_point(
-    data = base_sigla_uf %>%
-      filter(flag_conservation),
-    aes(lon,lat))
+# conservation   %>%
+#   ggplot() +
+#   geom_sf(fill="white", color="black",
+#           size=.15, show.legend = FALSE) +
+#   geom_point(
+#     data = base_sigla_uf %>%
+#       filter(flag_conservation),
+#     aes(lon,lat))
 
 ### testando classificação por bioma
-base_sigla_uf %>%
-  ggplot(aes(x=lon,y=lat,col=biome))+
-  geom_point()
-base_sigla_uf$biome %>% unique() == "Amazônia"
-
-base_sigla_uf %>%
-  mutate(
-    biome_n = biome == "Amazônia"
-  ) %>% glimpse()
+# base_sigla_uf %>%
+#   ggplot(aes(x=lon,y=lat,col=biome))+
+#   geom_point()
+# base_sigla_uf$biome %>% unique() == "Amazônia"
+#
+# base_sigla_uf %>%
+#   mutate(
+#     biome_n = biome == "Amazônia"
+#   ) %>% glimpse()
 
 ### Arrumando classificação
-base_sigla_uf %>%
-  mutate(
-    biome_n = case_when(
-        biome=='Other'& lon>= -45 & lat < -6~'AF',
-        biome == "Amazônia" ~ "AMZ",
-        biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
-        biome == 'Mata Atlântica' & lon> -40 & lat < -20 ~'Other',
-        biome == 'Mata Atlântica' & lon> -34 & lat > -5 ~'Other',
-        biome == 'Mata Atlântica' ~ 'AF',
-        biome=='Cerrado'~'CERR',
-        biome =='Pampa'~'PMP',
-        biome == 'Pantanal' ~ 'PNT',
-        biome=='Caatinga'~'CAAT',
-        TRUE ~ 'Other'
-      )
-  ) %>%
-  ggplot(aes(x=lon,y=lat,color=biome_n))+
-  geom_point()
+# base_sigla_uf %>%
+#   mutate(
+#     biome_n = case_when(
+#         biome=='Other'& lon>= -45 & lat < -6~'AF',
+#         biome == "Amazônia" ~ "AMZ",
+#         biome=='Other'& lon< -45 & lat >=-10 ~'AMZ',
+#         biome == 'Mata Atlântica' & lon> -40 & lat < -20 ~'Other',
+#         biome == 'Mata Atlântica' & lon> -34 & lat > -5 ~'Other',
+#         biome == 'Mata Atlântica' ~ 'AF',
+#         biome=='Cerrado'~'CERR',
+#         biome =='Pampa'~'PMP',
+#         biome == 'Pantanal' ~ 'PNT',
+#         biome=='Caatinga'~'CAAT',
+#         TRUE ~ 'Other'
+#       )
+#   ) %>%
+#   ggplot(aes(x=lon,y=lat,color=biome_n))+
+#   geom_point()
 
 base_sigla_uf <- base_sigla_uf %>%
   mutate(
@@ -156,9 +158,9 @@ base_sigla_uf <- base_sigla_uf %>%
       )
     )
 
-base_sigla_uf %>%
-  ggplot(aes(x=lon,y=lat,col=biomes))+
-  geom_point()
+# base_sigla_uf %>%
+#   ggplot(aes(x=lon,y=lat,col=biomes))+
+#   geom_point()
 
 ###
 # Classificando pelo pol da cidade ----------------------------------------
