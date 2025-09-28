@@ -1,5 +1,5 @@
 ---
-title: "Análise do peido dos Bois"
+title: "Variabilidade espaçotemporal da emissão de GEE e a pecuária Brasileira"
 author: "Oliveira PHM; Panosso AR"
 date: "2024-03-28"
 output: html_document
@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 
-## CARREGANDO OS PACOTES 
+## CARREGANDO OS PACOTES
 ```{r}
 library(tidyverse)
 library(gstat)
@@ -28,67 +28,20 @@ source("../R/my-function.R")
 ## IMPORTANDO A BASE DE DADOS 
 
 ```{r}
+brazil_ids <- read_rds("../data/df_nome.rds")
+nomes_uf <- c(brazil_ids$nome_uf %>% unique(),"Brazil")
 dados2 <- read_rds('../data/emissions_sources.rds')
 ```
 
 ## CARACTERIZANDO MUNICÍPIO
 
 ```{r}
-# getwd()
-# list_rds <- list.files("../data/")
-
-# dados <- map_df(
-#   list_rds,
-#   ~read_rds(paste0("../data/",.x))
-# )
-
-# dadosteste <-  read_rds('../data/df_nome.rds')
-# dadosteste2 <-  read_rds('../data/states.rds')
-dadosteste3 <-  read_rds('../data/emissions_sources.rds')  #contem lon,lat,year,gas
-
-# brazil_ids <- read_rds("../data/df_nome.rds")
-# 
-# nomes_uf <- c(brazil_ids$nome_uf %>% unique(),"Brazil")
-# 
-# abbrev_states <- brazil_ids$sigla_uf %>% unique()
-
 city <- geobr::read_municipality(
   showProgress = FALSE)
 
-cities <- city # |> filter(abbrev_state == 'MT')
-
-
-
-# plot(mt_city)
-
-# cities %>%  
-#   ggplot()  +
-#   geom_sf(fill="white", color="black",
-#           size=.15, show.legend = FALSE) +
-#   geom_point(
-#     data = dadosteste3 %>%
-#       # select(year,sigla_uf, lat,lon, gas) |> 
-#       filter(year == 2022,2
-#              sigla_uf == 'MT',
-#              gas == 'co2e_100yr'),
-#     aes(lon,lat))
+cities <- city 
 ```
 
-## VERIFICAR SE OS DADOS COINCIDEM COM OS DO CT 
-### 5 cidades ja verificadas (Betânia, Coqueiro Seco, Salgadinho PB e PE, Campo Grande MS)
-
-```{r}
-dados2 %>%
-  filter(city_ref == 'Campo Grande',
-         year == 2022,
-         sigla_uf == 'MS',
-         gas == 'co2e_100yr',
-         str_detect(activity_units, 'animal')) %>%
-  group_by(gas, emissions_quantity, year, city_ref, sector_name, sub_sector,sigla_uf, source_type, activity_units) %>%
-  summarise(
-    media_emissao =  mean(emissions_quantity, na.rm = T),
-    soma_emissao_animal =  sum(emissions_quantity, na.rm = T))
-```
 ## CRIANDO TEMA GRAFICO
 ```{r}
 my_theme <- theme(
@@ -121,9 +74,9 @@ my_theme_add <- function(.my_theme){
 ### CONTRUINDO MAPA COM CLASSES 
 ```{r}
 #my_state <- "MS" ### <-
-estados <- c("MT", "PA", "GO", "MG", "MS")
+estados <- c("PA", "MS", "MG", "MT", "GO")
 my_plot_map <- function(.estados){
-  cities %>%  #states alterado para citys
+  city %>%  
   select(abbrev_state) %>%
   filter(
     abbrev_state == .estados) %>%
@@ -131,9 +84,7 @@ my_plot_map <- function(.estados){
   geom_sf(fill="white", color="black",
           size=.15, show.legend = F) +
   geom_point(data = dados2 %>%
-               rename(Longitude = lon,
-                      Latitude = lat) %>%
-               filter(year == 2022,
+               filter(year == 2022, #>2014 & year <2023
                       sigla_uf == .estados,
                       str_detect(activity_units, 'animal'),
                       gas == 'co2e_100yr') %>%
@@ -146,51 +97,160 @@ my_plot_map <- function(.estados){
                  )
                ),
              size = 1.5,
-             aes(Longitude,Latitude, col = classe_emissao)) +
-  theme_bw() +
+             aes(lon,lat, col = classe_emissao)) +
+    theme_bw() +
   theme(
-    axis.text.x = element_text(size = rel(1.2)),
-    axis.title.x = element_text(size = rel(1.3)),
-    axis.text.y = element_text(size = rel(1.2)),
-    axis.title.y = element_text(size = rel(1.3)),
-    legend.text = element_text(size = rel(1.3)),
+    axis.text.x = element_text(size = rel(1), color = "#222222"),
+    axis.title.x = element_text(size = rel(1.3), color = "#222222"),
+    axis.text.y = element_text(size = rel(1), color = "#222222"),
+    axis.title.y = element_text(size = rel(1.3), color = "#222222"),
+    legend.text = element_text(size = rel(1.3), color = "#222222"),
     legend.title = element_text(size = rel(1.5)),
     ) +
-   labs(col = "CO2e emission"
+   labs(col = 'CO'[2]~'eq emission',
+        x = 'Longitude',
+        y = 'Latitude'
      #title = paste0("CO2e emission for", my_state),
         # caption = 'Data Source: Climate TRACE',
      )
 }
   
 map(estados,my_plot_map)
+
+# ggsave('GO.png', dpi = 3000, width = 9, height = 5.5)
+
+```
+
+```{r}
+my_state <- "MS" ### <-
+estados <- c("MS", "PA", "GO", "MT", "MG")
+my_plot_map_join <- function(.estados){
+  left_join(city %>% filter(abbrev_state == .estados),
+          dados2 %>%
+            filter(year == 2022, #>2014 & year <2023
+                   sigla_uf == .estados,
+                   str_detect(activity_units, 'animal'),
+                   gas == 'co2e_100yr') %>%
+            group_by(city_ref, sigla_uf)  %>%
+            summarise(emissions_quantity =
+                        sum(emissions_quantity, na.rm = TRUE)) %>%
+            rename(name_muni = city_ref) ,
+          by="name_muni") %>%
+  mutate(emissions_quantity = replace_na(emissions_quantity,0)) %>%
+  mutate(
+    classe_emissao = case_when(
+      emissions_quantity <0.1e6 ~ '< 0.1 Mton',
+      emissions_quantity <0.4e6 ~ '< 0.4 Mton',
+      emissions_quantity <0.7e6 ~ '< 0.7 Mton',
+      emissions_quantity >=1 ~ '>= 1 Mton'
+    )
+  ) %>%
+    ggplot() +
+    geom_sf(aes(fill=classe_emissao), color="black",
+            size=.15, show.legend = TRUE)  +
+    theme_bw() +
+  theme(
+    axis.text.x = element_text(size = rel(1), color = "#222222"),
+    axis.title.x = element_text(size = rel(1.3), color = "#222222"),
+    axis.text.y = element_text(size = rel(1), color = "#222222"),
+    axis.title.y = element_text(size = rel(1.3), color = "#222222"),
+    legend.text = element_text(size = rel(1.3), color = "#222222"),
+    legend.title = element_text(size = rel(1.5)),
+    ) +
+   labs(fill = 'CO'[2]~'eq emission',
+        x = 'Longitude',
+        y = 'Latitude'
+     #title = paste0("CO2e emission for", my_state),
+        # caption = 'Data Source: Climate TRACE',
+     ) +
+    scale_fill_viridis_d()
+}
+map(estados,my_plot_map_join)
+
+# ggsave('MG_col.png', dpi = 3000, width = 9, height = 5.5)
+
+#tentando gerar os mapas em uma única figura
+#my_state <- "MS" ### <-
+
+# estados <- c("MS", "PA", "GO", "MT", "MG")
+# my_plot_map_join <- function(.estados){
+#   left_join(city %>% filter(abbrev_state == .estados),
+#           dados2 %>%
+#             filter(year == 2022, #>2014 & year <2023 
+#                    sigla_uf %in% estados,
+#                    str_detect(activity_units, 'animal'),
+#                    gas == 'co2e_100yr') %>%
+#             group_by(city_ref, sigla_uf)  %>% 
+#             summarise(emissions_quantity = 
+#                         sum(emissions_quantity, na.rm = TRUE)) %>% 
+#             rename(name_muni = city_ref),
+#           by="name_muni") %>%             
+#   mutate(emissions_quantity = replace_na(emissions_quantity,0)) %>% 
+#   mutate(
+#     classe_emissao = case_when( 
+#       emissions_quantity <0.1e6 ~ '< 0.1 Mton',
+#       emissions_quantity <0.4e6 ~ '< 0.4 Mton',
+#       emissions_quantity <0.7e6 ~ '< 0.7 Mton',
+#       emissions_quantity >=1 ~ '>= 1 Mton'
+#     )
+#   ) %>% 
+#     ggplot() +
+#     geom_sf(aes(fill=classe_emissao), color="black",
+#             size=.15, show.legend = TRUE)  +
+#     theme_bw() +
+#   theme(
+#     axis.text.x = element_text(size = rel(1), color = "#222222"),
+#     axis.title.x = element_text(size = rel(1.3), color = "#222222"),
+#     axis.text.y = element_text(size = rel(1), color = "#222222"),
+#     axis.title.y = element_text(size = rel(1.3), color = "#222222"),
+#     legend.text = element_text(size = rel(1.3), color = "#222222"),
+#     legend.title = element_text(size = rel(1.5)),
+#     ) +
+#    labs(fill = 'CO'[2]~'eq emission',
+#         x = 'Longitude',
+#         y = 'Latitude'
+#      #title = paste0("CO2e emission for", my_state),
+#         # caption = 'Data Source: Climate TRACE',
+#      ) +
+#     scale_fill_viridis_d()+
+#   facet_wrap(~sigla_uf,ncol = 2)
+# } 
+# map(estados,my_plot_map_join)
+# 
+# # ggsave('MG_col.png', dpi = 3000, width = 9, height = 5.5)
+
 ```
 
 ### Verificando maiores cidades emissoras
 ```{r}
-
 dados2 |> 
   #glimpse() |> 
   #select(sigla_uf, emissions_quantity, city_ref, gas, activity_units, sector_name, sub_sector) |> 
-  filter(sigla_uf == estados,
+  filter(sigla_uf == "MG",
          gas == 'co2e_100yr',
+         year == 2022,
          sector_name == 'agriculture',
-         str_detect(activity_units, 'animal'),
-         sub_sector == c('enteric-fermentation-cattle-pasture',
-'manure-management-cattle-feedlot',"enteric-fermentation-cattle-feedlot","manure-left-on-pasture-cattle")
-           ) |> 
-  group_by(city_ref) |> 
-  summarise(
-    emission = sum(emissions_quantity, na.rm = T)
-  ) |> 
-  arrange(- emission)
+         !source_name %in% nomes_uf,
+         !sub_sector %in% c("forest-land-clearing",
+                            "forest-land-degradation",
+                            "shrubgrass-fires",
+                            "forest-land-fires",
+                            "wetland-fires",
+                            "removals"),
+         # str_detect(activity_units, 'animal'),
+         # sub_sector == 'enteric-fermentation-cattle-pasture',
+                         # 'manure-left-on-pasture-cattle'),
+         city_ref == 'Corinto' #altere o município aqui
+          ) #|> 
+  # group_by(sub_sector, sector_name) |> 
+  # summarise(
+  #    emission = sum(emissions_quantity, na.rm = T)
+  #  )
 ```
-
 
 ## VISUALIZANDO MAIORES EMISSORES PARA O SETOR DE AGRICULTURA 
 ```{r}
 dados2 %>%
-  rename(Longitude = lon,
-         Latitude = lat) %>%
   filter(
     year == 2022,
     sigla_uf %in% estados, # <-----
@@ -216,7 +276,8 @@ dados2 %>%
              city_ref,
              fill = sub_sector)) +
   geom_col(col="black", lwd = 0.1) +
-  labs(x = 'Emission (Mton)',
+  xlab(bquote(Emission~CO[2]~eq~(Mton))) +
+  labs(#x = 'Emission (Mton)',
        y = 'City',
        fill = 'Subsector') +
   theme_bw() +
@@ -231,14 +292,19 @@ dados2 %>%
     legend.position = '') +
       scale_fill_viridis_d(option ='plasma') +
     # legend.position = "top")
-  facet_wrap(~sigla_uf,scales = "free",ncol = 2)
+  facet_wrap(~sigla_uf,scales = "free",ncol = 2) +
+  annotate("text",
+           x=60,
+           y=1,
+           label = ".",
+           size=0.1)
+
+# ggsave('Emissões.png', dpi = 2500, width = 10, height = 6)
 ```
 
 ```{r}
 my_plot_col_states <- function(.estados){
   dados2 %>%
-  rename(Longitude = lon,
-         Latitude = lat) %>%
   filter(
     year == 2022,
     sigla_uf == .estados,
@@ -259,64 +325,69 @@ my_plot_col_states <- function(.estados){
     city_ref = city_ref %>% fct_reorder(emission_total) %>%
       fct_lump(n = 10, w = emission_total)) %>%
   filter(city_ref != "Other") %>%
+    mutate(
+      sub_sector = case_when(
+        sub_sector == "cropland-fires"  ~ "Cropland fires",                   
+        sub_sector == "enteric-fermentation-cattle-feedlot" ~ "EFC feedlot",
+        sub_sector == "enteric-fermentation-cattle-pasture" ~ "EFC pasture",
+        sub_sector == "manure-left-on-pasture-cattle"  ~ "ML pasture cattle",    
+        sub_sector == "manure-management-cattle-feedlot" ~ "MMC feedlot",  
+        sub_sector == "rice-cultivation" ~ "rice cultivation",                  
+        sub_sector == "synthetic-fertilizer-application" ~ "SF application", 
+      )
+    ) %>% 
   ggplot(aes(emission/1e6,
              city_ref,
              fill = sub_sector)) +
   geom_col(col="black", lwd = 0.1) +
-  labs(x = 'Emission (Mton)',
+    xlab(bquote(Emission~CO[2]~eq~(Mton))) +
+  labs(#x = 'Emission (Mton)',
        y = 'City',
-       fill = 'Sector') +
+       fill = '') +
   theme_bw() +
   map(my_theme,my_theme_add)
 } +
-  theme(legend.position = "", ##retirar legenda
+  theme(legend.position = "top", ##retirar legenda
     legend.background = element_rect(fill = "transparent"))+ ##?
-  scale_fill_viridis_d(option = "plasma")
-
+  scale_fill_viridis_d(option = "plasma") +
+  annotate("text",
+           x=60,
+           y=1,
+           label = ".",
+           size=0.1)
+  # geom_text(stat = 'identity',
+  #           position = 'identity',
+  #           size = 4,
+  #           angle = 90,
+  #           vjust = 2,
+  #           data = NULL,
+  #           label = 'emission')
 
 map(estados,my_plot_col_states)
 
-#melhorar visualizacao
+# ggsave('PA_setor_agr.png', dpi = 3000, width = 9, height = 6)
+
+
 
 ```
 ## SUBSETORES 
 
-### CARACTERIZANDO SUBSETORES
-
-#### VERIFICANDO VARIÁVEL
-
-```{r}
-dados2 %>%
-  pull(original_inventory_sector) %>%
-  unique()
-```
-
-#### VERIFICANDO SE O FILTRO ESTA CORRETO ###
-```{r}
-dados2 %>%
-  filter(original_inventory_sector == c('enteric-fermentation-cattle-pasture',
-'manure-management-cattle-feedlot',"enteric-fermentation-cattle-feedlot","manure-left-on-pasture-cattle")) %>%
-  pull(original_inventory_sector) %>% 
-  unique()
-```
-
 ### CARACTERIZANDO SUBSETORES PARA EMISSÕES DE GADO 
 
 ```{r}
-my_plot_subsector_states <- function(.estados){
+# my_plot_subsector_states <- function(.estados){
   dados2 %>%
-  rename(Longitude = lon,
-         Latitude = lat) %>%
   filter(
-         year == 2022,                 
+         year == 2022,
          str_detect(activity_units, 'animal'),
          gas == 'co2e_100yr',
-         sigla_uf == .estados) |> 
-  group_by(city_ref, original_inventory_sector) %>%
+         sigla_uf %in% estados) |> 
+  group_by(city_ref, original_inventory_sector, sigla_uf) %>%
   summarise(
     emission = sum(emissions_quantity, na.rm = T)
   ) %>%
-  group_by(city_ref) %>%
+  # ungroup() |> 
+  group_by(city_ref,sigla_uf) %>%
   mutate(
     emission_total = sum(emission, na.rm = T)
   ) %>%
@@ -328,7 +399,8 @@ my_plot_subsector_states <- function(.estados){
        original_inventory_sector = original_inventory_sector %>%
          as_factor() %>%
          fct_relevel("manure-left-on-pasture-cattle",
-          "enteric-fermentation-cattle-feedlot",                              "manure-management-cattle-feedlot",
+          "enteric-fermentation-cattle-feedlot",
+          "manure-management-cattle-feedlot",
           "enteric-fermentation-cattle-pasture")
     ) %>% 
   filter(city_ref != "Other") %>%
@@ -340,21 +412,27 @@ my_plot_subsector_states <- function(.estados){
        y = 'City',
        fill = 'Subsector') +
   theme_bw() +
-  map(my_theme,my_theme_add) +
-  theme(legend.position = "right") + ##retirada a legenda 
-  scale_fill_viridis_d(option = "plasma")         ##ta alterando cor de 1, gerar separadamente?
-} 
+  # map(my_theme,my_theme_add) +
+  theme(legend.position = "") +
+  scale_fill_viridis_d(option = "plasma") +
+    # facet_wrap(~city_ref,,ncol = 2) +
+  annotate("text",
+           x=50,
+           y=1,
+           label = ".",
+           size=0.1)     
+# } 
 
-map(estados,my_plot_subsector_states)
+# map(estados,my_plot_subsector_states)
 
 ```
 
 ## RANKEANDO AS 10 CIDADES COM SUBSETORES DE MAIOR EMISSÃO DENTRE OS 5 ESTADOS
 
 ```{r}
+#algum erro
+
 dados2 %>%
-  rename(Longitude = lon,
-         Latitude = lat) %>%
   filter(
     year == 2022,
     sigla_uf == estados,
@@ -385,7 +463,7 @@ dados2 %>%
        fill = 'Subsector') +
   theme_bw() +
   map(my_theme,my_theme_add) +
-  theme(legend.position = '') +
+  theme(legend.position = 'right') +
   scale_fill_viridis_d(option = 'plasma')
   
 ```
@@ -394,17 +472,11 @@ dados2 %>%
 
 ```{r}
 dados2 %>%
-  rename(Longitude = lon,
-         Latitude = lat) %>%
   filter(
     year == 2022,
     sigla_uf %in% estados,
     gas == 'co2e_100yr',
     str_detect(activity_units, 'animal')) |> 
-    # original_inventory_sector == c('enteric-fermentation-cattle-pasture',
-    #                                'manure-management-cattle-feedlot',
-    #                                "enteric-fermentation-cattle-feedlot",
-    #                                "manure-left-on-pasture-cattle")) %>%
   select(original_inventory_sector, emissions_quantity, sigla_uf) %>%
   group_by(sigla_uf, original_inventory_sector) %>% 
   arrange( desc(emissions_quantity)) %>%
@@ -438,22 +510,68 @@ dados2 %>%
 dados2 %>%
   filter(year == 2022,
          str_detect(activity_units, 'animal'),
-         gas == 'co2e_100yr'
-  ) %>%
+         gas == 'co2e_100yr') %>%
   group_by(sigla_uf) %>%                  #!!
   summarise(
     soma_emissao= sum(emissions_quantity)/1e6,  
-    media_ms = mean(emissions_quantity)/1e6
+    media_ms = mean(emissions_quantity)
   ) %>%
   arrange(- soma_emissao)
-# PA apesar de ser o menor emissor dentre os 5, apresenta o segundo maior rebanho bovino
 ```
 
 ## SERIE TEMPORAL, 2015 A 2022 
 
 ```{r}
-#errado, alterar posteriormente
-# 
+estado <- "MS"        #change the state here
+dados2 %>%
+  filter(
+    year <= 2022,
+    gas == 'co2e_100yr',
+    !source_name %in% nomes_uf,
+    str_detect(activity_units, 'animal')
+  ) %>%  # pull(sigla_uf) %>% unique()
+  group_by(year) %>%
+  summarise(
+    soma_emissao= sum(emissions_quantity, na.rm = TRUE)/1e6,
+    media_emissao = mean(emissions_quantity, na.rm = TRUE)/1e6,
+    sd_emissao = sd(emissions_quantity/1e6, na.rm = TRUE)
+  )  %>% 
+  mutate(
+    sigla_uf = "Br"
+  ) %>% 
+  rbind(dados2 %>%
+            filter(sigla_uf %in% estados,
+            str_detect(activity_units, 'animal'),
+            gas == 'co2e_100yr',
+            !source_name %in% nomes_uf
+          ) %>%
+          group_by(year, sigla_uf) %>%
+          summarise(
+            soma_emissao= sum(emissions_quantity)/1e6,
+            media_emissao = mean(emissions_quantity)/1e6,
+            sd_emissao = sd(emissions_quantity/1e6)
+          )
+  ) %>%
+  filter(sigla_uf != "Br") %>% 
+  ggplot(aes(x=year,y=soma_emissao,
+             fill=sigla_uf))+
+  #geom_point()+
+  #geom_smooth(method = 'lm')+
+  #ggpubr::stat_cor()+
+  geom_col(position = "dodge", color="black") +
+  theme_bw() +
+  map(my_theme, my_theme_add) +
+  labs(x = 'Year',
+       y = 'Sum of emission',
+       fill="") +
+  scale_fill_viridis_d()
+```
+
+
+```{r}
+# tentativa de plotar todos os Estados
+# errado, alterar posteriormente
+
 # my_plot_temporal_serie <- function(.estados) {
 #   dados2 %>%
 #   filter(str_detect(activity_units, 'animal'),
@@ -467,7 +585,7 @@ dados2 %>%
 #   )  %>%
 #   rbind(dados2 %>%
 #         ungroup() %>%
-#           filter(sigla_uf == 'MS',
+#           filter(sigla_uf == estados,
 #             str_detect(activity_units, 'animal'),
 #             gas == 'co2e_100yr',
 #           ) %>%
@@ -479,7 +597,7 @@ dados2 %>%
 #           )
 #   ) %>%
 #   mutate(
-#     uf=c(rep('Br',8),rep("MS",8))
+#     uf=c(rep('Br',8),rep(estado,8))
 #   ) %>%
 #   ggplot(aes(x=year,y=media_emissao,
 #              col=uf))+
@@ -489,11 +607,9 @@ dados2 %>%
 #   theme_bw() +
 #   map(my_theme, my_theme_add) +
 #   labs(x = 'Year',
-#        y = 'Mean of emission')
+#        y = 'Mean of emission (Mton)')
 # }
 # 
 # map(estados, my_plot_temporal_serie)
-
-
 ```
 

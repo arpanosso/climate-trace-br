@@ -312,6 +312,6 @@ dados_country <- dados_country %>%
 dados_country$directory[1]
 
 dados_country %>%
-  select( sector_name ) %>%
+  select(sector_name) %>%
   distinct()
 write_rds(dados_country, "data/country_emissions_v4_7_0.rds")

@@ -108,7 +108,10 @@ indigenous$geom %>% tibble() #615
 # Função para ler 01 arquivo csv
 my_file_read <- function(sector_name){
   read.csv(sector_name) %>%
+    # select(-(reporting_entity:native_source_id)) %>%
+    # select(source_id:lat_lon) %>%
     select(!starts_with("other")) %>%
+    select(!starts_with("native")) %>%
     mutate(directory = sector_name)
 }
 
