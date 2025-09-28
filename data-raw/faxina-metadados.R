@@ -10,10 +10,10 @@ source("R/my-function.R")
 # arquivo emissions-sources -----------------------------------------------
 # buscando o caminho dos setores
 tbl_directorys <- as_tibble(
-  list.files("data-raw/BRA/",
+  list.files("data-raw/BRA_47/",
              full.names = TRUE,
              recursive = TRUE)) %>%
-  filter(str_detect(value, "emissions_sources.csv"))
+  filter(str_detect(value, "emissions_sources_v4_7_0.csv"))
 
 # Extraindo os caminhos dos arquvios
 value <- tbl_directorys %>% pull(value)
@@ -37,9 +37,10 @@ trans_values <- tbl_directorys %>%
 dados <- map_dfr(value, my_file_read)
 glimpse(dados)
 
+
 # Numéro de posições no caminho divididas por "/"
 n_position <- ncol(str_split(tbl_directorys[1,1],"/",simplify = TRUE))
-
+basename(value[1])
 
 # Tratanto as colunas de data, nome de setores e sub setores
 dados <- dados %>%
@@ -48,7 +49,8 @@ dados <- dados %>%
     end_time = as_date(end_time),
     created_date = as_date(created_date),
     modified_date = as_date(modified_date),
-    year = lubridate::year(end_time)
+    year = lubridate::year(end_time),
+    month = lubridate::month(end_time)
   ) %>%
   mutate(
     sector_name = str_split(directory,
@@ -57,7 +59,7 @@ dados <- dados %>%
     sub_sector = str_split(directory,
                            "/",
                            simplify = TRUE)[,n_position],
-    sub_sector = str_remove(sub_sector,"_emissions_sources.csv|_country_emissions.csv")
+    sub_sector = str_remove(sub_sector,"_emissions_sources_v4_7_0.csv|_country_emissions_v4_7_0.csv")
   )
 dados$sector_name %>% unique()
 dados$sub_sector %>% unique()
@@ -226,28 +228,28 @@ get_geobr_city <- function(arg){
   return(resul)
 };get_geobr_city(NA)
 
-# tictoc::tic()
-# base_sigla_uf <- base_sigla_uf %>%
-#   group_by(sigla_uf) %>%
-#   nest() %>%
-#   #filter(sigla_uf != "DF") %>%
-#   mutate(
-#     nr = map(sigla_uf,
-#              ~get_geobr_city_n(data$lon,
-#                                data$lat,
-#                                .x))
-#   ) %>%
-#   unnest(cols = c(data, nr)) %>%
-#   ungroup() %>%
-#   # sample_n(10) %>%
-#   mutate(
-#     list_par = str_c(nr, lon, lat, sigla_uf,sep=" "),
-#   ) %>%
-#   mutate(
-#     city_ref = map(list_par,get_geobr_city)
-#   ) %>%
-#   unnest(cols = c(city_ref_2))
-# tictoc::toc()
+tictoc::tic()
+base_sigla_uf <- base_sigla_uf %>%
+  group_by(sigla_uf) %>%
+  nest() %>%
+  #filter(sigla_uf != "DF") %>%
+  mutate(
+    nr = map(sigla_uf,
+             ~get_geobr_city_n(data$lon,
+                               data$lat,
+                               .x))
+  ) %>%
+  unnest(cols = c(data, nr)) %>%
+  ungroup() %>%
+  # sample_n(10) %>%
+  mutate(
+    list_par = str_c(nr, lon, lat, sigla_uf,sep=" "),
+  ) %>%
+  mutate(
+    city_ref = map(list_par,get_geobr_city)
+  ) %>%
+  unnest(cols = c(city_ref))
+tictoc::toc()
 
 # Final da faxina ---------------------------------------------------------
 # lendo arquivo da base nacional
@@ -273,7 +275,7 @@ dados_sigla <- left_join(
 dados_sigla$nome_regiao %>%  unique()
 
 write_rds(dados_sigla %>%
-             rename(biome = biomes), "data/emissions_sources.rds")
+             rename(biome = biomes), "data/emissions_sources_v4_7_0.rds")
 
 # country data -----------------------------------------------------------------
 # buscando o caminho dos setores
@@ -297,13 +299,14 @@ dados_country <- dados_country %>%
     end_time = as_date(end_time),
     created_date = as_date(created_date),
     modified_date = as_date(modified_date),
-    year = lubridate::year(end_time)
+    year = lubridate::year(end_time),
+    month = lubridate::month(end_time)
   ) %>%
   mutate(
     sector_name = str_split(directory,
                             "/",
                             simplify = TRUE)[,3],
-    sector_name = str_remove(sector_name,"_country_emissions.csv")
+    sector_name = str_remove(sector_name,"_country_emissions_v4_7_0.csv")
   )
 
 dados_country$directory[1]
@@ -311,4 +314,4 @@ dados_country$directory[1]
 dados_country %>%
   select( sector_name ) %>%
   distinct()
-write_rds(dados_country, "data/country_emissions.rds")
+write_rds(dados_country, "data/country_emissions_v4_7_0.rds")
